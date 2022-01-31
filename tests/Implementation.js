@@ -4,10 +4,8 @@
 'use strict';
 
 const https = require('https');
-const {v4: uuidv4} = require('uuid');
 const httpsAgent = new https.Agent({rejectUnauthorized: false});
 const {httpClient} = require('@digitalbazaar/http-client');
-const {ISOTimeStamp} = require('./helpers');
 
 const _headers = {
   Accept: 'application/ld+json,application/json',
@@ -18,59 +16,25 @@ class Implementation {
   constructor(settings) {
     this.settings = settings;
   }
-  async issue({credential}) {
-    try {
-      const headers = {..._headers, ...this.settings.issuer.headers};
-      const expires = () => {
-        const date = new Date();
-        date.setMonth(date.getMonth() + 2);
-        return ISOTimeStamp({date});
-      };
-      const body = {
-        credential: {
-          ...credential,
-          id: `urn:uuid:${uuidv4()}`,
-          issuanceDate: ISOTimeStamp(),
-          expirationDate: expires(),
-          issuer: this.settings.issuer.id,
-          '@context': credential['@context']
-        }
-      };
-      const result = await httpClient.post(
-        this.settings.issuer.endpoint,
-        {headers, httpsAgent, json: body}
-      );
-      return result;
-    } catch(e) {
-      // this is just to make debugging easier
-      //console.error(e);
-      throw e;
+  /**
+   * An https did resolver binding.
+   *
+   * @param {object} options - Options to use.
+   * @param {String} options.did - A did.
+   * @param {object} [options.auth] - Potential auth credentials
+   *   for the did resolver.
+   *
+   * @returns {Promise<object>} The result from the did resolver.
+   */
+  async didResolver({did, auth}) {
+    const headers = {..._headers};
+    if(auth && auth.type === 'oauth2-bearer-token') {
+      headers.Authorization = `Bearer ${auth.accessToken}`;
     }
-  }
-  async verify({credential, auth}) {
-    try {
-      const headers = {..._headers};
-      if(auth && auth.type === 'oauth2-bearer-token') {
-        headers.Authorization = `Bearer ${auth.accessToken}`;
-      }
-      const body = {
-        verifiableCredential: credential,
-        options: {
-          checks: ['proof'],
-        },
-      };
-      const result = await httpClient.post(
-        this.settings.verifier,
-        {headers, httpsAgent, json: body}
-      );
-      return result;
-    } catch(e) {
-      // this is just to make debugging easier
-      if(e && e.response && e.response.data) {
-        throw new Error(JSON.stringify(e.response.data, null, 2));
-      }
-      throw e;
-    }
+    return httpClient.get(
+      `${this.settings.didResolver}/${encodeURIComponent(did)}`,
+      {headers, httpsAgent}
+    );
   }
 }
 
