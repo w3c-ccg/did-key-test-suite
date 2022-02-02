@@ -33,7 +33,7 @@ class Implementation {
     }
     return httpClient.get(
       `${this.settings.didResolver}/${encodeURIComponent(did)}`,
-      {headers, httpsAgent}
+      {headers, agent: httpsAgent}
     );
   }
 }
