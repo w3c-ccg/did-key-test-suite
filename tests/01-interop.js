@@ -63,11 +63,19 @@ describe('Ed25519 2020 Tests', function() {
             } catch(e) {
               error = e;
             }
-            should.exist(response, 'Expected didResolver to return a response');
-            should.not.exist(error);
-            //FIXME add assertion here for didResolver result
-            //FIXME add assertion here for didDocument deep equal
-            //
+            should.exist(response,
+              'Expected didResolver to return a response.');
+            should.not.exist(error, 'Expected no errors from didResolver.');
+            response.status.should.eql(response.status,
+              'Expected didResolver response status to match expected status.');
+            should.exist(response.data,
+              'Expected didResolver response data to exist.');
+            response.data.should.be.an('object',
+              'Expected didResolver response data to be an object.');
+            should.exist(response.data.didDocument,
+              'Expected a didDocument in the response data.');
+            test.expectedDidDocument.should.eql(response.data.didDocument,
+              'Expected response didDocument to match expected didDocument.');
           }
         });
       }
