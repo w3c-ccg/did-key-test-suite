@@ -1,8 +1,8 @@
 {
   "negative": true,
   "did": "did:key:tKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b",
-  "row": "should not return a didDocument for an invalid DID",
-  "title": "should not return a didDocument for an invalid DID",
+  "row": "should error if DID is not MULTIBASE",
+  "title": "should error if DID is not MULTIBASE",
   "expected": {
     "status": 500,
     "didDocument": {}
