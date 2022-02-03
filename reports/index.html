@@ -62,10 +62,10 @@
     </section>
     <section id="sotd">
       sotd is required
-      Tests passed 1/2 50%
-      Tests failed 1/2 50%
+      Tests passed 3/3 100%
+      Tests failed 0/3 0%
       Tests skipped 0
-      Total tests 2
+      Total tests 3
     </section>
     <section id="conformance">
       <!--- This will take the tests and display them as matrices -->
@@ -121,9 +121,15 @@
               <tbody>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">should not return a didDocument for an invalid DID</td>
+                <td class="subtest">should error if key encoding does not match MULTIBASE codec.</td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional">❌</td>
+                  <td class="passed not-optional">✓</td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">should error if DID is not MULTIBASE</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional">✓</td>
               </tr>
               <tr>
                 <!--This is the name of the test-->

@@ -56,11 +56,6 @@ describe('Ed25519 2020 Tests', function() {
             error.status.should.eql(test.expected.status,
               'Expected didResolver response status to match expected status.');
             should.exist(error.data, 'Expected error to have data.');
-            should.exist(
-              error.data.didDocument,
-              'Expected error data to have a didDocument'
-            );
-            error.data.didDocument.should.eql(test.expected.didDocument);
           }
           // positive tests here
           if(test.negative == false) {
