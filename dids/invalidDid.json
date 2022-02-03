@@ -1,0 +1,10 @@
+{
+  "negative": true,
+  "did": "did:key:tKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b",
+  "row": "should not return a didDocument for an invalid DID",
+  "title": "should not return a didDocument for an invalid DID",
+  "expected": {
+    "status": 500,
+    "didDocument": {}
+  }
+}
