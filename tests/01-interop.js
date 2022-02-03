@@ -40,21 +40,29 @@ describe('Ed25519 2020 Tests', function() {
       for(const test of dids) {
         it(test.title, async function() {
           this.test.cell = {columnId: resolver.name, rowId: test.row};
+          // negative tests here
           if(test.negative === true) {
             let error;
             let response;
             try {
-              response = await implementation.verify({
-                credential: test.credential
-              });
+              response = await implementation.didResolver({did: test.did});
             } catch(e) {
               error = e;
             }
             should.not.exist(response,
               'Expected didResolver to return an error');
             should.exist(error);
+            should.exist(error.status, 'Expected error to have a status.');
+            error.status.should.eql(test.expected.status,
+              'Expected didResolver response status to match expected status.');
+            should.exist(error.data, 'Expected error to have data.');
+            should.exist(
+              error.data.didDocument,
+              'Expected error data to have a didDocument'
+            );
+            error.data.didDocument.should.eql(test.expected.didDocument);
           }
-          // only one test is positive so far
+          // positive tests here
           if(test.negative == false) {
             let error;
             let response;
@@ -66,7 +74,7 @@ describe('Ed25519 2020 Tests', function() {
             should.exist(response,
               'Expected didResolver to return a response.');
             should.not.exist(error, 'Expected no errors from didResolver.');
-            response.status.should.eql(response.status,
+            response.status.should.eql(test.expected.status,
               'Expected didResolver response status to match expected status.');
             should.exist(response.data,
               'Expected didResolver response data to exist.');
@@ -74,7 +82,7 @@ describe('Ed25519 2020 Tests', function() {
               'Expected didResolver response data to be an object.');
             should.exist(response.data.didDocument,
               'Expected a didDocument in the response data.');
-            test.expectedDidDocument.should.eql(response.data.didDocument,
+            response.data.didDocument.should.eql(test.expected.didDocument,
               'Expected response didDocument to match expected didDocument.');
           }
         });

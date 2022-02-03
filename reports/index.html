@@ -62,10 +62,10 @@
     </section>
     <section id="sotd">
       sotd is required
-      Tests passed 1/1 100%
-      Tests failed 0/1 0%
+      Tests passed 1/2 50%
+      Tests failed 1/2 50%
       Tests skipped 0
-      Total tests 1
+      Total tests 2
     </section>
     <section id="conformance">
       <!--- This will take the tests and display them as matrices -->
@@ -119,6 +119,12 @@
                     <th class="no-wrap small-font">Digital Bazaar</th>
                 </thead>
               <tbody>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">should not return a didDocument for an invalid DID</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional">❌</td>
+              </tr>
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">should return a didDocument for a valid DID</td>
