@@ -1,15 +1,15 @@
 {
-  "name": "w3c-test-suite-template",
+  "name": "did-key-test-suite",
   "version": "0.1.0",
   "description": "Template for Creating Tests using the mocha-w3c-interop-reporter",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/ --require esm --reporter ./node_modules/mocha-w3c-interop-reporter/index.js --reporter-options body=\"$PWD/body.hbs\",matrix=\"$PWD/matrix.hbs\",reportDir=\"$PWD/reports\",respec=\"$PWD/respecConfig.json\",title=\"Ed25519 2020 Signature Interoperability Report 1.0\",helpers=\"$PWD/templateHelpers.js\",suiteLog='./suite.log' --timeout 15000",
+    "test": "mocha tests/ --require esm --reporter ./node_modules/mocha-w3c-interop-reporter/index.js --reporter-options body=\"$PWD/body.hbs\",matrix=\"$PWD/matrix.hbs\",reportDir=\"$PWD/reports\",respec=\"$PWD/respecConfig.json\",title=\"did:key Method Interoperability Report 1.0\",helpers=\"$PWD/templateHelpers.js\",suiteLog='./suite.log' --timeout 15000",
     "lint": "eslint *.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digitalbazaar/w3c-test-suite-template.git"
+    "url": "git+https://github.com/digitalbazaar/did-key-test-suite.git"
   },
   "keywords": [
     "Test",
@@ -39,7 +39,7 @@
     "eslint-plugin-jsdoc": "^32.3.0"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/w3c-test-suite-template/issues"
+    "url": "https://github.com/digitalbazaar/did-key-test-suite/issues"
   },
-  "homepage": "https://github.com/digitalbazaar/w3c-test-suite-template#readme"
+  "homepage": "https://github.com/digitalbazaar/did-key-test-suite#readme"
 }

@@ -17,7 +17,7 @@ const test = [
 // only test listed implementations
 const testAPIs = implementations.filter(v => test.includes(v.name));
 
-describe('Ed25519 2020 Tests', function() {
+describe('did:key Method Tests', function() {
   const summaries = new Set();
   this.summary = summaries;
   // column names for the matrix go here
