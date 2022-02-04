@@ -27,7 +27,10 @@ class Implementation {
    * @returns {Promise<object>} The result from the did resolver.
    */
   async didResolver({did, auth}) {
-    const headers = {..._headers};
+    const headers = {
+      ..._headers,
+      Accept: 'application/ld+json;profile="https://w3id.org/did-resolution"'
+    };
     if(auth && auth.type === 'oauth2-bearer-token') {
       headers.Authorization = `Bearer ${auth.accessToken}`;
     }
