@@ -11,7 +11,8 @@ const implementations = require('../implementations');
 const should = chai.should();
 // test these implementations' issuers or resolvers
 const test = [
-  'Digital Bazaar'
+  'Digital Bazaar',
+  'Danube Tech'
 ];
 
 // only test listed implementations
