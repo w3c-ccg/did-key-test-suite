@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/ --require esm --reporter ./node_modules/mocha-w3c-interop-reporter/index.js --reporter-options body=\"$PWD/body.hbs\",matrix=\"$PWD/matrix.hbs\",reportDir=\"$PWD/reports\",respec=\"$PWD/respecConfig.json\",title=\"did:key Method Interoperability Report 1.0\",helpers=\"$PWD/templateHelpers.js\",suiteLog='./suite.log' --timeout 15000",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "postinstall": "cd did-resolver-server && npm i"
   },
   "repository": {
     "type": "git",
