@@ -25,7 +25,7 @@ npm i
 npm test
 ```
 
-##Test Data
+## Test Data
 
 To generate new Dids simply add them to the `/dids` directory.
 
@@ -78,7 +78,7 @@ To generate new Dids simply add them to the `/dids` directory.
 ```
 
 
-##Implementation
+## Implementation
 
 To add a new Implementation simply add a new file to the `/implementations` dir.
 
