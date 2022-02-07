@@ -54,8 +54,13 @@ describe('did:key Method Tests', function() {
               'Expected didResolver to return an error');
             should.exist(error);
             should.exist(error.status, 'Expected error to have a status.');
+            // FIXME change this is more exact error codes after the spec
+            // is updated.
+            error.status.should.be.gte(400, 'Expected a negative status code');
+            /*
             error.status.should.eql(test.expected.status,
               'Expected didResolver response status to match expected status.');
+            */
             should.exist(error.data, 'Expected error to have data.');
           }
           // positive tests here
