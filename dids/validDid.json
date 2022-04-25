@@ -1,8 +1,8 @@
 {
   "negative": false,
   "did": "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b",
-  "row": "should return a didDocument for a valid DID",
-  "title": "should return a didDocument for a valid DID",
+  "row": "MUST return a didDocument for a valid DID",
+  "title": "MUST return a didDocument for a valid DID",
   "expected": {
     "status": 200,
     "didDocument": {

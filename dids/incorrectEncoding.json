@@ -1,8 +1,8 @@
 {
   "negative": true,
   "did": "did:key:z6MkNCwzLDQsNSw3LDcsNSw1LDAsMyw0LDUsMCwzLDQsMywxLDMsNCw1LDAsMyw0LDUsMCwzLDQsNSw3LDAsMCwxMDA=",
-  "row": "should error if key encoding does not match MULTIBASE codec",
-  "title": "should error if key encoding does not match MULTIBASE codec",
+  "row": "MUST error if key encoding does not match MULTIBASE codec",
+  "title": "MUST error if key encoding does not match MULTIBASE codec",
   "expected": {
     "status": 500,
     "didDocument": {}
