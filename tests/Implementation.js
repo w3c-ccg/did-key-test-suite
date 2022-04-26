@@ -20,7 +20,7 @@ class Implementation {
    * An https did resolver binding.
    *
    * @param {object} options - Options to use.
-   * @param {String} options.did - A did.
+   * @param {String} options.did - A Decentralized Identifier.
    * @param {object} [options.auth] - Potential auth credentials
    *   for the did resolver.
    *
