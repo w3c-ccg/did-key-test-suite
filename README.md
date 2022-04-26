@@ -98,7 +98,7 @@ To add a new Implementation simply add a new file to the `/implementations` dir.
 }
 ```
 
-You will also need to whitelist the implementation in `tests/01-interop.js`.
+You will also need to enable the implementation in `tests/01-interop.js`.
 
 ```js
 // test these implementations' issuers or verifiers
