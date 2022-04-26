@@ -84,7 +84,7 @@ To add a new Implementation simply add a new file to the `/implementations` dir.
 
 ```js
 {
-  "name": "Your Company Name",
+  "name": "Your Organization Name",
   "implementation": "Your Implementation Name",
   "issuer": {
     "id": "did:your-did-method:your-did-id",
