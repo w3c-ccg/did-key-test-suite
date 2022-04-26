@@ -86,14 +86,6 @@ To add a new Implementation simply add a new file to the `/implementations` dir.
 {
   "name": "Your Organization Name",
   "implementation": "Your Implementation Name",
-  "issuer": {
-    "id": "did:your-did-method:your-did-id",
-    "endpoint": "https://your-company.com/vc-issuer/issue",
-    "headers": {
-      "authorization": "Bearer your auth token"
-    }
-  },
-  "verifier": "https://your-company.com/vc-verifier/verify",
   "didResolver": "https://resolver.your-company.com/1.0/identifiers"
 }
 ```
