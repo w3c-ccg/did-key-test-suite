@@ -103,7 +103,7 @@ You will also need to enable the implementation in `tests/01-interop.js`.
 ```js
 // test these implementations' issuers or verifiers
 const test = [
-  'Your Company Name'
+  'Your Organization Name'
 ];
 
 // only test listed implementations
