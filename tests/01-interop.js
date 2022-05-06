@@ -22,7 +22,7 @@ describe('did:key Method Tests', function() {
   // to make an interop matrix with this suite
   this.matrix = true;
   this.report = true;
-  this.columns = [...match.keys()];
+  this.implemented = [...match.keys()];
   this.notImplemented = [...nonMatch.keys()];
   this.rowLabel = 'Test Name';
   this.columnLabel = 'Did Key Resolver';
