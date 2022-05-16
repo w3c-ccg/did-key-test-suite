@@ -5,6 +5,6 @@
 
 const requireDir = require('require-dir');
 
-const dir = requireDir('./dids');
+const dir = requireDir('./');
 
 module.exports = Object.values(dir);
