@@ -4,7 +4,7 @@
   "description": "Template for Creating Tests using the mocha-w3c-interop-reporter",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/ --reporter @digitalbazaar/mocha-w3c-interop-reporter --reporter-options body=\"$PWD/body.hbs\",matrix=\"$PWD/matrix.hbs\",reportDir=\"$PWD/reports\",respec=\"$PWD/respecConfig.json\",title=\"did:key Method Interoperability Report 1.0\",suiteLog='./suite.log' --timeout 15000",
+    "test": "mocha tests/ --reporter @digitalbazaar/mocha-w3c-interop-reporter --reporter-options abstract=\"$PWD/abstract.hbs\",matrix=\"$PWD/matrix.hbs\",reportDir=\"$PWD/reports\",respec=\"$PWD/respecConfig.json\",title=\"did:key Method Interoperability Report 1.0\",suiteLog='./suite.log' --timeout 15000",
     "lint": "eslint ."
   },
   "repository": {
