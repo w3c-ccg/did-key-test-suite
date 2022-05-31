@@ -1,11 +1,9 @@
 /*!
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
-'use strict';
-
-const chai = require('chai');
-const dids = require('../dids');
-const {filterByTag} = require('vc-api-test-suite-implementations');
+import chai from 'chai';
+import dids from '../dids/index.js';
+import {filterByTag} from 'vc-api-test-suite-implementations';
 
 const should = chai.should();
 const headers = {

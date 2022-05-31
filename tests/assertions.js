@@ -1,9 +1,7 @@
 /*!
- * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
-'use strict';
-
-const chai = require('chai');
+import chai from 'chai';
 
 const should = chai.should();
 
@@ -14,10 +12,8 @@ const should = chai.should();
  *
  * @returns {undefined} Just returns on success.
  */
-const testResolverResponse = result => {
+export const testResolverResponse = result => {
   should.exist(result, 'expected result to exist');
   result.should.be.an('object');
   result.should.have.property('didDocument');
 };
-
-module.exports = {testResolverResponse};
