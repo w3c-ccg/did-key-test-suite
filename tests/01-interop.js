@@ -2,7 +2,7 @@
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
 import chai from 'chai';
-import dids from '../dids/index.js';
+import {dids} from '../dids/index.js';
 import {filterByTag} from 'vc-api-test-suite-implementations';
 
 const should = chai.should();
