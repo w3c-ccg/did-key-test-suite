@@ -5,14 +5,16 @@
 
 const chai = require('chai');
 const dids = require('../dids');
-const {filterImplementations} = require('vc-api-test-suite-implementations');
+const {filterByTag} = require('vc-api-test-suite-implementations');
 
 const should = chai.should();
-
-const {match, nonMatch} = filterImplementations({filter: ({value}) => {
-  return value.didResolvers.some(
-    didResolver => didResolver.tags.has('Did-Key'));
-}});
+const headers = {
+  Accept: 'application/ld+json;profile="https://w3id.org/did-resolution"'
+};
+const {match, nonMatch} = filterByTag({
+  property: 'didResolvers',
+  tags: ['Did-Key']
+});
 
 describe('did:key Method Tests', function() {
   const summaries = new Set();
@@ -31,13 +33,18 @@ describe('did:key Method Tests', function() {
   for(const [name, implementation] of match) {
     const didResolver = implementation.didResolvers.find(
       dr => dr.tags.has('Did-Key'));
+    const makeUrl = did =>
+      `${didResolver.settings.endpoint}/${encodeURIComponent(did)}`;
     describe(name, function() {
       for(const test of dids) {
         it(test.title, async function() {
           this.test.cell = {columnId: name, rowId: test.row};
           // negative tests here
           if(test.negative === true) {
-            const {result, error} = await didResolver.resolve({did: test.did});
+            const {result, error} = await didResolver.get({
+              url: makeUrl(test.did),
+              headers
+            });
             should.not.exist(result,
               'Expected didResolver to return an error');
             should.exist(error);
@@ -53,7 +60,10 @@ describe('did:key Method Tests', function() {
           }
           // positive tests here
           if(test.negative == false) {
-            const {result, error} = await didResolver.resolve({did: test.did});
+            const {result, error} = await didResolver.get({
+              url: makeUrl(test.did),
+              headers
+            });
             should.exist(result,
               'Expected didResolver to return a response.');
             should.not.exist(error, 'Expected no errors from didResolver.');
