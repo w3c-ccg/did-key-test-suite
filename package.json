@@ -24,7 +24,7 @@
     "url": "https://digitalbazaar.com/"
   },
   "engines": {
-    "node": ">=14.18.0"
+    "node": ">=16.0.0"
   },
   "dependencies": {
     "@digitalbazaar/mocha-w3c-interop-reporter": "^1.2.1",
@@ -34,10 +34,10 @@
     "vc-api-test-suite-implementations": "github:w3c-ccg/vc-api-test-suite-implementations#convert-to-module"
   },
   "devDependencies": {
-    "eslint": "^8.18.0",
+    "eslint": "^8.19.0",
     "eslint-config-digitalbazaar": "^4.0.1",
     "eslint-plugin-jsdoc": "^39.3.3",
-    "eslint-plugin-unicorn": "^42.0.0"
+    "eslint-plugin-unicorn": "^43.0.0"
   },
   "bugs": {
     "url": "https://github.com/w3c-ccg/did-key-test-suite/issues"
