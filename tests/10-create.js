@@ -4,13 +4,13 @@
 'use strict';
 
 const chai = require('chai');
-const dids = require('../dids');
 const {filterByTag} = require('vc-api-test-suite-implementations');
 
 const should = chai.should();
 const headers = {
   Accept: 'application/ld+json;profile="https://w3id.org/did-resolution"'
 };
+const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 const {match, nonMatch} = filterByTag({
   property: 'didResolvers',
   tags: ['Did-Key']
@@ -37,10 +37,19 @@ describe('did:key Create Operation', function() {
       `${didResolver.settings.endpoint}/${encodeURIComponent(did)}`;
     describe(name, function() {
       it('The scheme MUST be the value `did`', async () => {
-
+        const [scheme] = did.split(':');
+        should.exist(scheme, 'Expected first part of the did to exist.');
+        scheme.should.be.a('string', 'Expected did scheme to be a string.');
+        scheme.should.equal('did', 'Expected scheme to be "did"');
       });
       it('MUST raise INVALID_DID error if scheme is not `did`', async () => {
-
+        const noScheme = did.replace(/^did:/, '');
+        const {result, error} = await didResolver.get({
+          url: makeUrl(noScheme),
+          headers
+        });
+        should.not.exist(result, 'Expected no response when did has no scheme');
+        should.exist(error, 'Expected an error when did has no scheme.');
       });
       it('The method MUST be the value `key`', async () => {
 
@@ -51,7 +60,7 @@ describe('did:key Create Operation', function() {
       it('The version MUST be convertible to a positive integer value.',
         async () => {
 
-      });
+        });
       it('MUST raise INVALID_ID if version is not convertible to a ' +
         'positive integer value.', async () => {
 
@@ -59,7 +68,7 @@ describe('did:key Create Operation', function() {
       it('The multibaseValue MUST be a string and begin with the letter `z`',
         async () => {
 
-      });
+        });
       it('MUST raise INVALID_ID if the multibaseValue does not begin with ' +
         'the letter `z`.', async () => {
 
