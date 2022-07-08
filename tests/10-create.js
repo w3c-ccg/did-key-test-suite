@@ -5,6 +5,7 @@
 
 const chai = require('chai');
 const {filterByTag} = require('vc-api-test-suite-implementations');
+const {shouldBeDidResolverResponse} = require('./assertions');
 
 const should = chai.should();
 const headers = {
@@ -54,15 +55,11 @@ describe('did:key Create Operation', function() {
         should.exist(error, 'Expected an error when did has no scheme.');
         should.exist(error.data, 'Expected an error with data.');
         const {data} = error;
-        data.should.be.an('object', 'Expected "error.data" to be an object.');
-        should.exist(
-          data.didResolutionMetadata,
-          'Expected "data.didResolutionMetadata" to exist.'
-        );
-        data.didResolutionMetadata.should.be.an(
-          'object',
-          'Expected "data.didResolutionMetadata" to be an object.'
-        );
+        shouldBeDidResolverResponse(data);
+        data.didResolutionMetadata.should.be.an('object');
+        data.didResolutionMetadata.should.have.property('error');
+        data.didResolutionMetadata.error.should.be.a('string');
+        data.didResolutionMetadata.error.should.equal('INVALID_DID');
       });
       it('The method MUST be the value `key`', async () => {
 

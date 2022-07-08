@@ -12,11 +12,16 @@ const should = chai.should();
  *
  * @returns {undefined} Just returns on success.
  */
-export const testResolverResponse = data => {
-  should.exist(data, 'expected data to exist');
-  data.should.be.an('object');
+export const shouldBeDidResolverResponse = data => {
+  const resolverResponse = 'DID Resolver response';
+  should.exist(data, `Expected ${resolverResponse} to have data.`);
+  data.should.be.an(
+    'object',
+    `Expected ${resolverResponse} data to be an object`
+  );
   data.should.have.property('didDocument');
   data.should.have.property('@context');
   data.should.have.property('didDocumentMetadata');
   data.should.have.property('didResolutionMetadata');
 };
+
