@@ -25,3 +25,8 @@ export const shouldBeDidResolverResponse = data => {
   data.should.have.property('didResolutionMetadata');
 };
 
+export const shouldErrorWithData = (response, error) => {
+  should.not.exist(response, 'Expected no response');
+  should.exist(error, 'Expected an error');
+  should.exist(error.data, 'Expected an error with data');
+};
