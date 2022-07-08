@@ -7,7 +7,8 @@ const chai = require('chai');
 const {filterByTag} = require('vc-api-test-suite-implementations');
 const {
   shouldBeDidResolverResponse,
-  shouldErrorWithData
+  shouldErrorWithData,
+  shouldHaveDidResolutionError
 } = require('./assertions');
 
 const should = chai.should();
@@ -57,10 +58,7 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
         const {data} = error;
         shouldBeDidResolverResponse(data);
-        data.didResolutionMetadata.should.be.an('object');
-        data.didResolutionMetadata.should.have.property('error');
-        data.didResolutionMetadata.error.should.be.a('string');
-        data.didResolutionMetadata.error.should.equal('INVALID_DID');
+        shouldHaveDidResolutionError(data, 'INVALID_DID');
       });
       it('The method MUST be the value `key`', async () => {
         const method = did.split(':')[1];
@@ -79,6 +77,9 @@ describe('did:key Create Operation', function() {
           headers
         });
         shouldErrorWithData(result, error);
+        const {data} = error;
+        shouldBeDidResolverResponse(data);
+        shouldHaveDidResolutionError(data, 'INVALID_DID');
       });
       it('The version MUST be convertible to a positive integer value.',
         async () => {

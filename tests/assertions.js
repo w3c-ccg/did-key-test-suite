@@ -30,3 +30,10 @@ export const shouldErrorWithData = (response, error) => {
   should.exist(error, 'Expected an error');
   should.exist(error.data, 'Expected an error with data');
 };
+
+export const shouldHaveDidResolutionError = (data, didError) => {
+  data.didResolutionMetadata.should.be.an('object');
+  data.didResolutionMetadata.should.have.property('error');
+  data.didResolutionMetadata.error.should.be.a('string');
+  data.didResolutionMetadata.error.should.equal(didError);
+};
