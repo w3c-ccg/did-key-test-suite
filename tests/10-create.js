@@ -5,7 +5,10 @@
 
 const chai = require('chai');
 const {filterByTag} = require('vc-api-test-suite-implementations');
-const {shouldBeDidResolverResponse} = require('./assertions');
+const {
+  shouldBeDidResolverResponse,
+  shouldErrorWithData
+} = require('./assertions');
 
 const should = chai.should();
 const headers = {
@@ -51,9 +54,7 @@ describe('did:key Create Operation', function() {
           url: makeUrl(noScheme),
           headers
         });
-        should.not.exist(result, 'Expected no response when did has no scheme');
-        should.exist(error, 'Expected an error when did has no scheme.');
-        should.exist(error.data, 'Expected an error with data.');
+        shouldErrorWithData(result, error);
         const {data} = error;
         shouldBeDidResolverResponse(data);
         data.didResolutionMetadata.should.be.an('object');
@@ -77,9 +78,7 @@ describe('did:key Create Operation', function() {
           url: makeUrl(noMethod),
           headers
         });
-        should.not.exist(result, 'Expected no response when did has no scheme');
-        should.exist(error, 'Expected an error when did has no scheme.');
-        should.exist(error.data, 'Expected an error with data.');
+        shouldErrorWithData(result, error);
       });
       it('The version MUST be convertible to a positive integer value.',
         async () => {
