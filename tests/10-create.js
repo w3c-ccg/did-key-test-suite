@@ -62,10 +62,24 @@ describe('did:key Create Operation', function() {
         data.didResolutionMetadata.error.should.equal('INVALID_DID');
       });
       it('The method MUST be the value `key`', async () => {
-
+        const method = did.split(':')[1];
+        should.exist(method, 'Expected did to have a method');
+        method.should.be.a('string', 'Expected method to be a string');
+        method.should.equal('key', 'Expected method to equal key');
       });
+      //FIXME non key did methods do exist so we need one that we know
+      //is not a registered did method
       it('MUST raise INVALID_DID error if method is not `key`', async () => {
-
+        const didParts = did.split(':');
+        // use the first part and everything after the second part
+        const noMethod = `${didParts[0]}:${didParts.slice(2).join(':')}`;
+        const {result, error} = await didResolver.get({
+          url: makeUrl(noMethod),
+          headers
+        });
+        should.not.exist(result, 'Expected no response when did has no scheme');
+        should.exist(error, 'Expected an error when did has no scheme.');
+        should.exist(error.data, 'Expected an error with data.');
       });
       it('The version MUST be convertible to a positive integer value.',
         async () => {
