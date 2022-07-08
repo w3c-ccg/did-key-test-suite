@@ -6,14 +6,17 @@ import chai from 'chai';
 const should = chai.should();
 
 /**
- * Tests the properties of a did resolver result.
+ * Tests the properties of a did resolver return.
  *
- * @param {object} result - The result from a did resolver.
+ * @param {object} data - The data from a did resolver.
  *
  * @returns {undefined} Just returns on success.
  */
-export const testResolverResponse = result => {
-  should.exist(result, 'expected result to exist');
-  result.should.be.an('object');
-  result.should.have.property('didDocument');
+export const testResolverResponse = data => {
+  should.exist(data, 'expected data to exist');
+  data.should.be.an('object');
+  data.should.have.property('didDocument');
+  data.should.have.property('@context');
+  data.should.have.property('didDocumentMetadata');
+  data.should.have.property('didResolutionMetadata');
 };

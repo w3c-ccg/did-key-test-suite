@@ -10,6 +10,8 @@ const should = chai.should();
 const headers = {
   Accept: 'application/ld+json;profile="https://w3id.org/did-resolution"'
 };
+//FIXME we need a way of getting dids from different implementers into
+//the test suite.
 const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 const {match, nonMatch} = filterByTag({
   property: 'didResolvers',
@@ -50,6 +52,17 @@ describe('did:key Create Operation', function() {
         });
         should.not.exist(result, 'Expected no response when did has no scheme');
         should.exist(error, 'Expected an error when did has no scheme.');
+        should.exist(error.data, 'Expected an error with data.');
+        const {data} = error;
+        data.should.be.an('object', 'Expected "error.data" to be an object.');
+        should.exist(
+          data.didResolutionMetadata,
+          'Expected "data.didResolutionMetadata" to exist.'
+        );
+        data.didResolutionMetadata.should.be.an(
+          'object',
+          'Expected "data.didResolutionMetadata" to be an object.'
+        );
       });
       it('The method MUST be the value `key`', async () => {
 
