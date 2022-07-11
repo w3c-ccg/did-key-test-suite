@@ -1,15 +1,14 @@
 /*!
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
-'use strict';
 
-const chai = require('chai');
-const {filterByTag} = require('vc-api-test-suite-implementations');
-const {
+import {
   shouldBeDidResolverResponse,
   shouldErrorWithData,
   shouldHaveDidResolutionError
-} = require('./assertions');
+} from './assertions.js';
+import chai from 'chai';
+import {filterByTag} from 'vc-api-test-suite-implementations';
 
 const should = chai.should();
 const headers = {
