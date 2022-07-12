@@ -5,7 +5,8 @@
 import {
   shouldBeDidResolverResponse,
   shouldErrorWithData,
-  shouldHaveDidResolutionError
+  shouldHaveDidResolutionError,
+  shouldHaveValidVersion
 } from './assertions.js';
 import chai from 'chai';
 import {filterByTag} from 'vc-api-test-suite-implementations';
@@ -85,23 +86,7 @@ describe('did:key Create Operation', function() {
         async () => {
           const {version} = splitDid({did});
           should.exist(version, `Expected ${did} to have a version.`);
-          let integer;
-          let error;
-          try {
-            integer = Number.parseInt(version);
-          } catch(e) {
-            error = e;
-          }
-          should.not.exist(
-            error,
-            'Expected conversion of "version" to an Integer to not error'
-          );
-          should.exist(integer, 'Expected conversion of "version" to exist');
-          Number.isInteger(integer).should.equal(
-            true,
-            'Expected "version" to be an Integer'
-          );
-          integer.should.be.gte(0, 'Expected "version" to be positive');
+          shouldHaveValidVersion(version);
         });
       it('MUST raise INVALID_ID if version is not convertible to a ' +
         'positive integer value.', async () => {
@@ -140,11 +125,28 @@ describe('did:key Create Operation', function() {
         const {data} = error;
         shouldBeDidResolverResponse(data);
         shouldHaveDidResolutionError(data, 'INVALID_ID');
-
       });
       it('If document.id is not a valid DID, an INVALID_DID error MUST be ' +
         'raised', async () => {
-
+        const {result, error} = await didResolver.get({
+          url: makeUrl(did),
+          headers
+        });
+        should.not.exist(error, `Expected resolution of ${did} to not error`);
+        should.exist(
+          result,
+          `Expected resolution of ${did} to return a response`
+        );
+        result.should.be.an(
+          'object',
+          'Expected did resolver response to be an object'
+        );
+        result.should.have.property('id');
+        result.id.should.be.a(
+          'string',
+          'Expected "didDocument.id" to be a string'
+        );
+        const didParts = splitDid({did: result.id});
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
