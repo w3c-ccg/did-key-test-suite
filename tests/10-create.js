@@ -85,10 +85,37 @@ describe('did:key Create Operation', function() {
         async () => {
           const {version} = splitDid({did});
           should.exist(version, `Expected ${did} to have a version.`);
+          let integer;
+          let error;
+          try {
+            integer = Number.parseInt(version);
+          } catch(e) {
+            error = e;
+          }
+          should.not.exist(
+            error,
+            'Expected conversion of "version" to an Integer to not error'
+          );
+          should.exist(integer, 'Expected conversion of "version" to exist');
+          Number.isInteger(integer).should.equal(
+            true,
+            'Expected "version" to be an Integer'
+          );
+          integer.should.be.gte(0, 'Expected "version" to be positive');
         });
       it('MUST raise INVALID_ID if version is not convertible to a ' +
         'positive integer value.', async () => {
-
+        const didParts = splitDid({did});
+        const invalidVersionDid = `${didParts.scheme}:${didParts.method}:` +
+          `-v4:${didParts.multibase}`;
+        const {result, error} = await didResolver.get({
+          url: makeUrl(invalidVersionDid),
+          headers
+        });
+        shouldErrorWithData(result, error);
+        const {data} = error;
+        shouldBeDidResolverResponse(data);
+        shouldHaveDidResolutionError(data, 'INVALID_ID');
       });
       it('The multibaseValue MUST be a string and begin with the letter `z`',
         async () => {
