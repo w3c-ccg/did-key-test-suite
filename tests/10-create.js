@@ -119,10 +119,27 @@ describe('did:key Create Operation', function() {
       });
       it('The multibaseValue MUST be a string and begin with the letter `z`',
         async () => {
-
+          const {multibase} = splitDid({did});
+          should.exist(multibase, 'Expected multibase to exist');
+          multibase.should.be.a('string', 'Expected multibase to be a string');
+          multibase.startsWith('z').should.equal(
+            true,
+            'Expected multibase to start with z'
+          );
         });
       it('MUST raise INVALID_ID if the multibaseValue does not begin with ' +
         'the letter `z`.', async () => {
+        const didParts = splitDid({did});
+        const invalidVersionDid = `${didParts.scheme}:${didParts.method}:` +
+          `${didParts.multibase.replace(/^z/, '')}`;
+        const {result, error} = await didResolver.get({
+          url: makeUrl(invalidVersionDid),
+          headers
+        });
+        shouldErrorWithData(result, error);
+        const {data} = error;
+        shouldBeDidResolverResponse(data);
+        shouldHaveDidResolutionError(data, 'INVALID_ID');
 
       });
       it('If document.id is not a valid DID, an INVALID_DID error MUST be ' +
