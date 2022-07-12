@@ -9,6 +9,7 @@ import {
 } from './assertions.js';
 import chai from 'chai';
 import {filterByTag} from 'vc-api-test-suite-implementations';
+import {splitDid} from './helpers.js';
 
 const should = chai.should();
 const headers = {
@@ -43,7 +44,7 @@ describe('did:key Create Operation', function() {
       `${didResolver.settings.endpoint}/${encodeURIComponent(did)}`;
     describe(name, function() {
       it('The scheme MUST be the value `did`', async () => {
-        const [scheme] = did.split(':');
+        const {scheme} = splitDid({did});
         should.exist(scheme, 'Expected first part of the did to exist.');
         scheme.should.be.a('string', 'Expected did scheme to be a string.');
         scheme.should.equal('did', 'Expected scheme to be "did"');
@@ -60,7 +61,7 @@ describe('did:key Create Operation', function() {
         shouldHaveDidResolutionError(data, 'INVALID_DID');
       });
       it('The method MUST be the value `key`', async () => {
-        const method = did.split(':')[1];
+        const {method} = splitDid({did});
         should.exist(method, 'Expected did to have a method');
         method.should.be.a('string', 'Expected method to be a string');
         method.should.equal('key', 'Expected method to equal key');
@@ -68,9 +69,9 @@ describe('did:key Create Operation', function() {
       //FIXME non key did methods do exist so we need one that we know
       //is not a registered did method
       it('MUST raise INVALID_DID error if method is not `key`', async () => {
-        const didParts = did.split(':');
+        const {parts} = splitDid({did});
         // use the first part and everything after the second part
-        const noMethod = `${didParts[0]}:${didParts.slice(2).join(':')}`;
+        const noMethod = `${parts[0]}:${parts.slice(2).join(':')}`;
         const {result, error} = await didResolver.get({
           url: makeUrl(noMethod),
           headers
@@ -82,7 +83,8 @@ describe('did:key Create Operation', function() {
       });
       it('The version MUST be convertible to a positive integer value.',
         async () => {
-
+          const {version} = splitDid({did});
+          should.exist(version, `Expected ${did} to have a version.`);
         });
       it('MUST raise INVALID_ID if version is not convertible to a ' +
         'positive integer value.', async () => {
