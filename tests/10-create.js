@@ -6,7 +6,8 @@ import {
   shouldBeDidResolverResponse,
   shouldErrorWithData,
   shouldHaveDidResolutionError,
-  shouldHaveValidVersion
+  shouldHaveValidVersion,
+  shouldBeValidDid
 } from './assertions.js';
 import chai from 'chai';
 import {filterByTag} from 'vc-api-test-suite-implementations';
@@ -139,7 +140,7 @@ describe('did:key Create Operation', function() {
         );
         result.should.be.an(
           'object',
-          'Expected did resolver response to be an object'
+          'Expected did resolver result to be an object'
         );
         result.should.have.property('id');
         result.id.should.be.a(
@@ -147,6 +148,15 @@ describe('did:key Create Operation', function() {
           'Expected "didDocument.id" to be a string'
         );
         const didParts = splitDid({did: result.id});
+        let didError;
+        try {
+          shouldBeValidDid(didParts);
+        } catch(e) {
+          didError = e;
+        }
+        if(didError) {
+          throw didError;
+        }
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
