@@ -14,7 +14,7 @@ const {match, nonMatch} = filterByTag({
   tags: ['Did-Key']
 });
 
-describe('did:key Method Tests', function() {
+describe.skip('did:key Method Tests', function() {
   const summaries = new Set();
   this.summary = summaries;
   const reportData = [];
