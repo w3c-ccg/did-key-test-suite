@@ -127,38 +127,26 @@ describe('did:key Create Operation', function() {
         shouldBeDidResolverResponse(data);
         shouldHaveDidResolutionError(data, 'INVALID_ID');
       });
-      // FIXME I don't understand this test.
-      it('If document.id is not a valid DID, an INVALID_DID error MUST be ' +
-        'raised', async () => {
+      it('If "didDocument.id" is not a valid DID, an INVALID_DID error MUST ' +
+        'be raised', async () => {
+        const invalidDid = 'did:key:@';
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(did),
+          url: makeUrl(invalidDid),
           headers
         });
         //FIXME maybe this should check for the error here?
-        should.not.exist(error, `Expected resolution of ${did} to not error`);
+        should.exist(error, `Expected resolution of ${invalidDid} to error`);
+        should.not.exist(result, 'Expected no response.');
         should.exist(
           data,
-          `Expected resolution of ${did} to return a response`
+          `Expected resolution of ${invalidDid} to return a response`
         );
         shouldBeDidResolverResponse(data);
         data.didDocument.id.should.be.a(
           'string',
           'Expected "didDocument.id" to be a string'
         );
-        const didParts = splitDid({did: data.didDocument.id});
-        let didError;
-        try {
-          shouldBeValidDid(didParts);
-        } catch(e) {
-          didError = e;
-        }
-        if(didError) {
-          return shouldHaveDidResolutionError(data, 'INVALID_ID');
-        }
-        should.exist(result, 'Expected result');
-        result.should.be.an.instanceOf(
-          Response, 'Expected result to be a response');
-        result.status.should.equal(200, 'Expected response 200');
+        shouldHaveDidResolutionError(data, 'INVALID_ID');
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
