@@ -142,11 +142,17 @@ describe('did:key Create Operation', function() {
           `Expected resolution of ${invalidDid} to return a response`
         );
         shouldBeDidResolverResponse(data);
+        // FIXME this doesn't seem right we should not expect a didDocument
+        // for an invalid did
+        data.didDocument.should.not.eql(
+          {},
+          'Expected a didDocument'
+        );
         data.didDocument.id.should.be.a(
           'string',
           'Expected "didDocument.id" to be a string'
         );
-        shouldHaveDidResolutionError(data, 'INVALID_ID');
+        shouldHaveDidResolutionError(data, 'INVALID_DID');
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
