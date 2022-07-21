@@ -6,19 +6,18 @@ import {
   shouldBeDidResolverResponse,
   shouldErrorWithData,
   shouldHaveDidResolutionError,
-  shouldHaveValidVersion,
-  shouldBeValidDid
+  shouldHaveValidVersion
 } from './assertions.js';
 import chai from 'chai';
 import {filterByTag} from 'vc-api-test-suite-implementations';
-import {splitDid} from './helpers.js';
+import {generateDid, splitDid} from './helpers.js';
 
 const should = chai.should();
 const headers = {
   Accept: 'application/ld+json;profile="https://w3id.org/did-resolution"'
 };
-//FIXME we need a way of getting dids from different implementers into
-//the test suite.
+
+// default valid bs58 ed25519 did
 const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 const {match, nonMatch} = filterByTag({
   property: 'didResolvers',
@@ -157,7 +156,15 @@ describe('did:key Create Operation', function() {
       it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
         'an INVALID_PUBLIC_KEY_LENGTH error MUST be raised.', async () => {
-
+        const publicKey512Bytes = await generateDid({bitLength: 512});
+        const invalidDid = `did:key:${publicKey512Bytes}`;
+        const {result, error, data} = await didResolver.get({
+          url: makeUrl(invalidDid),
+          headers
+        });
+        shouldErrorWithData(result, error);
+        shouldBeDidResolverResponse(data);
+        shouldHaveDidResolutionError(data, 'INVALID_PUBLIC_KEY_LENGTH');
       });
       it('If an invalid public key value is detected, an INVALID_PUBLIC_KEY ' +
         'error MUST be raised.', async () => {
