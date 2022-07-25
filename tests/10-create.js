@@ -5,6 +5,7 @@
 import {generateDid, splitDid} from './helpers.js';
 import {
   shouldBeDidResolverResponse,
+  shouldBeValidDid,
   shouldErrorWithData,
   shouldHaveDidResolutionError,
   shouldHaveValidVersion
@@ -212,7 +213,26 @@ describe('did:key Create Operation', function() {
       });
       it('If verificationMethod.controller is not a valid DID, an ' +
         'INVALID_DID error MUST be raised.', async () => {
-
+        const {multibase} = splitDid({did});
+        const invalidDidUrl = `${did}#${multibase}`;
+        const {result, error, data} = await didResolver.get({
+          url: makeUrl(invalidDidUrl),
+          headers
+        });
+        should.exist(result, 'Expected a result');
+        should.not.exist(error, 'Did not expect an error');
+        should.exist(data, 'Expected data');
+        data.should.be.an('object', 'Expected data to be an object');
+        data.should.have.property('didDocument');
+        data.didDocument.should.be.an(
+          'object',
+          'Expected didDocument to be an object'
+        );
+        const {didDocument} = data;
+        didDocument.should.have.property('controller');
+        const {controller} = didDocument;
+        const didParts = splitDid({did: controller});
+        shouldBeValidDid(didParts);
       });
     });
   }
