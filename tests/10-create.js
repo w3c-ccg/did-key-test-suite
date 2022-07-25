@@ -2,6 +2,7 @@
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
 
+import {generateDid, splitDid} from './helpers.js';
 import {
   shouldBeDidResolverResponse,
   shouldErrorWithData,
@@ -10,7 +11,6 @@ import {
 } from './assertions.js';
 import chai from 'chai';
 import {filterByTag} from 'vc-api-test-suite-implementations';
-import {generateDid, splitDid} from './helpers.js';
 
 const should = chai.should();
 const headers = {
@@ -181,7 +181,16 @@ describe('did:key Create Operation', function() {
       });
       it('If verificationMethod.id is not a valid DID URL, an ' +
         'INVALID_DID_URL error MUST be raised.', async () => {
-
+        const {multibase} = splitDid({did});
+        const invalidDidUrl = `${did}/?query=true#${multibase}`;
+        const {result, error, data} = await didResolver.get({
+          url: makeUrl(invalidDidUrl),
+          headers
+        });
+        shouldErrorWithData(result, error);
+        // FIXME these need assertions for did urls
+        //shouldBeDidResolverResponse(data);
+        //shouldHaveDidResolutionError(data, 'INVALID_DID_URL');
       });
       it('If publicKeyFormat is not known to the implementation, an ' +
         'UNSUPPORTED_PUBLIC_KEY_TYPE error MUST be raised.', async () => {
