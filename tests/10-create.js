@@ -166,6 +166,15 @@ describe('did:key Create Operation', function() {
         shouldBeDidResolverResponse(data);
         shouldHaveDidResolutionError(data, 'INVALID_PUBLIC_KEY_LENGTH');
       });
+      /**
+       * Ensure the rawPublicKeyBytes are a proper encoding of the public key
+       * type as specified by the multicodecValue. This validation is often
+       * done by a cryptographic library when importing the public key by,
+       * for example, ensuring that an Elliptic Curve public key is a
+       * specific coordinate that exists on the elliptic curve. If an
+       * invalid public key value is detected, an INVALID_PUBLIC_KEY error
+       * MUST be raised.
+       */
       it('If an invalid public key value is detected, an INVALID_PUBLIC_KEY ' +
         'error MUST be raised.', async () => {
 
