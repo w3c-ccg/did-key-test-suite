@@ -30,7 +30,6 @@
     "@digitalbazaar/mocha-w3c-interop-reporter": "^1.2.1",
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
-    "require-dir": "^1.2.0",
     "vc-api-test-suite-implementations": "github:w3c-ccg/vc-api-test-suite-implementations"
   },
   "devDependencies": {
