@@ -35,10 +35,11 @@ export const shouldErrorWithData = (response, error) => {
 };
 
 export const shouldHaveDidResolutionError = (data, didError) => {
-  data.didResolutionMetadata.should.be.an('object');
-  data.didResolutionMetadata.should.have.property('error');
-  data.didResolutionMetadata.error.should.be.a('string');
-  data.didResolutionMetadata.error.should.equal(didError);
+  return _shouldHaveMetadataError(data, didError, 'didResolutionMetadata');
+};
+
+export const shouldHaveDidDereferencingError = (data, didError) => {
+  return _shouldHaveMetadataError(data, didError, 'didDereferencingMetadata');
 };
 
 export const shouldHaveValidVersion = version => {
@@ -75,3 +76,10 @@ export const shouldBeValidDid = didParts => {
   shouldHaveValidVersion(didParts.version);
   should.exist(didParts.multibase, 'Expected there to be a multibaseValue');
 };
+
+function _shouldHaveMetadataError(data, didError, property) {
+  data[property].should.be.an('object');
+  data[property].should.have.property('error');
+  data[property].error.should.be.a('string');
+  data[property].error.should.equal(didError);
+}

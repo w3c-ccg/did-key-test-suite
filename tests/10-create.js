@@ -7,6 +7,7 @@ import {
   shouldBeDidResolverResponse,
   shouldBeValidDid,
   shouldErrorWithData,
+  shouldHaveDidDereferencingError,
   shouldHaveDidResolutionError,
   shouldHaveValidVersion
 } from './assertions.js';
@@ -225,7 +226,15 @@ describe('did:key Create Operation', function() {
         didDocument.should.have.property('controller');
         const {controller} = didDocument;
         const didParts = splitDid({did: controller});
-        shouldBeValidDid(didParts);
+        let didError;
+        try {
+          shouldBeValidDid(didParts);
+        } catch(e) {
+          didError = e;
+        }
+        if(didError) {
+          shouldHaveDidDereferencingError(data, 'INVALID_DID');
+        }
       });
     });
   }
