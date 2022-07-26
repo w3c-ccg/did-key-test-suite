@@ -52,7 +52,7 @@ describe('did:key Create Operation', function() {
         scheme.should.be.a('string', 'Expected did scheme to be a string.');
         scheme.should.equal('did', 'Expected scheme to be "did"');
       });
-      it('MUST raise INVALID_DID error if scheme is not `did`', async () => {
+      it('MUST raise invalidDid error if scheme is not `did`', async () => {
         const noScheme = did.replace(/^did:/, '');
         const {result, error} = await didResolver.get({
           url: makeUrl(noScheme),
@@ -61,7 +61,7 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
         const {data} = error;
         shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'INVALID_DID');
+        shouldHaveDidResolutionError(data, 'invalidDid');
       });
       it('The method MUST be the value `key`', async () => {
         const {method} = splitDid({did});
@@ -71,7 +71,7 @@ describe('did:key Create Operation', function() {
       });
       //FIXME non key did methods do exist so we need one that we know
       //is not a registered did method
-      it('MUST raise INVALID_DID error if method is not `key`', async () => {
+      it('MUST raise invalidDid error if method is not `key`', async () => {
         const {parts} = splitDid({did});
         // use the first part and everything after the second part
         const noMethod = `${parts[0]}:${parts.slice(2).join(':')}`;
@@ -82,7 +82,7 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
         const {data} = error;
         shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'INVALID_DID');
+        shouldHaveDidResolutionError(data, 'invalidDid');
       });
       it('The version MUST be convertible to a positive integer value.',
         async () => {
@@ -128,7 +128,7 @@ describe('did:key Create Operation', function() {
         shouldBeDidResolverResponse(data);
         shouldHaveDidResolutionError(data, 'INVALID_ID');
       });
-      it('If "didDocument.id" is not a valid DID, an INVALID_DID error MUST ' +
+      it('If "didDocument.id" is not a valid DID, an invalidDid error MUST ' +
         'be raised', async () => {
         const invalidDid = 'did:key:@';
         const {result, error, data} = await didResolver.get({
@@ -153,7 +153,7 @@ describe('did:key Create Operation', function() {
           'string',
           'Expected "didDocument.id" to be a string'
         );
-        shouldHaveDidResolutionError(data, 'INVALID_DID');
+        shouldHaveDidResolutionError(data, 'invalidDid');
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
@@ -212,7 +212,7 @@ describe('did:key Create Operation', function() {
 
       });
       it('If verificationMethod.controller is not a valid DID, an ' +
-        'INVALID_DID error MUST be raised.', async () => {
+        'invalidDid error MUST be raised.', async () => {
         const {multibase} = splitDid({did});
         const invalidDidUrl = `${did}#${multibase}`;
         const {result, error, data} = await didResolver.get({
@@ -233,7 +233,7 @@ describe('did:key Create Operation', function() {
           didError = e;
         }
         if(didError) {
-          shouldHaveDidDereferencingError(data, 'INVALID_DID');
+          shouldHaveDidDereferencingError(data, 'invalidDid');
         }
       });
     });
