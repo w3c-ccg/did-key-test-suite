@@ -195,28 +195,53 @@ describe('did:key Create Operation', function() {
       });
       it('If publicKeyFormat is not known to the implementation, an ' +
         'UNSUPPORTED_PUBLIC_KEY_TYPE error MUST be raised.', async () => {
-
+        const {result, error} = await didResolver.get({
+          url: makeUrl(did),
+          headers,
+          searchParams: {
+            publicKeyFormat: 'unknown'
+          }
+        });
+        shouldErrorWithData(result, error);
       });
       it('For Signature Verification Methods, if ' +
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
         'publicKeyFormat is not Multikey, JsonWebKey2020, or ' +
         'Ed25519VerificationKey2020, an INVALID_PUBLIC_KEY_TYPE error ' +
         'MUST be raised.', async () => {
-
+        const {result, error} = await didResolver.get({
+          url: makeUrl(did),
+          headers,
+          searchParams: {
+            publicKeyFormat: 'newFormat',
+            enableExperimentalPublicKeyTypes: false
+          }
+        });
+        shouldErrorWithData(result, error);
       });
       it('For Encryption Verification Methods, if ' +
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
         'publicKeyFormat is not Multikey, JsonWebKey2020, or ' +
         'X25519KeyAgreementKey2020, an INVALID_PUBLIC_KEY_TYPE error ' +
         'MUST be raised.', async () => {
-
+        const {multibase} = splitDid({did});
+        const didUrl = `${did}#${multibase}`;
+        const {result, error} = await didResolver.get({
+          url: makeUrl(didUrl),
+          headers,
+          searchParams: {
+            publicKeyFormat: 'newFormat',
+            enableExperimentalPublicKeyTypes: false
+          }
+        });
+        shouldErrorWithData(result, error);
       });
       it('If verificationMethod.controller is not a valid DID, an ' +
         'invalidDid error MUST be raised.', async () => {
         const {multibase} = splitDid({did});
-        const invalidDidUrl = `${did}#${multibase}`;
+        const didUrl = `${did}#${multibase}`;
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(invalidDidUrl),
+          url: makeUrl(didUrl),
           headers
         });
         should.exist(result, 'Expected a result');
