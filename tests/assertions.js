@@ -22,7 +22,10 @@ export const shouldBeDidResolverResponse = data => {
   data.should.have.property('didDocument');
   data.should.have.property('@context');
   data.should.have.property('didDocumentMetadata');
-  data.should.have.property('didResolutionMetadata');
+  const didMetaData = data.didDereferencingMetadata ||
+    data.didResolutionMetadata;
+  should.exist(didMetaData, 'Expected didResolver data to have either' +
+    ' "didDereferencingMetadata" or "didResolutionMetadata"');
 };
 
 export const shouldErrorWithData = (response, error) => {

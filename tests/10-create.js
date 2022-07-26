@@ -189,8 +189,7 @@ describe('did:key Create Operation', function() {
           headers
         });
         shouldErrorWithData(result, error);
-        // FIXME these need assertions for did urls
-        //shouldBeDidResolverResponse(data);
+        shouldBeDidResolverResponse(data);
         //shouldHaveDidResolutionError(data, 'INVALID_DID_URL');
       });
       it('If publicKeyFormat is not known to the implementation, an ' +
@@ -221,13 +220,7 @@ describe('did:key Create Operation', function() {
         });
         should.exist(result, 'Expected a result');
         should.not.exist(error, 'Did not expect an error');
-        should.exist(data, 'Expected data');
-        data.should.be.an('object', 'Expected data to be an object');
-        data.should.have.property('didDocument');
-        data.didDocument.should.be.an(
-          'object',
-          'Expected didDocument to be an object'
-        );
+        shouldBeDidResolverResponse(data);
         const {didDocument} = data;
         didDocument.should.have.property('controller');
         const {controller} = didDocument;
