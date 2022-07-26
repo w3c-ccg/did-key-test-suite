@@ -40,30 +40,34 @@ describe('did:key Create Operation', function() {
   this.columnLabel = 'Did Key Resolver';
   // the reportData will be displayed under the test title
   this.reportData = reportData;
-  for(const [name, implementation] of match) {
+  for(const [columnId, implementation] of match) {
     const didResolver = implementation.didResolvers.find(
       dr => dr.tags.has('Did-Key'));
     const makeUrl = did =>
       `${didResolver.settings.endpoint}/${encodeURIComponent(did)}`;
-    describe(name, function() {
-      it('The scheme MUST be the value `did`', async () => {
+    describe(columnId, function() {
+      it('The scheme MUST be the value `did`', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const {scheme} = splitDid({did});
         should.exist(scheme, 'Expected first part of the did to exist.');
         scheme.should.be.a('string', 'Expected did scheme to be a string.');
         scheme.should.equal('did', 'Expected scheme to be "did"');
       });
-      it('MUST raise invalidDid error if scheme is not `did`', async () => {
-        const noScheme = did.replace(/^did:/, '');
-        const {result, error} = await didResolver.get({
-          url: makeUrl(noScheme),
-          headers
+      it('MUST raise invalidDid error if scheme is not `did`',
+        async function() {
+          this.test.cell = {columnId, rowId: this.test.title};
+          const noScheme = did.replace(/^did:/, '');
+          const {result, error} = await didResolver.get({
+            url: makeUrl(noScheme),
+            headers
+          });
+          shouldErrorWithData(result, error);
+          const {data} = error;
+          shouldBeDidResolverResponse(data);
+          shouldHaveDidResolutionError(data, 'invalidDid');
         });
-        shouldErrorWithData(result, error);
-        const {data} = error;
-        shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'invalidDid');
-      });
-      it('The method MUST be the value `key`', async () => {
+      it('The method MUST be the value `key`', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const {method} = splitDid({did});
         should.exist(method, 'Expected did to have a method');
         method.should.be.a('string', 'Expected method to be a string');
@@ -71,27 +75,31 @@ describe('did:key Create Operation', function() {
       });
       //FIXME non key did methods do exist so we need one that we know
       //is not a registered did method
-      it('MUST raise invalidDid error if method is not `key`', async () => {
-        const {parts} = splitDid({did});
-        // use the first part and everything after the second part
-        const noMethod = `${parts[0]}:${parts.slice(2).join(':')}`;
-        const {result, error} = await didResolver.get({
-          url: makeUrl(noMethod),
-          headers
+      it('MUST raise invalidDid error if method is not `key`',
+        async function() {
+          this.test.cell = {columnId, rowId: this.test.title};
+          const {parts} = splitDid({did});
+          // use the first part and everything after the second part
+          const noMethod = `${parts[0]}:${parts.slice(2).join(':')}`;
+          const {result, error} = await didResolver.get({
+            url: makeUrl(noMethod),
+            headers
+          });
+          shouldErrorWithData(result, error);
+          const {data} = error;
+          shouldBeDidResolverResponse(data);
+          shouldHaveDidResolutionError(data, 'invalidDid');
         });
-        shouldErrorWithData(result, error);
-        const {data} = error;
-        shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'invalidDid');
-      });
       it('The version MUST be convertible to a positive integer value.',
-        async () => {
+        async function() {
+          this.test.cell = {columnId, rowId: this.test.title};
           const {version} = splitDid({did});
           should.exist(version, `Expected ${did} to have a version.`);
           shouldHaveValidVersion(version);
         });
       it('MUST raise INVALID_ID if version is not convertible to a ' +
-        'positive integer value.', async () => {
+        'positive integer value.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const didParts = splitDid({did});
         const invalidVersionDid = `${didParts.scheme}:${didParts.method}:` +
           `-v4:${didParts.multibase}`;
@@ -105,7 +113,8 @@ describe('did:key Create Operation', function() {
         shouldHaveDidResolutionError(data, 'INVALID_ID');
       });
       it('The multibaseValue MUST be a string and begin with the letter `z`',
-        async () => {
+        async function() {
+          this.test.cell = {columnId, rowId: this.test.title};
           const {multibase} = splitDid({did});
           should.exist(multibase, 'Expected multibase to exist');
           multibase.should.be.a('string', 'Expected multibase to be a string');
@@ -115,7 +124,8 @@ describe('did:key Create Operation', function() {
           );
         });
       it('MUST raise INVALID_ID if the multibaseValue does not begin with ' +
-        'the letter `z`.', async () => {
+        'the letter `z`.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const didParts = splitDid({did});
         const invalidVersionDid = `${didParts.scheme}:${didParts.method}:` +
           `${didParts.multibase.replace(/^z/, '')}`;
@@ -129,13 +139,13 @@ describe('did:key Create Operation', function() {
         shouldHaveDidResolutionError(data, 'INVALID_ID');
       });
       it('If "didDocument.id" is not a valid DID, an invalidDid error MUST ' +
-        'be raised', async () => {
+        'be raised', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const invalidDid = 'did:key:@';
         const {result, error, data} = await didResolver.get({
           url: makeUrl(invalidDid),
           headers
         });
-        //FIXME maybe this should check for the error here?
         should.exist(error, `Expected resolution of ${invalidDid} to error`);
         should.not.exist(result, 'Expected no response.');
         should.exist(
@@ -157,7 +167,8 @@ describe('did:key Create Operation', function() {
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
-        'an INVALID_PUBLIC_KEY_LENGTH error MUST be raised.', async () => {
+        'an INVALID_PUBLIC_KEY_LENGTH error MUST be raised.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const publicKey512Bytes = await generateDid({bitLength: 512});
         const invalidDid = `did:key:${publicKey512Bytes}`;
         const {result, error, data} = await didResolver.get({
@@ -178,11 +189,13 @@ describe('did:key Create Operation', function() {
        * MUST be raised.
        */
       it('If an invalid public key value is detected, an INVALID_PUBLIC_KEY ' +
-        'error MUST be raised.', async () => {
+        'error MUST be raised.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
 
       });
       it('If verificationMethod.id is not a valid DID URL, an ' +
-        'INVALID_DID_URL error MUST be raised.', async () => {
+        'INVALID_DID_URL error MUST be raised.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
         const invalidDidUrl = `${did}/?query=true#${multibase}`;
         const {result, error, data} = await didResolver.get({
@@ -194,7 +207,8 @@ describe('did:key Create Operation', function() {
         //shouldHaveDidResolutionError(data, 'INVALID_DID_URL');
       });
       it('If publicKeyFormat is not known to the implementation, an ' +
-        'UNSUPPORTED_PUBLIC_KEY_TYPE error MUST be raised.', async () => {
+        'UNSUPPORTED_PUBLIC_KEY_TYPE error MUST be raised.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const {result, error} = await didResolver.get({
           url: makeUrl(did),
           headers,
@@ -208,7 +222,8 @@ describe('did:key Create Operation', function() {
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
         'publicKeyFormat is not Multikey, JsonWebKey2020, or ' +
         'Ed25519VerificationKey2020, an INVALID_PUBLIC_KEY_TYPE error ' +
-        'MUST be raised.', async () => {
+        'MUST be raised.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const {result, error} = await didResolver.get({
           url: makeUrl(did),
           headers,
@@ -223,7 +238,8 @@ describe('did:key Create Operation', function() {
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
         'publicKeyFormat is not Multikey, JsonWebKey2020, or ' +
         'X25519KeyAgreementKey2020, an INVALID_PUBLIC_KEY_TYPE error ' +
-        'MUST be raised.', async () => {
+        'MUST be raised.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
         const didUrl = `${did}#${multibase}`;
         const {result, error} = await didResolver.get({
@@ -237,7 +253,8 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
       });
       it('If verificationMethod.controller is not a valid DID, an ' +
-        'invalidDid error MUST be raised.', async () => {
+        'invalidDid error MUST be raised.', async function() {
+        this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
         const didUrl = `${did}#${multibase}`;
         const {result, error, data} = await didResolver.get({
