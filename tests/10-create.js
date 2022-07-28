@@ -208,7 +208,7 @@ describe('did:key Create Operation', function() {
       it('If publicKeyFormat is not known to the implementation, an ' +
         '`unsupportedPublicKeyType` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
-        const {result, error} = await didResolver.get({
+        const {result, error, data} = await didResolver.get({
           url: makeUrl(did),
           headers,
           searchParams: {
@@ -216,6 +216,7 @@ describe('did:key Create Operation', function() {
           }
         });
         shouldErrorWithData(result, error);
+        shouldHaveDidResolutionError(data, 'unsupportedPublicKeyType');
       });
       it('For Signature Verification Methods, if ' +
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
@@ -223,7 +224,7 @@ describe('did:key Create Operation', function() {
         'Ed25519VerificationKey2020, an `invalidPublicKeyType` error ' +
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
-        const {result, error} = await didResolver.get({
+        const {result, error, data} = await didResolver.get({
           url: makeUrl(did),
           headers,
           searchParams: {
@@ -232,6 +233,7 @@ describe('did:key Create Operation', function() {
           }
         });
         shouldErrorWithData(result, error);
+        shouldHaveDidResolutionError(data, 'invalidPublicKeyType');
       });
       it('For Encryption Verification Methods, if ' +
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
@@ -241,7 +243,7 @@ describe('did:key Create Operation', function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
         const didUrl = `${did}#${multibase}`;
-        const {result, error} = await didResolver.get({
+        const {result, error, data} = await didResolver.get({
           url: makeUrl(didUrl),
           headers,
           searchParams: {
@@ -250,6 +252,7 @@ describe('did:key Create Operation', function() {
           }
         });
         shouldErrorWithData(result, error);
+        shouldHaveDidResolutionError(data, 'invalidPublicKeyType');
       });
       it('If verificationMethod.controller is not a valid DID, an ' +
         '`invalidDid` error MUST be raised.', async function() {
