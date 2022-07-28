@@ -73,16 +73,14 @@ describe('did:key Create Operation', function() {
         method.should.be.a('string', 'Expected method to be a string');
         method.should.equal('key', 'Expected method to equal key');
       });
-      //FIXME non key did methods do exist so we need one that we know
-      //is not a registered did method
       it('MUST raise invalidDid error if method is not `key`',
         async function() {
           this.test.cell = {columnId, rowId: this.test.title};
           const {parts} = splitDid({did});
           // use the first part and everything after the second part
-          const noMethod = `${parts[0]}:${parts.slice(2).join(':')}`;
+          const methodNotKey = `${parts[0]}:notKey:${parts.slice(2).join(':')}`;
           const {result, error} = await didResolver.get({
-            url: makeUrl(noMethod),
+            url: makeUrl(methodNotKey),
             headers
           });
           shouldErrorWithData(result, error);
