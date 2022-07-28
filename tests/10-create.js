@@ -53,7 +53,7 @@ describe('did:key Create Operation', function() {
         scheme.should.be.a('string', 'Expected did scheme to be a string.');
         scheme.should.equal('did', 'Expected scheme to be "did"');
       });
-      it('MUST raise invalidDid error if scheme is not `did`',
+      it('MUST raise `invalidDid` error if scheme is not `did`',
         async function() {
           this.test.cell = {columnId, rowId: this.test.title};
           const noScheme = did.replace(/^did:/, '');
@@ -73,7 +73,7 @@ describe('did:key Create Operation', function() {
         method.should.be.a('string', 'Expected method to be a string');
         method.should.equal('key', 'Expected method to equal key');
       });
-      it('MUST raise invalidDid error if method is not `key`',
+      it('MUST raise `invalidDid` error if method is not `key`',
         async function() {
           this.test.cell = {columnId, rowId: this.test.title};
           const {parts} = splitDid({did});
@@ -95,7 +95,7 @@ describe('did:key Create Operation', function() {
           should.exist(version, `Expected ${did} to have a version.`);
           shouldHaveValidVersion(version);
         });
-      it('MUST raise INVALID_ID if version is not convertible to a ' +
+      it('MUST raise `invalidId` if version is not convertible to a ' +
         'positive integer value.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const didParts = splitDid({did});
@@ -108,7 +108,7 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
         const {data} = error;
         shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'INVALID_ID');
+        shouldHaveDidResolutionError(data, 'invalidId');
       });
       it('The multibaseValue MUST be a string and begin with the letter `z`',
         async function() {
@@ -121,7 +121,7 @@ describe('did:key Create Operation', function() {
             'Expected multibase to start with z'
           );
         });
-      it('MUST raise INVALID_ID if the multibaseValue does not begin with ' +
+      it('MUST raise `invalidId` if the multibaseValue does not begin with ' +
         'the letter `z`.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const didParts = splitDid({did});
@@ -134,9 +134,9 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
         const {data} = error;
         shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'INVALID_ID');
+        shouldHaveDidResolutionError(data, 'invalidId');
       });
-      it('If "didDocument.id" is not a valid DID, an invalidDid error MUST ' +
+      it('If "didDocument.id" is not a valid DID, an `invalidDid` error MUST ' +
         'be raised', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const invalidDid = 'did:key:@';
@@ -165,7 +165,7 @@ describe('did:key Create Operation', function() {
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
-        'an INVALID_PUBLIC_KEY_LENGTH error MUST be raised.', async function() {
+        'an `invalidPublicKeyLength` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const publicKey512Bytes = await generateDid({bitLength: 512});
         const invalidDid = `did:key:${publicKey512Bytes}`;
@@ -175,7 +175,7 @@ describe('did:key Create Operation', function() {
         });
         shouldErrorWithData(result, error);
         shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'INVALID_PUBLIC_KEY_LENGTH');
+        shouldHaveDidResolutionError(data, 'invalidPublicKeyLength');
       });
       /**
        * Ensure the rawPublicKeyBytes are a proper encoding of the public key
@@ -183,16 +183,16 @@ describe('did:key Create Operation', function() {
        * done by a cryptographic library when importing the public key by,
        * for example, ensuring that an Elliptic Curve public key is a
        * specific coordinate that exists on the elliptic curve. If an
-       * invalid public key value is detected, an INVALID_PUBLIC_KEY error
+       * invalid public key value is detected, an invalidPublicKey error
        * MUST be raised.
        */
-      it('If an invalid public key value is detected, an INVALID_PUBLIC_KEY ' +
-        'error MUST be raised.', async function() {
+      it.skip('If an invalid public key value is detected, an `invalid' +
+        'PublicKey` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
 
       });
       it('If verificationMethod.id is not a valid DID URL, an ' +
-        'INVALID_DID_URL error MUST be raised.', async function() {
+        '`invalidDidUrl` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
         const invalidDidUrl = `${did}/?query=true#${multibase}`;
@@ -202,10 +202,10 @@ describe('did:key Create Operation', function() {
         });
         shouldErrorWithData(result, error);
         shouldBeDidResolverResponse(data);
-        //shouldHaveDidResolutionError(data, 'INVALID_DID_URL');
+        shouldHaveDidDereferencingError(data, 'invalidDidUrl');
       });
       it('If publicKeyFormat is not known to the implementation, an ' +
-        'UNSUPPORTED_PUBLIC_KEY_TYPE error MUST be raised.', async function() {
+        '`unsupportedPublicKeyType` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {result, error} = await didResolver.get({
           url: makeUrl(did),
@@ -219,7 +219,7 @@ describe('did:key Create Operation', function() {
       it('For Signature Verification Methods, if ' +
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
         'publicKeyFormat is not Multikey, JsonWebKey2020, or ' +
-        'Ed25519VerificationKey2020, an INVALID_PUBLIC_KEY_TYPE error ' +
+        'Ed25519VerificationKey2020, an `invalidPublicKeyType` error ' +
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {result, error} = await didResolver.get({
@@ -235,7 +235,7 @@ describe('did:key Create Operation', function() {
       it('For Encryption Verification Methods, if ' +
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
         'publicKeyFormat is not Multikey, JsonWebKey2020, or ' +
-        'X25519KeyAgreementKey2020, an INVALID_PUBLIC_KEY_TYPE error ' +
+        'X25519KeyAgreementKey2020, an `invalidPublicKeyType` error ' +
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
@@ -251,7 +251,7 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
       });
       it('If verificationMethod.controller is not a valid DID, an ' +
-        'invalidDid error MUST be raised.', async function() {
+        '`invalidDid` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
         const didUrl = `${did}#${multibase}`;
