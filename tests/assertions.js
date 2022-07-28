@@ -59,7 +59,7 @@ export const shouldHaveValidVersion = version => {
     true,
     'Expected "version" to be an Integer'
   );
-  integer.should.be.gte(0, 'Expected "version" to be positive');
+  integer.should.be.gt(0, 'Expected "version" to be positive');
 };
 
 // takes the result of splitDid and checks it
