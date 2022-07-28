@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha tests/ --reporter @digitalbazaar/mocha-w3c-interop-reporter --reporter-options abstract=\"$PWD/abstract.hbs\",matrix=\"$PWD/matrix.hbs\",reportDir=\"$PWD/reports\",respec=\"$PWD/respecConfig.json\",title=\"did:key Method Interoperability Report 1.0\",suiteLog='./suite.log' --timeout 15000",
+    "test": "mocha tests/ --reporter @digitalbazaar/mocha-w3c-interop-reporter --reporter-options abstract=\"$PWD/abstract.hbs\",reportDir=\"$PWD/reports\",respec=\"$PWD/respecConfig.json\",title=\"did:key Method Interoperability Report 1.0\",suiteLog='./suite.log' --timeout 15000",
     "lint": "eslint ."
   },
   "repository": {
@@ -27,7 +27,7 @@
     "node": ">=16.0.0"
   },
   "dependencies": {
-    "@digitalbazaar/mocha-w3c-interop-reporter": "^1.2.1",
+    "@digitalbazaar/mocha-w3c-interop-reporter": "github:digitalbazaar/mocha-w3c-interop-reporter#add-errors-to-matrix-default-template",
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
     "vc-api-test-suite-implementations": "github:w3c-ccg/vc-api-test-suite-implementations"
