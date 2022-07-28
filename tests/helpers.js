@@ -4,7 +4,7 @@
 
 import {IdEncoder, IdGenerator} from 'bnid';
 
-export const generateDid = async ({bitLength = 32}) => {
+export const generateMultibase = async ({bitLength = 32}) => {
 
   const generator = new IdGenerator({bitLength});
 

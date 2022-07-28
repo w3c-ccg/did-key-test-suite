@@ -2,7 +2,7 @@
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
 
-import {generateDid, splitDid} from './helpers.js';
+import {generateMultibase, splitDid} from './helpers.js';
 import {
   shouldBeDidResolverResponse,
   shouldBeValidDid,
@@ -56,9 +56,9 @@ describe('did:key Create Operation', function() {
       it('MUST raise `invalidDid` error if scheme is not `did`',
         async function() {
           this.test.cell = {columnId, rowId: this.test.title};
-          const noScheme = did.replace(/^did:/, '');
+          const noDidScheme = did.replace(/^did:/, 'notDid');
           const {result, error} = await didResolver.get({
-            url: makeUrl(noScheme),
+            url: makeUrl(noDidScheme),
             headers
           });
           shouldErrorWithData(result, error);
@@ -100,7 +100,7 @@ describe('did:key Create Operation', function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const didParts = splitDid({did});
         const invalidVersionDid = `${didParts.scheme}:${didParts.method}:` +
-          `-v4:${didParts.multibase}`;
+          `-4:${didParts.multibase}`;
         const {result, error} = await didResolver.get({
           url: makeUrl(invalidVersionDid),
           headers
@@ -125,10 +125,10 @@ describe('did:key Create Operation', function() {
         'the letter `z`.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const didParts = splitDid({did});
-        const invalidVersionDid = `${didParts.scheme}:${didParts.method}:` +
+        const invalidMultibaseDid = `${didParts.scheme}:${didParts.method}:` +
           `${didParts.multibase.replace(/^z/, '')}`;
         const {result, error} = await didResolver.get({
-          url: makeUrl(invalidVersionDid),
+          url: makeUrl(invalidMultibaseDid),
           headers
         });
         shouldErrorWithData(result, error);
@@ -139,6 +139,7 @@ describe('did:key Create Operation', function() {
       it('If "didDocument.id" is not a valid DID, an `invalidDid` error MUST ' +
         'be raised', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
+        // @ is not a valid character for a did identifier or version
         const invalidDid = 'did:key:@';
         const {result, error, data} = await didResolver.get({
           url: makeUrl(invalidDid),
@@ -167,10 +168,10 @@ describe('did:key Create Operation', function() {
         'expected public key length for the associated multicodecValue, ' +
         'an `invalidPublicKeyLength` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
-        const publicKey512Bytes = await generateDid({bitLength: 512});
-        const invalidDid = `did:key:${publicKey512Bytes}`;
+        const publicKey512Bytes = await generateMultibase({bitLength: 512});
+        const invalidKeyLengthDid = `did:key:${publicKey512Bytes}`;
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(invalidDid),
+          url: makeUrl(invalidKeyLengthDid),
           headers
         });
         shouldErrorWithData(result, error);
