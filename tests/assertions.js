@@ -78,6 +78,7 @@ export const shouldBeValidDid = didParts => {
 };
 
 function _shouldHaveMetadataError(data, didError, property) {
+  should.exist(data[property], `Expected property ${property} to exist`);
   data[property].should.be.an('object');
   data[property].should.have.property('error');
   data[property].error.should.be.a('string');

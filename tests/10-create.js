@@ -154,6 +154,7 @@ describe('did:key Create Operation', function() {
         shouldBeDidResolverResponse(data);
         // FIXME this doesn't seem right we should not expect a didDocument
         // for an invalid did
+        should.exist(data.didDocument, 'Expected a didDocument');
         data.didDocument.should.not.eql(
           {},
           'Expected a didDocument'
