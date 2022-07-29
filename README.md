@@ -26,7 +26,7 @@ npm test
 ```
 
 ## Test Data
-Currently our test suite work `did:key` that are `ed25519` compatible.
+Currently our test suite works only with `did:key`s that are `ed25519` compatible.
 We will expand to support other formats of `did:key` when those libraries are available.
 
 ## Implementation
