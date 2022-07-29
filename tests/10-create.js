@@ -37,7 +37,7 @@ describe('did:key Create Operation', function() {
   this.implemented = [...match.keys()];
   this.notImplemented = [...nonMatch.keys()];
   this.rowLabel = 'Test Name';
-  this.columnLabel = 'Did Key Resolver';
+  this.columnLabel = 'did:key Resolver';
   // the reportData will be displayed under the test title
   this.reportData = reportData;
   for(const [columnId, implementation] of match) {
