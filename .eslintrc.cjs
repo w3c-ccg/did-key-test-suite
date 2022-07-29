@@ -5,7 +5,7 @@ module.exports = {
   extends: [
     'eslint-config-digitalbazaar',
     'eslint-config-digitalbazaar/jsdoc',
-    'digitalbazaar/module',
+    'eslint-config-digitalbazaar/module',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
