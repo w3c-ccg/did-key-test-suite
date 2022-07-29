@@ -1,7 +1,6 @@
 /*!
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
-
 import {IdEncoder, IdGenerator} from 'bnid';
 
 export const generateMultibase = async ({bitLength = 32}) => {
