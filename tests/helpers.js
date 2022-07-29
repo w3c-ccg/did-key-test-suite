@@ -16,7 +16,7 @@ export const generateMultibase = async ({bitLength = 32}) => {
   return encoder.encode(await generator.generate());
 };
 
-/*
+/**
  * Using a colon (:) as the delimiter, split the identifier
  * into its components: a scheme, a method, a version, and a
  * multibaseValue. If there are only three components set the
