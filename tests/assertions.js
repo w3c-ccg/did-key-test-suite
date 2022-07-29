@@ -6,7 +6,7 @@ import chai from 'chai';
 const should = chai.should();
 
 /**
- * Tests the properties of a did resolver return.
+ * Tests the properties of a did resolver return value.
  *
  * @param {object} data - The data from a did resolver.
  *
