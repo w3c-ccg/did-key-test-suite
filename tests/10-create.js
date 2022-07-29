@@ -1,7 +1,6 @@
 /*!
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
-
 import {generateMultibase, splitDid} from './helpers.js';
 import {
   shouldBeDidResolverResponse,
