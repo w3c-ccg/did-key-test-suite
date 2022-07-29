@@ -24,9 +24,9 @@ export const generateMultibase = async ({bitLength = 32}) => {
  * the multibaseValue.
  *
  * @param {object} options - Options to use.
- * @param {string} did - A did as a string.
+ * @param {string} options.did - A did as a string.
  *
- * @returns {object} The parts of the did;
+ * @returns {object} The parts of the did.
 */
 export const splitDid = ({did}) => {
   const parts = did.split(':');
