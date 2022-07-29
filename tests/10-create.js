@@ -20,9 +20,10 @@ const headers = {
 
 // default valid bs58 ed25519 did
 const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
+const tag = 'did:key';
 const {match, nonMatch} = filterByTag({
   property: 'didResolvers',
-  tags: ['Did-Key']
+  tags: [tag]
 });
 
 describe('did:key Create Operation', function() {
@@ -41,7 +42,7 @@ describe('did:key Create Operation', function() {
   this.reportData = reportData;
   for(const [columnId, implementation] of match) {
     const didResolver = implementation.didResolvers.find(
-      dr => dr.tags.has('Did-Key'));
+      dr => dr.tags.has(tag));
     const makeUrl = did =>
       `${didResolver.settings.endpoint}/${encodeURIComponent(did)}`;
     describe(columnId, function() {
