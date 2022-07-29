@@ -26,78 +26,26 @@ npm test
 ```
 
 ## Test Data
-
-To generate new Dids simply add them to the `/dids` directory.
-
-```js
-{
-  "negative": false,
-  "did": "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b",
-  "row": "should return a didDocument for a valid DID",
-  "title": "should return a didDocument for a valid DID",
-  "expected": {
-    "status": 200,
-    "didDocument": {
-      "@context": [
-        "https://www.w3.org/ns/did/v1",
-        "https://w3id.org/security/suites/ed25519-2020/v1",
-        "https://w3id.org/security/suites/x25519-2020/v1"
-      ],
-      "id": "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b",
-      "verificationMethod": [
-        {
-          "id": "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b",
-          "type": "Ed25519VerificationKey2020",
-          "controller": "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b",
-          "publicKeyMultibase": "z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b"
-        }
-      ],
-      "authentication": [
-        "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b"
-      ],
-      "assertionMethod": [
-        "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b"
-      ],
-      "capabilityDelegation": [
-        "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b"
-      ],
-      "capabilityInvocation": [
-        "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b"
-      ],
-      "keyAgreement": [
-        {
-          "id": "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b#z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ",
-          "type": "X25519KeyAgreementKey2020",
-          "controller": "did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b",
-          "publicKeyMultibase": "z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ"
-        }
-      ]
-    }
-  }
-}
-```
-
+Currently our test suite work `did:key` that are `ed25519` compatible.
+We will expand to support other formats of `did:key` when those libraries are available.
 
 ## Implementation
-
-To add a new Implementation simply add a new file to the `/implementations` dir.
-
-```js
-{
-  "name": "Your Organization Name",
-  "implementation": "Your Implementation Name",
-  "didResolver": "https://resolver.your-company.com/1.0/identifiers"
-}
-```
-
-You will also need to enable the implementation in `tests/01-interop.js`.
+To add your implementation to this test suite see the [README here.](https://github.com/w3c-ccg/vc-api-test-suite-implementations)
+Add the tag `Did-Key` to the did resolvers you want tested. Did Resolvers should be their own property in the json manifest:
 
 ```js
-// test these implementations' issuers or verifiers
-const test = [
-  'Your Organization Name'
-];
-
-// only test listed implementations
-const testAPIs = implementations.filter(v => test.includes(v.name));
+  "issuers": [{
+    ... issuer settings here
+  }],
+  "verifiers": [{
+    ... verifier settings here
+  }],
+  "didResolvers": [{
+    "id": "",
+    "endpoint": "https://did.resolver.my.app/1.0/resolve/identifiers",
+    "tags": ["Did-Key"]
+  }]
 ```
+
+To run the tests, some implementations require client secrets
+that can be passed as env variables to the test script. To see which ones require client secrets, you can check the [vc-api-test-suite-implementations](https://github.com/w3c-ccg/vc-api-test-suite-implementations) library.
