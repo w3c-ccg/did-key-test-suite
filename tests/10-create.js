@@ -95,7 +95,7 @@ describe('did:key Create Operation', function() {
           should.exist(version, `Expected ${did} to have a version.`);
           shouldHaveValidVersion(version);
         });
-      it('MUST raise `invalidId` if version is not convertible to a ' +
+      it('MUST raise `invalidDid` if version is not convertible to a ' +
         'positive integer value.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const didParts = splitDid({did});
@@ -108,7 +108,7 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
         const {data} = error;
         shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'invalidId');
+        shouldHaveDidResolutionError(data, 'invalidDid');
       });
       it('The multibaseValue MUST be a string and begin with the letter `z`',
         async function() {
@@ -121,7 +121,7 @@ describe('did:key Create Operation', function() {
             'Expected multibase to start with z'
           );
         });
-      it('MUST raise `invalidId` if the multibaseValue does not begin with ' +
+      it('MUST raise `invalidDid` if the multibaseValue does not begin with ' +
         'the letter `z`.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const didParts = splitDid({did});
@@ -134,7 +134,7 @@ describe('did:key Create Operation', function() {
         shouldErrorWithData(result, error);
         const {data} = error;
         shouldBeDidResolverResponse(data);
-        shouldHaveDidResolutionError(data, 'invalidId');
+        shouldHaveDidResolutionError(data, 'invalidDid');
       });
       it('If "didDocument.id" is not a valid DID, an `invalidDid` error MUST ' +
         'be raised', async function() {
