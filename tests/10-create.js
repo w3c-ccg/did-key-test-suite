@@ -191,7 +191,6 @@ describe('did:key Create Operation', function() {
       it.skip('If an invalid public key value is detected, an `invalid' +
         'PublicKey` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
-
       });
       it('If verificationMethod.id is not a valid DID URL, an ' +
         '`invalidDidUrl` error MUST be raised.', async function() {
