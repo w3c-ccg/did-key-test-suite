@@ -155,14 +155,6 @@ describe('did:key Create Operation', function() {
         // FIXME this doesn't seem right we should not expect a didDocument
         // for an invalid did
         should.exist(data.didDocument, 'Expected a didDocument');
-        data.didDocument.should.not.eql(
-          {},
-          'Expected a didDocument'
-        );
-        data.didDocument.id.should.be.a(
-          'string',
-          'Expected "didDocument.id" to be a string'
-        );
         shouldHaveDidResolutionError(data, 'invalidDid');
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
@@ -196,7 +188,7 @@ describe('did:key Create Operation', function() {
         '`invalidDidUrl` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
-        const invalidDidUrl = `${did}/?query=true#${multibase}`;
+        const invalidDidUrl = `${did}/^bar^/?query=\`#${multibase}`;
         const {result, error, data} = await didResolver.get({
           url: makeUrl(invalidDidUrl),
           headers
