@@ -27,7 +27,7 @@ const keyAgreementVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T5
 const assertionVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53' +
   'b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 
-const tag = 'did-key';
+const didKeyTag = 'did-key';
 const {match, nonMatch} = filterByTag({
   property: 'didResolvers',
   tags: [tag]
