@@ -21,16 +21,16 @@ const headers = {
 // default valid bs58 ed25519 did
 const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 // The id of the keyAgreementKey used for encryption verification
-const keyAgreementVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T5' +
-  '3b#z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ';
+const keyAgreementVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsr' +
+  'H9T53b#z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ';
 // The id of the verificationMethod used for signature verification
-const assertionVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53' +
-  'b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
+const assertionVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9' +
+  'T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 
 const didKeyTag = 'did-key';
 const {match, nonMatch} = filterByTag({
   property: 'didResolvers',
-  tags: [tag]
+  tags: [didKeyTag]
 });
 
 describe('did:key Create Operation', function() {
@@ -49,7 +49,7 @@ describe('did:key Create Operation', function() {
   this.reportData = reportData;
   for(const [columnId, implementation] of match) {
     const didResolver = implementation.didResolvers.find(
-      dr => dr.tags.has(tag));
+      dr => dr.tags.has(didKeyTag));
     const makeUrl = did =>
       `${didResolver.settings.endpoint}/${encodeURIComponent(did)}`;
     describe(columnId, function() {
@@ -225,7 +225,7 @@ describe('did:key Create Operation', function() {
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(signatureId),
+          url: makeUrl(assertionVmId),
           headers,
           searchParams: {
             publicKeyFormat: 'ExperimentalVerificationKey2022',
@@ -242,7 +242,7 @@ describe('did:key Create Operation', function() {
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(encryptionId),
+          url: makeUrl(keyAgreementVmId),
           headers,
           searchParams: {
             publicKeyFormat: 'ExperimentalVerificationKey2022',
