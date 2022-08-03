@@ -20,6 +20,12 @@ const headers = {
 
 // default valid bs58 ed25519 did
 const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
+// The id of the keyAgreementKey used for encryption verification
+const encryptionId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T5' +
+  '3b#z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ';
+// The id of the verificationMethod used for signature verification
+const signatureId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53' +
+  'b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 const tag = 'did:key';
 const {match, nonMatch} = filterByTag({
   property: 'didResolvers',
@@ -218,7 +224,7 @@ describe('did:key Create Operation', function() {
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(did),
+          url: makeUrl(signatureId),
           headers,
           searchParams: {
             publicKeyFormat: 'newFormat',
@@ -234,10 +240,8 @@ describe('did:key Create Operation', function() {
         'X25519KeyAgreementKey2020, an `invalidPublicKeyType` error ' +
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
-        const {multibase} = splitDid({did});
-        const didUrl = `${did}#${multibase}`;
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(didUrl),
+          url: makeUrl(encryptionId),
           headers,
           searchParams: {
             publicKeyFormat: 'newFormat',
