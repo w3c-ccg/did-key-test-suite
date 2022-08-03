@@ -227,12 +227,12 @@ describe('did:key Create Operation', function() {
           url: makeUrl(signatureId),
           headers,
           searchParams: {
-            publicKeyFormat: 'newFormat',
+            publicKeyFormat: 'ExperimentalVerificationKey2022',
             enableExperimentalPublicKeyTypes: false
           }
         });
         shouldErrorWithData(result, error);
-        shouldHaveDidResolutionError(data, 'invalidPublicKeyType');
+        shouldHaveDidDereferencingError(data, 'invalidPublicKeyType');
       });
       it('For Encryption Verification Methods, if ' +
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
@@ -244,12 +244,12 @@ describe('did:key Create Operation', function() {
           url: makeUrl(encryptionId),
           headers,
           searchParams: {
-            publicKeyFormat: 'newFormat',
+            publicKeyFormat: 'ExperimentalVerificationKey2022',
             enableExperimentalPublicKeyTypes: false
           }
         });
         shouldErrorWithData(result, error);
-        shouldHaveDidResolutionError(data, 'invalidPublicKeyType');
+        shouldHaveDidDereferencingError(data, 'invalidPublicKeyType');
       });
       it('If verificationMethod.controller is not a valid DID, an ' +
         '`invalidDid` error MUST be raised.', async function() {
