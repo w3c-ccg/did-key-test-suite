@@ -56,7 +56,7 @@ describe('did:key Create Operation', function() {
       it('MUST raise `invalidDid` error if scheme is not `did`',
         async function() {
           this.test.cell = {columnId, rowId: this.test.title};
-          const noDidScheme = did.replace(/^did:/, 'notDid');
+          const noDidScheme = did.replace(/^did:/, 'notDid:');
           const {result, error} = await didResolver.get({
             url: makeUrl(noDidScheme),
             headers
@@ -78,7 +78,8 @@ describe('did:key Create Operation', function() {
           this.test.cell = {columnId, rowId: this.test.title};
           const {parts} = splitDid({did});
           // use the first part and everything after the second part
-          const methodNotKey = `${parts[0]}:notKey:${parts.slice(2).join(':')}`;
+          const methodNotKey = `${parts[0]}:experimental:` +
+            `${parts.slice(2).join(':')}`;
           const {result, error} = await didResolver.get({
             url: makeUrl(methodNotKey),
             headers
