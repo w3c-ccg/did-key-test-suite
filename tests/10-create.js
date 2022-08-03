@@ -21,7 +21,7 @@ const headers = {
 // default valid bs58 ed25519 did
 const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 // The id of the keyAgreementKey used for encryption verification
-const encryptionId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T5' +
+const keyAgreementVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T5' +
   '3b#z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ';
 // The id of the verificationMethod used for signature verification
 const signatureId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53' +
