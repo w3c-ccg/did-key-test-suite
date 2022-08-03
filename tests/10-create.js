@@ -24,7 +24,7 @@ const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 const keyAgreementVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T5' +
   '3b#z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ';
 // The id of the verificationMethod used for signature verification
-const signatureId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53' +
+const assertionVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53' +
   'b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 
 const tag = 'did-key';
