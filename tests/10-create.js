@@ -20,9 +20,17 @@ const headers = {
 
 // default valid bs58 ed25519 did
 const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
+// The id of the keyAgreementKey used for encryption verification
+const keyAgreementVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsr' +
+  'H9T53b#z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ';
+// The id of the verificationMethod used for signature verification
+const assertionVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9' +
+  'T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
+
+const didKeyTag = 'did-key';
 const {match, nonMatch} = filterByTag({
   property: 'didResolvers',
-  tags: ['Did-Key']
+  tags: [didKeyTag]
 });
 
 describe('did:key Create Operation', function() {
@@ -41,7 +49,7 @@ describe('did:key Create Operation', function() {
   this.reportData = reportData;
   for(const [columnId, implementation] of match) {
     const didResolver = implementation.didResolvers.find(
-      dr => dr.tags.has('Did-Key'));
+      dr => dr.tags.has(didKeyTag));
     const makeUrl = did =>
       `${didResolver.settings.endpoint}/${encodeURIComponent(did)}`;
     describe(columnId, function() {
@@ -55,7 +63,7 @@ describe('did:key Create Operation', function() {
       it('MUST raise `invalidDid` error if scheme is not `did`',
         async function() {
           this.test.cell = {columnId, rowId: this.test.title};
-          const noDidScheme = did.replace(/^did:/, 'notDid');
+          const noDidScheme = did.replace(/^did:/, 'notDid:');
           const {result, error} = await didResolver.get({
             url: makeUrl(noDidScheme),
             headers
@@ -77,7 +85,8 @@ describe('did:key Create Operation', function() {
           this.test.cell = {columnId, rowId: this.test.title};
           const {parts} = splitDid({did});
           // use the first part and everything after the second part
-          const methodNotKey = `${parts[0]}:notKey:${parts.slice(2).join(':')}`;
+          const methodNotKey = `${parts[0]}:experimental:` +
+            `${parts.slice(2).join(':')}`;
           const {result, error} = await didResolver.get({
             url: makeUrl(methodNotKey),
             headers
@@ -154,14 +163,6 @@ describe('did:key Create Operation', function() {
         // FIXME this doesn't seem right we should not expect a didDocument
         // for an invalid did
         should.exist(data.didDocument, 'Expected a didDocument');
-        data.didDocument.should.not.eql(
-          {},
-          'Expected a didDocument'
-        );
-        data.didDocument.id.should.be.a(
-          'string',
-          'Expected "didDocument.id" to be a string'
-        );
         shouldHaveDidResolutionError(data, 'invalidDid');
       });
       it('If the byte length of rawPublicKeyBytes does not match the ' +
@@ -195,7 +196,7 @@ describe('did:key Create Operation', function() {
         '`invalidDidUrl` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {multibase} = splitDid({did});
-        const invalidDidUrl = `${did}/?query=true#${multibase}`;
+        const invalidDidUrl = `${did}/^bar^/?query=\`#${multibase}`;
         const {result, error, data} = await didResolver.get({
           url: makeUrl(invalidDidUrl),
           headers
@@ -224,15 +225,15 @@ describe('did:key Create Operation', function() {
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(did),
+          url: makeUrl(assertionVmId),
           headers,
           searchParams: {
-            publicKeyFormat: 'newFormat',
+            publicKeyFormat: 'ExperimentalVerificationKey2022',
             enableExperimentalPublicKeyTypes: false
           }
         });
         shouldErrorWithData(result, error);
-        shouldHaveDidResolutionError(data, 'invalidPublicKeyType');
+        shouldHaveDidDereferencingError(data, 'invalidPublicKeyType');
       });
       it('For Encryption Verification Methods, if ' +
         'options.enableExperimentalPublicKeyTypes is set to false and ' +
@@ -240,18 +241,16 @@ describe('did:key Create Operation', function() {
         'X25519KeyAgreementKey2020, an `invalidPublicKeyType` error ' +
         'MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
-        const {multibase} = splitDid({did});
-        const didUrl = `${did}#${multibase}`;
         const {result, error, data} = await didResolver.get({
-          url: makeUrl(didUrl),
+          url: makeUrl(keyAgreementVmId),
           headers,
           searchParams: {
-            publicKeyFormat: 'newFormat',
+            publicKeyFormat: 'ExperimentalVerificationKey2022',
             enableExperimentalPublicKeyTypes: false
           }
         });
         shouldErrorWithData(result, error);
-        shouldHaveDidResolutionError(data, 'invalidPublicKeyType');
+        shouldHaveDidDereferencingError(data, 'invalidPublicKeyType');
       });
       it('If verificationMethod.controller is not a valid DID, an ' +
         '`invalidDid` error MUST be raised.', async function() {

@@ -36,7 +36,7 @@ export const splitDid = ({did}) => {
     scheme,
     method,
     // if multibase exists use the version
-    version: multibase ? version : 1,
+    version: multibase ? version : '1',
     // if multibase exists use multibase
     multibase: multibase || version,
     parts,
