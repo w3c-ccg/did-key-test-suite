@@ -1,7 +1,12 @@
 /*!
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
-import {generateMultibase, splitDid} from './helpers.js';
+import {
+  assertionVmId,
+  did,
+  invalidKeyLengthDid,
+  keyAgreementVmId
+} from './mock.data.js';
 import {
   shouldBeDidResolverResponse,
   shouldBeValidDid,
@@ -12,20 +17,12 @@ import {
 } from './assertions.js';
 import chai from 'chai';
 import {filterByTag} from 'vc-api-test-suite-implementations';
+import {splitDid} from './helpers.js';
 
 const should = chai.should();
 const headers = {
   Accept: 'application/ld+json;profile="https://w3id.org/did-resolution"'
 };
-
-// default valid bs58 ed25519 did
-const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
-// The id of the keyAgreementKey used for encryption verification
-const keyAgreementVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsr' +
-  'H9T53b#z6LSfHfAMAopsuBxaBzvp51GXrPf38Az13j2fmwqadbwwrzJ';
-// The id of the verificationMethod used for signature verification
-const assertionVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9' +
-  'T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 
 const didKeyTag = 'did-key';
 const {match, nonMatch} = filterByTag({
@@ -165,12 +162,10 @@ describe('did:key Create Operation', function() {
         should.exist(data.didDocument, 'Expected a didDocument');
         shouldHaveDidResolutionError(data, 'invalidDid');
       });
-      it('If the byte length of rawPublicKeyBytes does not match the ' +
+      it.only('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
         'an `invalidPublicKeyLength` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
-        const publicKey512Bytes = await generateMultibase({bitLength: 512});
-        const invalidKeyLengthDid = `did:key:${publicKey512Bytes}`;
         const {result, error, data} = await didResolver.get({
           url: makeUrl(invalidKeyLengthDid),
           headers
