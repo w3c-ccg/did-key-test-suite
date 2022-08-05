@@ -6,7 +6,6 @@ export const keyAgreementVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81Qdc' +
 // The id of the verificationMethod used for signature verification
 export const assertionVmId = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRL' +
   'XQsrH9T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
-// follows did:key format, but is to large for ed keys
-export const invalidKeyLengthDid = 'did:key:z6MkA9MEcFWsoUVqj2zX6LACFaikLQ28' +
-  'i9WAsJnURDS3HLGKSkUbwUbiLH22ohgZ2BwgpQ6qC3VBTNV3pLhYDTVgR';
+// follows did:key format, but is to small for ed keys
+export const invalidKeyLengthDid = 'did:key:zTjsVPtY';
 
