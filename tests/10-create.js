@@ -162,7 +162,7 @@ describe('did:key Create Operation', function() {
         should.exist(data.didDocument, 'Expected a didDocument');
         shouldHaveDidResolutionError(data, 'invalidDid');
       });
-      it.only('If the byte length of rawPublicKeyBytes does not match the ' +
+      it('If the byte length of rawPublicKeyBytes does not match the ' +
         'expected public key length for the associated multicodecValue, ' +
         'an `invalidPublicKeyLength` error MUST be raised.', async function() {
         this.test.cell = {columnId, rowId: this.test.title};
