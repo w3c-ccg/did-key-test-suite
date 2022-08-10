@@ -223,7 +223,7 @@ describe('did:key Create Operation', function() {
           url: makeUrl(assertionVmId),
           headers,
           searchParams: {
-            publicKeyFormat: 'ExperimentalVerificationKey2022',
+            publicKeyFormat: 'Ed25519VerificationKey2018',
             enableExperimentalPublicKeyTypes: false
           }
         });
@@ -240,7 +240,7 @@ describe('did:key Create Operation', function() {
           url: makeUrl(keyAgreementVmId),
           headers,
           searchParams: {
-            publicKeyFormat: 'ExperimentalVerificationKey2022',
+            publicKeyFormat: 'Ed25519VerificationKey2018',
             enableExperimentalPublicKeyTypes: false
           }
         });
