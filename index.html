@@ -83,19 +83,19 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 0/0 0%
+      Tests passed 9/30 30%
       </p>
       <p>
-      Tests failed 0/0 0%
+      Tests failed 21/30 70%
       </p>
       <p>
-      Tests skipped 0
+      Tests skipped 2
       </p>
       <p>
-      Total tests 0
+      Total tests 32
       </p>
       <p>
-        These tests were run on <time>14 August 2022, 5:17 am UTC</time>
+        These tests were run on <time>16 August 2022, 12:43 pm UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -191,9 +191,9 @@
                   <span>&#8659;</span><span>Test Name</span>
                   </div>
                 </th>
-                    <th class="no-wrap small-font">API Catalog</th>
                     <th class="no-wrap small-font">Danube Tech</th>
                     <th class="no-wrap small-font">Digital Bazaar</th>
+                    <th class="no-wrap small-font">API Catalog</th>
                     <th class="no-wrap small-font">MATTR</th>
                     <th class="no-wrap small-font">Mavennet</th>
                     <th class="no-wrap small-font">mesur.io</th>
@@ -201,6 +201,670 @@
                     <th class="no-wrap small-font">Transmute</th>
                 </thead>
               <tbody>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">The scheme MUST be the value &#x60;did&#x60;</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">MUST raise &#x60;invalidDid&#x60; error if scheme is not &#x60;did&#x60;</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected { …(3) } to have property 'didDocument'",
+          "showDiff": false,
+          "actual": {
+            "message": "Route GET:/1.0/identifiers/resolve/notDid%3Akey%3Az6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b not found",
+            "error": "Not Found",
+            "statusCode": 404
+          },
+          "stack": "AssertionError: expected { …(3) } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:70:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">The method MUST be the value &#x60;key&#x60;</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">MUST raise &#x60;invalidDid&#x60; error if method is not &#x60;key&#x60;</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected 'notFound' to equal 'invalidDid'",
+          "showDiff": true,
+          "actual": "notFound",
+          "expected": "invalidDid",
+          "operator": "strictEqual",
+          "stack": "AssertionError: expected 'notFound' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:94:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected { …(3) } to have property 'didDocument'",
+          "showDiff": false,
+          "actual": {
+            "message": "Route GET:/1.0/identifiers/resolve/did%3Aexperimental%3Az6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b not found",
+            "error": "Not Found",
+            "statusCode": 404
+          },
+          "stack": "AssertionError: expected { …(3) } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">The version MUST be convertible to a positive integer value.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">MUST raise &#x60;invalidDid&#x60; if version is not convertible to a positive integer value.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected 'notFound' to equal 'invalidDid'",
+          "showDiff": true,
+          "actual": "notFound",
+          "expected": "invalidDid",
+          "operator": "strictEqual",
+          "stack": "AssertionError: expected 'notFound' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:116:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected { …(3) } to have property 'didDocument'",
+          "showDiff": false,
+          "actual": {
+            "message": "Route GET:/1.0/identifiers/resolve/did%3Akey%3A-4%3Az6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b not found",
+            "error": "Not Found",
+            "statusCode": 404
+          },
+          "stack": "AssertionError: expected { …(3) } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:115:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">The multibaseValue MUST be a string and begin with the letter &#x60;z&#x60;</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">MUST raise &#x60;invalidDid&#x60; if the multibaseValue does not begin with the letter &#x60;z&#x60;.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected 'notFound' to equal 'invalidDid'",
+          "showDiff": true,
+          "actual": "notFound",
+          "expected": "invalidDid",
+          "operator": "strictEqual",
+          "stack": "AssertionError: expected 'notFound' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:142:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected { …(3) } to have property 'didDocument'",
+          "showDiff": false,
+          "actual": {
+            "message": "Route GET:/1.0/identifiers/resolve/did%3Akey%3A6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b not found",
+            "error": "Not Found",
+            "statusCode": 404
+          },
+          "stack": "AssertionError: expected { …(3) } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:141:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">If &quot;didDocument.id&quot; is not a valid DID, an &#x60;invalidDid&#x60; error MUST be raised</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected a didDocument: expected null to exist",
+          "showDiff": false,
+          "actual": null,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected a didDocument: expected null to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:162:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected { …(3) } to have property 'didDocument'",
+          "showDiff": false,
+          "actual": {
+            "message": "Route GET:/1.0/identifiers/resolve/did%3Akey%3A@ not found",
+            "error": "Not Found",
+            "statusCode": 404
+          },
+          "stack": "AssertionError: expected { …(3) } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:159:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">If the byte length of rawPublicKeyBytes does not match the expected public key length for the associated multicodecValue, an &#x60;invalidPublicKeyLength&#x60; error MUST be raised.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected 'notFound' to equal 'invalidPublicKeyLength'",
+          "showDiff": true,
+          "actual": "notFound",
+          "expected": "invalidPublicKeyLength",
+          "operator": "strictEqual",
+          "stack": "AssertionError: expected 'notFound' to equal 'invalidPublicKeyLength'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:175:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected { …(3) } to have property 'didDocument'",
+          "showDiff": false,
+          "actual": {
+            "message": "Route GET:/1.0/identifiers/resolve/did%3Akey%3AzTjsVPtY not found",
+            "error": "Not Found",
+            "statusCode": 404
+          },
+          "stack": "AssertionError: expected { …(3) } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">If verificationMethod.id is not a valid DID URL, an &#x60;invalidDidUrl&#x60; error MUST be raised.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
+          "showDiff": false,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:201:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "expected { …(3) } to have property 'didDocument'",
+          "showDiff": false,
+          "actual": {
+            "message": "Route GET:/1.0/identifiers/resolve/did%3Akey%3Az6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b%2F%5Ebar%5E%2F%3Fquery%3D%60%23z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b not found",
+            "error": "Not Found",
+            "statusCode": 404
+          },
+          "stack": "AssertionError: expected { …(3) } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:200:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">If publicKeyFormat is not known to the implementation, an &#x60;unsupportedPublicKeyType&#x60; error MUST be raised.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected no response: expected Response{ size: +0, data: { …(4) }, …(2) } to not exist",
+          "showDiff": false,
+          "actual": {
+            "size": 0
+          },
+          "operator": "notStrictEqual",
+          "stack": "AssertionError: Expected no response: expected Response{ size: +0, data: { …(4) }, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:213:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected property didResolutionMetadata to exist: expected undefined to exist",
+          "showDiff": false,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected property didResolutionMetadata to exist: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">For Signature Verification Methods, if options.enableExperimentalPublicKeyTypes is set to false and publicKeyFormat is not Multikey, JsonWebKey2020, or Ed25519VerificationKey2020, an &#x60;invalidPublicKeyType&#x60; error MUST be raised.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
+          "showDiff": false,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:231:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
+          "showDiff": false,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:231:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">For Encryption Verification Methods, if options.enableExperimentalPublicKeyTypes is set to false and publicKeyFormat is not Multikey, JsonWebKey2020, or X25519KeyAgreementKey2020, an &#x60;invalidPublicKeyType&#x60; error MUST be raised.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
+          "showDiff": false,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:248:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
+          "showDiff": false,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:248:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">If verificationMethod.controller is not a valid DID, an &#x60;invalidDid&#x60; error MUST be raised.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected a result: expected undefined to exist",
+          "showDiff": false,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected a result: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:259:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                      <span class="err hide no-space-around">
+                        <pre>{
+          "name": "AssertionError",
+          "message": "Expected a result: expected undefined to exist",
+          "showDiff": false,
+          "operator": "strictEqual",
+          "stack": "AssertionError: Expected a result: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:259:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+        }</pre>
+                      </span>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+                  <td class="notImplemented not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">—</div>
+                  </td>
+              </tr>
             </tbody>
             </table>
           </div>
