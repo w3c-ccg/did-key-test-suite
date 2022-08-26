@@ -44,9 +44,8 @@ describe('did:key Create Operation', function() {
   this.columnLabel = 'did:key Resolver';
   // the reportData will be displayed under the test title
   this.reportData = reportData;
-  for(const [columnId, implementation] of match) {
-    const didResolver = implementation.didResolvers.find(
-      dr => dr.tags.has(didKeyTag));
+  for(const [columnId, {endpoints}] of match) {
+    const [didResolver] = endpoints;
     const makeUrl = did =>
       `${didResolver.settings.endpoint}/${encodeURIComponent(did)}`;
     describe(columnId, function() {
