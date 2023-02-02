@@ -76,7 +76,7 @@ describe('did:key Create Operation', function() {
         method.should.be.a('string', 'Expected method to be a string');
         method.should.equal('key', 'Expected method to equal key');
       });
-      it('MUST raise `invalidDid` error if method is not `key`',
+      it('MUST raise `methodNotSupported` error if method is not `key`',
         async function() {
           this.test.cell = {columnId, rowId: this.test.title};
           const {parts} = splitDid({did});
@@ -90,7 +90,7 @@ describe('did:key Create Operation', function() {
           shouldErrorWithData(result, error);
           const {data} = error;
           shouldBeDidResolverResponse(data);
-          shouldHaveDidResolutionError(data, 'invalidDid');
+          shouldHaveDidResolutionError(data, 'methodNotSupported');
         });
       it('The version MUST be convertible to a positive integer value.',
         async function() {
