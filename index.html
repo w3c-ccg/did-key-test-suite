@@ -83,19 +83,19 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 20/30 66%
+      Tests passed 24/45 53%
       </p>
       <p>
-      Tests failed 10/30 34%
+      Tests failed 21/45 47%
       </p>
       <p>
-      Tests skipped 2
+      Tests skipped 3
       </p>
       <p>
-      Total tests 32
+      Total tests 48
       </p>
       <p>
-        These tests were run on <time>21 May 2023 at 5:12 am UTC</time>
+        These tests were run on <time>28 May 2023 at 5:12 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -183,6 +183,7 @@
                 </th>
                     <th class="no-wrap small-font">Danube Tech</th>
                     <th class="no-wrap small-font">Digital Bazaar</th>
+                    <th class="no-wrap small-font">Spruce</th>
                     <th class="no-wrap small-font">API Catalog</th>
                     <th class="no-wrap small-font">EWF</th>
                     <th class="no-wrap small-font">GS1 US</th>
@@ -198,6 +199,38 @@
                 <!--This is the name of the test-->
                 <td class="subtest">The scheme MUST be the value &#x60;did&#x60;</td>
                 <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                    </div>
+                  </td>
                   <td class="passed not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
@@ -619,6 +652,45 @@
                       </style>
                     </div>
                   </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected an error with data: expected undefined to exist",
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:68:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
                   <td class="notImplemented not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">—</div>
                     <div class="relative-pos">
@@ -912,6 +984,38 @@
                 <!--This is the name of the test-->
                 <td class="subtest">The method MUST be the value &#x60;key&#x60;</td>
                 <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                    </div>
+                  </td>
                   <td class="passed not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
@@ -1340,6 +1444,45 @@
                       </style>
                     </div>
                   </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected an error with data: expected undefined to exist",
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:91:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
                   <td class="notImplemented not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">—</div>
                     <div class="relative-pos">
@@ -1633,6 +1776,38 @@
                 <!--This is the name of the test-->
                 <td class="subtest">The version MUST be convertible to a positive integer value.</td>
                 <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                    </div>
+                  </td>
                   <td class="passed not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
@@ -2061,6 +2236,45 @@
                       </style>
                     </div>
                   </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected an error with data: expected undefined to exist",
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:113:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
                   <td class="notImplemented not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">—</div>
                     <div class="relative-pos">
@@ -2354,6 +2568,38 @@
                 <!--This is the name of the test-->
                 <td class="subtest">The multibaseValue MUST be a string and begin with the letter &#x60;z&#x60;</td>
                 <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                    </div>
+                  </td>
                   <td class="passed not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
@@ -2782,6 +3028,45 @@
                       </style>
                     </div>
                   </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected an error with data: expected undefined to exist",
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:139:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
                   <td class="notImplemented not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">—</div>
                     <div class="relative-pos">
@@ -3144,6 +3429,45 @@
                          margin-left: 1rem;
                        }
                       </style>
+                    </div>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected resolution of did:key:@ to return a response: expected undefined to exist",
+                      "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:155:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
                     </div>
                   </td>
                   <td class="notImplemented not-optional highlight-on-hover">
@@ -3510,6 +3834,45 @@
                       </style>
                     </div>
                   </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected an error with data: expected undefined to exist",
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:173:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
                   <td class="notImplemented not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">—</div>
                     <div class="relative-pos">
@@ -3872,6 +4235,45 @@
                          margin-left: 1rem;
                        }
                       </style>
+                    </div>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected an error with data: expected undefined to exist",
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:199:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
                     </div>
                   </td>
                   <td class="notImplemented not-optional highlight-on-hover">
@@ -4238,6 +4640,45 @@
                       </style>
                     </div>
                   </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected no response: expected Response{ size: +0, data: { …(5) }, …(2) } to not exist",
+                      "stack": "AssertionError: Expected no response: expected Response{ size: +0, data: { …(5) }, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:213:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
                   <td class="notImplemented not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">—</div>
                     <div class="relative-pos">
@@ -4600,6 +5041,45 @@
                          margin-left: 1rem;
                        }
                       </style>
+                    </div>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected no response: expected Response{ size: +0, …(2) } to not exist",
+                      "stack": "AssertionError: Expected no response: expected Response{ size: +0, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
                     </div>
                   </td>
                   <td class="notImplemented not-optional highlight-on-hover">
@@ -4966,6 +5446,45 @@
                       </style>
                     </div>
                   </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected an error with data: expected undefined to exist",
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
                   <td class="notImplemented not-optional highlight-on-hover">
                     <div class= "highlight-on-hover">—</div>
                     <div class="relative-pos">
@@ -5328,6 +5847,45 @@
                          margin-left: 1rem;
                        }
                       </style>
+                    </div>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Expected DID Resolver response to have data.: expected undefined to exist",
+                      "stack": "AssertionError: Expected DID Resolver response to have data.: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:17:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:261:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                    }</pre>
+                      </span>
                     </div>
                   </td>
                   <td class="notImplemented not-optional highlight-on-hover">
