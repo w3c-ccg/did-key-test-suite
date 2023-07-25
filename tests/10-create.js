@@ -25,7 +25,7 @@ const headers = {
 };
 
 const didKeyTag = 'did-key';
-const {match, nonMatch} = filterByTag({
+const {match} = filterByTag({
   property: 'didResolvers',
   tags: [didKeyTag]
 });
@@ -39,7 +39,6 @@ describe('did:key Create Operation', function() {
   this.matrix = true;
   this.report = true;
   this.implemented = [...match.keys()];
-  this.notImplemented = [...nonMatch.keys()];
   this.rowLabel = 'Test Name';
   this.columnLabel = 'did:key Resolver';
   // the reportData will be displayed under the test title
