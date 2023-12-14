@@ -24,7 +24,7 @@
     "url": "https://digitalbazaar.com/"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18"
   },
   "dependencies": {
     "@digitalbazaar/mocha-w3c-interop-reporter": "^1.5.0",
