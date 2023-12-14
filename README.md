@@ -31,7 +31,7 @@ We will expand to support other formats of `did:key` when those libraries are av
 
 ## Implementation
 To add your implementation to this test suite see the [README here.](https://github.com/w3c-ccg/vc-test-suite-implementations)
-Add the tag `Did-Key` to the did resolvers you want tested. Did Resolvers should be their own property in the json manifest:
+Add the tag `did-key` to the did resolvers you want tested. Did Resolvers should be their own property in the json manifest:
 
 ```js
   "issuers": [{
@@ -43,7 +43,7 @@ Add the tag `Did-Key` to the did resolvers you want tested. Did Resolvers should
   "didResolvers": [{
     "id": "",
     "endpoint": "https://did.resolver.my.app/1.0/resolve/identifiers",
-    "tags": ["Did-Key"]
+    "tags": ["did-key"]
   }]
 ```
 
