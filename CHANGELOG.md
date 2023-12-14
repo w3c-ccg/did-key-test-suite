@@ -1,5 +1,10 @@
 # w3c-ccg/did-key-test-suite ChangeLog
 
+## 1.1.0 -
+
+### Changed
+- Change to `vc-test-suite-implementations` from `vc-api-test-suite-implementations`.
+
 ## 1.0.0 - 2023-11-09
 
 ### Added
