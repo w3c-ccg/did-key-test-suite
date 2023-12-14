@@ -16,7 +16,7 @@ import {
   shouldHaveValidVersion
 } from './assertions.js';
 import chai from 'chai';
-import {filterByTag} from 'vc-api-test-suite-implementations';
+import {filterByTag} from 'vc-test-suite-implementations';
 import {splitDid} from './helpers.js';
 
 const should = chai.should();
