@@ -30,7 +30,7 @@ Currently our test suite works only with `did:key`s that are `ed25519` compatibl
 We will expand to support other formats of `did:key` when those libraries are available.
 
 ## Implementation
-To add your implementation to this test suite see the [README here.](https://github.com/w3c-ccg/vc-api-test-suite-implementations)
+To add your implementation to this test suite see the [README here.](https://github.com/w3c-ccg/vc-test-suite-implementations)
 Add the tag `Did-Key` to the did resolvers you want tested. Did Resolvers should be their own property in the json manifest:
 
 ```js
@@ -48,4 +48,4 @@ Add the tag `Did-Key` to the did resolvers you want tested. Did Resolvers should
 ```
 
 To run the tests, some implementations require client secrets
-that can be passed as env variables to the test script. To see which ones require client secrets, you can check the [vc-api-test-suite-implementations](https://github.com/w3c-ccg/vc-api-test-suite-implementations) library.
+that can be passed as env variables to the test script. To see which ones require client secrets, you can check the [vc-test-suite-implementations](https://github.com/w3c-ccg/vc-test-suite-implementations) library.
