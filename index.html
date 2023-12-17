@@ -84,13 +84,13 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 22/45 49%
+      Tests passed 24/45 53%
       </p>
       <p>
-      Tests failed 23/45 51%
+      Tests failed 21/45 47%
       </p>
       <p>
-      Failures 23
+      Failures 21
       </p>
       <p>
       Tests skipped 3
@@ -99,7 +99,7 @@
       Total tests 48
       </p>
       <p>
-        These tests were run on <time>10 December 2023 at 5:15 am UTC</time>
+        These tests were run on <time>17 December 2023 at 5:13 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -292,8 +292,8 @@
                 <!--This is the name of the test-->
                 <td class="subtest">MUST raise &#x60;invalidDid&#x60; error if scheme is not &#x60;did&#x60;</td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
                       <style>
                        .hide {
@@ -322,13 +322,6 @@
                          margin-left: 1rem;
                        }
                       </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
-                    }</pre>
-                      </span>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -397,7 +390,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -508,8 +501,8 @@
                 <!--This is the name of the test-->
                 <td class="subtest">MUST raise &#x60;methodNotSupported&#x60; error if method is not &#x60;key&#x60;</td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
                       <style>
                        .hide {
@@ -538,13 +531,6 @@
                          margin-left: 1rem;
                        }
                       </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
-                    }</pre>
-                      </span>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -581,7 +567,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "expected 'invalidDid' to equal 'methodNotSupported'",
-                      "stack": "AssertionError: expected 'invalidDid' to equal 'methodNotSupported'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: expected 'invalidDid' to equal 'methodNotSupported'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -620,7 +606,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -764,8 +750,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "expected 'methodNotSupported' to equal 'invalidDid'",
+                      "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:115:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -836,7 +822,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -980,8 +966,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "expected 'methodNotSupported' to equal 'invalidDid'",
+                      "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:141:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1052,7 +1038,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1095,8 +1081,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected resolution of did:key:@ to return a response: expected undefined to exist",
-                      "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "Expected a didDocument: expected null to exist",
+                      "stack": "AssertionError: Expected a didDocument: expected null to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:161:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1167,7 +1153,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected resolution of did:key:@ to return a response: expected undefined to exist",
-                      "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1210,8 +1196,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "expected 'methodNotSupported' to equal 'invalidPublicKeyLength'",
+                      "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidPublicKeyLength'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1282,7 +1268,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1325,8 +1311,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
+                      "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:200:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1397,7 +1383,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1440,8 +1426,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "Expected no response: expected Response{ data: { …(4) }, …(3) } to not exist",
+                      "stack": "AssertionError: Expected no response: expected Response{ data: { …(4) }, …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1511,8 +1497,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no response: expected Response{ size: +0, data: { …(5) }, …(2) } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response{ size: +0, data: { …(5) }, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "Expected no response: expected Response{ data: { …(5) }, …(3) } to not exist",
+                      "stack": "AssertionError: Expected no response: expected Response{ data: { …(5) }, …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1555,8 +1541,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
+                      "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1626,8 +1612,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no response: expected Response{ size: +0, …(2) } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response{ size: +0, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "Expected no response: expected Response{ …(3) } to not exist",
+                      "stack": "AssertionError: Expected no response: expected Response{ …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1670,8 +1656,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
+                      "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1742,7 +1728,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1786,7 +1772,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected a result: expected undefined to exist",
-                      "stack": "AssertionError: Expected a result: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected a result: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>
@@ -1857,7 +1843,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected DID Resolver response to have data.: expected undefined to exist",
-                      "stack": "AssertionError: Expected DID Resolver response to have data.: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:17:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                      "stack": "AssertionError: Expected DID Resolver response to have data.: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:17:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
                     }</pre>
                       </span>
                     </div>

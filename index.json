@@ -22,9 +22,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:2b19a1f5-2120-44cd-9ac3-63c6f6e029e5",
+              "_testId": "urn:uuid:30b8f7c1-ad4e-46d4-83fd-7176a3f43072",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -35,12 +35,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 375,
+                "_idleStart": 305,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 3,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -57,9 +57,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:20246b5a-c2c8-46e4-b0ca-2567c6f67cc5",
+              "_testId": "urn:uuid:bf7240b8-6a80-4fd0-afc9-cfc7c553cf23",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -70,20 +70,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 377,
+                "_idleStart": 306,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10040,
-              "state": "failed",
-              "err": {
-                "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
-              }
+              "duration": 342,
+              "state": "passed",
+              "speed": "slow"
             },
             {
               "type": "test",
@@ -98,9 +92,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:fa754eae-bbc5-40e5-8472-e49a094f97ef",
+              "_testId": "urn:uuid:21522ebd-c77e-42c3-8b2e-86542a2b7d73",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -111,12 +105,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10420,
+                "_idleStart": 649,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -133,9 +127,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:c683ba77-fb67-43e8-a352-a9017e981b98",
+              "_testId": "urn:uuid:32299487-d097-4112-acbb-8f4c028fcee8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -146,20 +140,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10421,
+                "_idleStart": 649,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
-              "state": "failed",
-              "err": {
-                "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
-              }
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -174,9 +162,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:4917b4b5-fda5-494b-a869-70e51230e5f9",
+              "_testId": "urn:uuid:d4a8ac5c-f02d-43cc-8ae7-8c0450a32c33",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -187,12 +175,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 20429,
+                "_idleStart": 670,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -209,9 +197,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:9fc759d8-ec63-4a88-9b20-c1893825506e",
+              "_testId": "urn:uuid:a25a5079-0731-4181-b8e0-89794ec4e402",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -222,19 +210,21 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 20430,
+                "_idleStart": 671,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 23,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
+                "message": "expected 'methodNotSupported' to equal 'invalidDid'",
+                "showDiff": true,
+                "actual": "methodNotSupported",
+                "expected": "invalidDid",
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:115:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -250,9 +240,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:47b6cd54-b604-4d78-99fd-bd9e8d7b3a42",
+              "_testId": "urn:uuid:63322325-d5e3-4ece-a378-1898c993b7e0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -263,12 +253,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 30437,
+                "_idleStart": 697,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -285,9 +275,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:89b38e1f-430d-4894-ac60-35ea4db465ef",
+              "_testId": "urn:uuid:082186c9-463a-4610-abf2-aa79e8a11768",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -298,19 +288,21 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 30438,
+                "_idleStart": 697,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10004,
+              "duration": 20,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
+                "message": "expected 'methodNotSupported' to equal 'invalidDid'",
+                "showDiff": true,
+                "actual": "methodNotSupported",
+                "expected": "invalidDid",
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:141:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -326,9 +318,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:4ad6cdc0-bf12-4a95-ab2f-39c4813c5851",
+              "_testId": "urn:uuid:9ab889b9-6528-422e-9311-3ea8a0a59d09",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -339,19 +331,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 40443,
+                "_idleStart": 719,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 17,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected resolution of did:key:@ to return a response: expected undefined to exist",
+                "message": "Expected a didDocument: expected null to exist",
                 "showDiff": false,
+                "actual": null,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected a didDocument: expected null to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:161:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -367,9 +360,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:7f057e8c-a038-4731-87e6-be2730a8ead8",
+              "_testId": "urn:uuid:80ff00cd-c9ee-4ff7-a647-cc7be4a258c0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -380,19 +373,21 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 50451,
+                "_idleStart": 736,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 20,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
+                "message": "expected 'methodNotSupported' to equal 'invalidPublicKeyLength'",
+                "showDiff": true,
+                "actual": "methodNotSupported",
+                "expected": "invalidPublicKeyLength",
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidPublicKeyLength'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -407,7 +402,7 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
               "state": "pending"
             },
@@ -424,9 +419,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:55171cd6-345a-4bf2-849a-85bb010036cd",
+              "_testId": "urn:uuid:a56f892a-507e-4839-bb7c-c43f99a31755",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -437,19 +432,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 60458,
+                "_idleStart": 756,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 16,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:200:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -465,9 +460,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:eab6551c-36f2-4518-bc8d-940fb02f7e42",
+              "_testId": "urn:uuid:283c3cc5-d727-4e4b-abe5-0545af63385c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -478,19 +473,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 70466,
+                "_idleStart": 773,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 21,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected no response: expected Response{ data: { …(4) }, …(3) } to not exist",
                 "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "actual": {},
+                "operator": "notStrictEqual",
+                "stack": "AssertionError: Expected no response: expected Response{ data: { …(4) }, …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -506,9 +502,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:688ea831-11e4-465e-8089-b46df3f9ae83",
+              "_testId": "urn:uuid:e4569260-7704-4812-9470-11b02359e2cc",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -519,19 +515,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 80474,
+                "_idleStart": 796,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 16,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -547,9 +543,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:03a19219-1ed6-406c-9684-84382e18c98f",
+              "_testId": "urn:uuid:5a80d042-23d7-416b-83e9-7f1ba04eb922",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -560,19 +556,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 90482,
+                "_idleStart": 812,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10006,
+              "duration": 16,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -588,9 +584,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:d86ee3a4-76f1-4916-aaf0-0ab6deb19ee0",
+              "_testId": "urn:uuid:c91ba326-e3e9-44c9-8621-5248d07ffe22",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -601,19 +597,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 100489,
+                "_idleStart": 828,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10006,
+              "duration": 16,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected a result: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected a result: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected a result: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ],
@@ -630,9 +626,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "nLa_8YdM03THCUEr-rl09",
+          "parent": "Gw70vEbkic2esHDN7PAbz",
           "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-          "_testId": "urn:uuid:8eef99fc-9da3-40f0-9c83-fcd7c5447101"
+          "_testId": "urn:uuid:68b42efa-63b0-4753-9341-2c29d4261be4"
         },
         {
           "title": "Digital Bazaar",
@@ -652,9 +648,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:2a492676-7261-4d05-b157-c68db04330fb",
+              "_testId": "urn:uuid:b93d5ea7-7271-4fb6-88ff-0fcfabd126de",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -665,7 +661,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110496,
+                "_idleStart": 845,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -687,9 +683,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:34a311c7-ba10-4231-9295-c8673ce5caf9",
+              "_testId": "urn:uuid:a30ce06d-23c4-4680-9fa3-04b8ba55dc71",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -700,12 +696,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110496,
+                "_idleStart": 845,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 251,
+              "duration": 160,
               "state": "passed",
               "speed": "slow"
             },
@@ -722,9 +718,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:0fed5004-179a-4810-b253-61969eb47229",
+              "_testId": "urn:uuid:74ca572f-5008-4743-a5b8-1c2efbc1d0ae",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -735,7 +731,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110748,
+                "_idleStart": 1006,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -757,9 +753,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:cb517202-d40c-4f80-a353-692ae5b58222",
+              "_testId": "urn:uuid:ac3d812a-42f8-4e6b-8268-8ac8d8a8c28e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -770,12 +766,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110748,
+                "_idleStart": 1006,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 203,
+              "duration": 34,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -784,7 +780,7 @@
                 "actual": "invalidDid",
                 "expected": "methodNotSupported",
                 "operator": "strictEqual",
-                "stack": "AssertionError: expected 'invalidDid' to equal 'methodNotSupported'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: expected 'invalidDid' to equal 'methodNotSupported'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -800,9 +796,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:148d3bee-c1c0-4e7a-8dd3-7e7099e73160",
+              "_testId": "urn:uuid:6002b8a2-5755-437a-8856-1e410322c45f",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -813,7 +809,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110952,
+                "_idleStart": 1040,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -835,9 +831,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:48e79626-4a7f-4ab0-ad52-bd82d5ce9ca8",
+              "_testId": "urn:uuid:62f05607-4621-4c30-b6f0-26ef7722e835",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -848,12 +844,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110952,
+                "_idleStart": 1041,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 59,
+              "duration": 60,
               "state": "passed",
               "speed": "medium"
             },
@@ -870,9 +866,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:c910a779-86aa-4b66-9d00-0ab81b2a8ca8",
+              "_testId": "urn:uuid:4dc16bcb-4261-4ee0-bded-11aad3c1a6af",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -883,12 +879,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111012,
+                "_idleStart": 1100,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -905,9 +901,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:4d49ecae-1085-4cb4-8968-2baf9bf69da3",
+              "_testId": "urn:uuid:3223654f-74f4-42ed-b002-40c3dd208fad",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -918,14 +914,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111013,
+                "_idleStart": 1100,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 185,
+              "duration": 29,
               "state": "passed",
-              "speed": "slow"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -940,9 +936,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:5afd3031-3c1d-4f7e-bb6a-b57a88fdf1e1",
+              "_testId": "urn:uuid:5236dde2-3b8b-4fb1-b27d-02be17d2d714",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -953,14 +949,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111198,
+                "_idleStart": 1129,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 59,
+              "duration": 32,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -975,9 +971,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:a51366a1-fa6f-4eac-9da6-12aa9174e4ca",
+              "_testId": "urn:uuid:2f2ade0d-270f-4d0a-9518-756a99657b6f",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -988,14 +984,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111257,
+                "_idleStart": 1164,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 58,
+              "duration": 31,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -1009,7 +1005,7 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
               "state": "pending"
             },
@@ -1026,9 +1022,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:9e3badad-6e7b-4fae-9172-e631208d8d07",
+              "_testId": "urn:uuid:0362ac48-4ea7-422c-9c8e-8a830443943d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1039,14 +1035,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111316,
+                "_idleStart": 1195,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 59,
+              "duration": 29,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -1061,9 +1057,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:41038ca1-616d-4e4d-a94a-3736d7b2f407",
+              "_testId": "urn:uuid:44688225-47a7-4902-a79a-f3b44ce5aa78",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1074,14 +1070,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111375,
+                "_idleStart": 1225,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 56,
+              "duration": 29,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -1096,9 +1092,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:4cf802ec-0ff6-4e7d-84ad-a59402916b2e",
+              "_testId": "urn:uuid:19158158-4d04-49af-81ea-81fd0b680ab6",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1109,14 +1105,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111431,
+                "_idleStart": 1254,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 199,
+              "duration": 40,
               "state": "passed",
-              "speed": "slow"
+              "speed": "medium"
             },
             {
               "type": "test",
@@ -1131,9 +1127,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:7d1f30b4-a03b-4444-9dab-ce887240101f",
+              "_testId": "urn:uuid:bdcece37-ffdd-40f8-a1bc-b849e4f93328",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1144,14 +1140,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111630,
+                "_idleStart": 1295,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 60,
+              "duration": 30,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -1166,9 +1162,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:e8b397cf-9015-4378-af13-5fee10c2a615",
+              "_testId": "urn:uuid:bb57f1d8-7252-4153-aacf-90964373a98d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1179,14 +1175,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111690,
+                "_idleStart": 1324,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 64,
+              "duration": 36,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             }
           ],
           "root": false,
@@ -1202,9 +1198,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "nLa_8YdM03THCUEr-rl09",
+          "parent": "Gw70vEbkic2esHDN7PAbz",
           "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-          "_testId": "urn:uuid:e2b728ae-adac-4ff1-b425-2a274009e66d"
+          "_testId": "urn:uuid:db185f28-ced6-4e48-8fcd-0df3cbaff3d1"
         },
         {
           "title": "SpruceID",
@@ -1224,9 +1220,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:dbf010ee-b760-4c3a-9de8-7a5e13c3800f",
+              "_testId": "urn:uuid:864ffce4-7c9f-48fe-b44c-084397933f77",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1237,7 +1233,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111755,
+                "_idleStart": 1360,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1259,9 +1255,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:092f4bf2-16b4-41a8-8456-1a59e55c1d1b",
+              "_testId": "urn:uuid:d1f3935e-0654-486e-ac2d-1129866d7cc8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1272,19 +1268,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111755,
+                "_idleStart": 1361,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 153,
+              "duration": 49,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1300,9 +1296,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:f79db45c-1861-443c-a3f3-bfb57f51c8af",
+              "_testId": "urn:uuid:2c882f76-4a14-457a-9e1e-d4057eaae8ab",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1313,7 +1309,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111908,
+                "_idleStart": 1410,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1335,9 +1331,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:36278c5f-58ea-4654-8902-784692725775",
+              "_testId": "urn:uuid:a5a92621-eb1c-4ca2-b3a5-018f0d7c154d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1348,19 +1344,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111909,
+                "_idleStart": 1410,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 116,
+              "duration": 20,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1376,9 +1372,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:fd5a1e41-b51b-479a-914d-51b5b77535cb",
+              "_testId": "urn:uuid:eecd288f-62d8-464b-b65a-806d3f23d5b4",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1389,12 +1385,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112026,
+                "_idleStart": 1431,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -1411,9 +1407,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:5c6522da-5ab8-4091-9d89-17382f8132bf",
+              "_testId": "urn:uuid:3a54db63-b875-4f07-aac0-7eb4f201b08e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1424,19 +1420,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112026,
+                "_idleStart": 1431,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 146,
+              "duration": 20,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1452,9 +1448,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:e893cc35-cc6c-44a0-8c91-9fb660c9a3d1",
+              "_testId": "urn:uuid:ea972b07-e3f9-4faf-ba0a-68c800849df9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1465,7 +1461,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112173,
+                "_idleStart": 1452,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1487,9 +1483,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:f73a5e8c-1db1-49db-b871-d7c7528755bc",
+              "_testId": "urn:uuid:b91218d5-c0f8-498c-8b2a-42e0080d504c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1500,19 +1496,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112173,
+                "_idleStart": 1452,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 123,
+              "duration": 19,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1528,9 +1524,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:df33afdd-44a2-4b4a-810c-1297c8badf9b",
+              "_testId": "urn:uuid:57e1203d-dfa4-44f1-bc58-7c8a6f661171",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1541,19 +1537,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112296,
+                "_idleStart": 1472,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 128,
+              "duration": 19,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected resolution of did:key:@ to return a response: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1569,9 +1565,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:c9844efe-87f1-454b-8400-5dd9b652bde1",
+              "_testId": "urn:uuid:fb63eab0-8e7b-44e4-b634-e7ad24d87c34",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1582,19 +1578,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112424,
+                "_idleStart": 1491,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 129,
+              "duration": 18,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1609,7 +1605,7 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
               "state": "pending"
             },
@@ -1626,9 +1622,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:835ee285-1a58-4cc7-a969-3228500ce03b",
+              "_testId": "urn:uuid:61ee4d7e-68f2-4c88-b372-bea8422d22c9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1639,19 +1635,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112553,
+                "_idleStart": 1509,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 505,
+              "duration": 340,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1667,9 +1663,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:ba26ff57-e4f2-4e19-8be5-6ad276ba179a",
+              "_testId": "urn:uuid:eb1bf67d-2986-4b96-b4c6-915317e00dd5",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1680,22 +1676,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 113058,
+                "_idleStart": 1849,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 130,
+              "duration": 19,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response{ size: +0, data: { …(5) }, …(2) } to not exist",
+                "message": "Expected no response: expected Response{ data: { …(5) }, …(3) } to not exist",
                 "showDiff": false,
-                "actual": {
-                  "size": 0
-                },
+                "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response{ size: +0, data: { …(5) }, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected no response: expected Response{ data: { …(5) }, …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1711,9 +1705,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:276fcff1-c924-4087-93af-ace2292ed491",
+              "_testId": "urn:uuid:fcd60499-0f5d-4b03-8394-b5dae4e9bf53",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1724,22 +1718,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 113190,
+                "_idleStart": 1868,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 59,
+              "duration": 18,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response{ size: +0, …(2) } to not exist",
+                "message": "Expected no response: expected Response{ …(3) } to not exist",
                 "showDiff": false,
-                "actual": {
-                  "size": 0
-                },
+                "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response{ size: +0, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected no response: expected Response{ …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1755,9 +1747,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:02039daa-a7a0-4e6f-80af-06bc77a925f1",
+              "_testId": "urn:uuid:acd7cba8-bb8b-4f73-bcd4-3a334fc41ee8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1768,19 +1760,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 113249,
+                "_idleStart": 1887,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 566,
+              "duration": 336,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -1796,9 +1788,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:431a914f-8b3b-4bf5-8bf1-79deb0d7dc22",
+              "_testId": "urn:uuid:5d73f36e-7362-4f27-a1c3-7d1e87a6be7e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1809,18 +1801,18 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 113816,
+                "_idleStart": 2224,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 132,
+              "duration": 31,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected DID Resolver response to have data.: expected undefined to exist",
                 "showDiff": false,
-                "stack": "AssertionError: Expected DID Resolver response to have data.: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:17:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected DID Resolver response to have data.: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:17:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ],
@@ -1837,9 +1829,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "nLa_8YdM03THCUEr-rl09",
+          "parent": "Gw70vEbkic2esHDN7PAbz",
           "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-          "_testId": "urn:uuid:a30e43ec-0380-46b6-be83-2e2642fdb495"
+          "_testId": "urn:uuid:6c7b4ac8-4142-49e3-a118-d7cd4f6b6329"
         }
       ],
       "root": false,
@@ -1855,7 +1847,7 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "gD_YpC5KB0L5teg_YbppM",
+      "parent": "jgoc_Vz_MqJPkyOJrptj3",
       "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
       "summary": {},
       "matrix": true,
@@ -1863,7 +1855,7 @@
       "rowLabel": "Test Name",
       "columnLabel": "did:key Resolver",
       "reportData": [],
-      "_testId": "urn:uuid:d2f75018-4d4d-4d82-8421-bddd0554b99d",
+      "_testId": "urn:uuid:e95f5385-e14d-4775-a151-623d15a15436",
       "columns": [
         "Danube Tech",
         "Digital Bazaar",
@@ -1886,9 +1878,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:2b19a1f5-2120-44cd-9ac3-63c6f6e029e5",
+              "_testId": "urn:uuid:30b8f7c1-ad4e-46d4-83fd-7176a3f43072",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1899,12 +1891,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 375,
+                "_idleStart": 305,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 3,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -1921,9 +1913,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:2a492676-7261-4d05-b157-c68db04330fb",
+              "_testId": "urn:uuid:b93d5ea7-7271-4fb6-88ff-0fcfabd126de",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1934,7 +1926,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110496,
+                "_idleStart": 845,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1956,9 +1948,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:dbf010ee-b760-4c3a-9de8-7a5e13c3800f",
+              "_testId": "urn:uuid:864ffce4-7c9f-48fe-b44c-084397933f77",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1969,7 +1961,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111755,
+                "_idleStart": 1360,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1996,9 +1988,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:20246b5a-c2c8-46e4-b0ca-2567c6f67cc5",
+              "_testId": "urn:uuid:bf7240b8-6a80-4fd0-afc9-cfc7c553cf23",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2009,53 +2001,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 377,
+                "_idleStart": 306,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10040,
-              "state": "failed",
-              "err": {
-                "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
-              }
-            },
-            {
-              "type": "test",
-              "title": "MUST raise `invalidDid` error if scheme is not `did`",
-              "body": "async function() {\n          this.test.cell = {columnId, rowId: this.test.title};\n          const noDidScheme = did.replace(/^did:/, 'notDid:');\n          const {result, error} = await didResolver.get({\n            url: makeUrl(noDidScheme),\n            headers\n          });\n          shouldErrorWithData(result, error);\n          const {data} = error;\n          shouldBeDidResolverResponse(data);\n          shouldHaveDidResolutionError(data, 'invalidDid');\n        }",
-              "async": 0,
-              "sync": true,
-              "_timeout": 15000,
-              "_slow": 75,
-              "_retries": -1,
-              "timedOut": false,
-              "_currentRetry": 0,
-              "pending": false,
-              "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
-              "ctx": null,
-              "_testId": "urn:uuid:34a311c7-ba10-4231-9295-c8673ce5caf9",
-              "_events": {},
-              "_eventsCount": 1,
-              "cell": {
-                "columnId": "Digital Bazaar",
-                "rowId": "MUST raise `invalidDid` error if scheme is not `did`"
-              },
-              "timer": {
-                "_idleTimeout": -1,
-                "_idlePrev": null,
-                "_idleNext": null,
-                "_idleStart": 110496,
-                "_onTimeout": null,
-                "_repeat": null,
-                "_destroyed": true
-              },
-              "duration": 251,
+              "duration": 342,
               "state": "passed",
               "speed": "slow"
             },
@@ -2072,9 +2023,44 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:092f4bf2-16b4-41a8-8456-1a59e55c1d1b",
+              "_testId": "urn:uuid:a30ce06d-23c4-4680-9fa3-04b8ba55dc71",
+              "_events": {},
+              "_eventsCount": 1,
+              "cell": {
+                "columnId": "Digital Bazaar",
+                "rowId": "MUST raise `invalidDid` error if scheme is not `did`"
+              },
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 845,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "duration": 160,
+              "state": "passed",
+              "speed": "slow"
+            },
+            {
+              "type": "test",
+              "title": "MUST raise `invalidDid` error if scheme is not `did`",
+              "body": "async function() {\n          this.test.cell = {columnId, rowId: this.test.title};\n          const noDidScheme = did.replace(/^did:/, 'notDid:');\n          const {result, error} = await didResolver.get({\n            url: makeUrl(noDidScheme),\n            headers\n          });\n          shouldErrorWithData(result, error);\n          const {data} = error;\n          shouldBeDidResolverResponse(data);\n          shouldHaveDidResolutionError(data, 'invalidDid');\n        }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 15000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
+              "ctx": null,
+              "_testId": "urn:uuid:d1f3935e-0654-486e-ac2d-1129866d7cc8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2085,19 +2071,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111755,
+                "_idleStart": 1361,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 153,
+              "duration": 49,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -2118,9 +2104,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:fa754eae-bbc5-40e5-8472-e49a094f97ef",
+              "_testId": "urn:uuid:21522ebd-c77e-42c3-8b2e-86542a2b7d73",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2131,42 +2117,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10420,
-                "_onTimeout": null,
-                "_repeat": null,
-                "_destroyed": true
-              },
-              "duration": 1,
-              "state": "passed",
-              "speed": "fast"
-            },
-            {
-              "type": "test",
-              "title": "The method MUST be the value `key`",
-              "body": "async function() {\n        this.test.cell = {columnId, rowId: this.test.title};\n        const {method} = splitDid({did});\n        should.exist(method, 'Expected did to have a method');\n        method.should.be.a('string', 'Expected method to be a string');\n        method.should.equal('key', 'Expected method to equal key');\n      }",
-              "async": 0,
-              "sync": true,
-              "_timeout": 15000,
-              "_slow": 75,
-              "_retries": -1,
-              "timedOut": false,
-              "_currentRetry": 0,
-              "pending": false,
-              "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
-              "ctx": null,
-              "_testId": "urn:uuid:0fed5004-179a-4810-b253-61969eb47229",
-              "_events": {},
-              "_eventsCount": 1,
-              "cell": {
-                "columnId": "Digital Bazaar",
-                "rowId": "The method MUST be the value `key`"
-              },
-              "timer": {
-                "_idleTimeout": -1,
-                "_idlePrev": null,
-                "_idleNext": null,
-                "_idleStart": 110748,
+                "_idleStart": 649,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2188,9 +2139,44 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:f79db45c-1861-443c-a3f3-bfb57f51c8af",
+              "_testId": "urn:uuid:74ca572f-5008-4743-a5b8-1c2efbc1d0ae",
+              "_events": {},
+              "_eventsCount": 1,
+              "cell": {
+                "columnId": "Digital Bazaar",
+                "rowId": "The method MUST be the value `key`"
+              },
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 1006,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast"
+            },
+            {
+              "type": "test",
+              "title": "The method MUST be the value `key`",
+              "body": "async function() {\n        this.test.cell = {columnId, rowId: this.test.title};\n        const {method} = splitDid({did});\n        should.exist(method, 'Expected did to have a method');\n        method.should.be.a('string', 'Expected method to be a string');\n        method.should.equal('key', 'Expected method to equal key');\n      }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 15000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
+              "ctx": null,
+              "_testId": "urn:uuid:2c882f76-4a14-457a-9e1e-d4057eaae8ab",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2201,7 +2187,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111908,
+                "_idleStart": 1410,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2228,9 +2214,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:c683ba77-fb67-43e8-a352-a9017e981b98",
+              "_testId": "urn:uuid:32299487-d097-4112-acbb-8f4c028fcee8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2241,20 +2227,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10421,
+                "_idleStart": 649,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
-              "state": "failed",
-              "err": {
-                "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
-              }
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -2269,9 +2249,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:cb517202-d40c-4f80-a353-692ae5b58222",
+              "_testId": "urn:uuid:ac3d812a-42f8-4e6b-8268-8ac8d8a8c28e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2282,12 +2262,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110748,
+                "_idleStart": 1006,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 203,
+              "duration": 34,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2296,7 +2276,7 @@
                 "actual": "invalidDid",
                 "expected": "methodNotSupported",
                 "operator": "strictEqual",
-                "stack": "AssertionError: expected 'invalidDid' to equal 'methodNotSupported'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: expected 'invalidDid' to equal 'methodNotSupported'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2312,9 +2292,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:36278c5f-58ea-4654-8902-784692725775",
+              "_testId": "urn:uuid:a5a92621-eb1c-4ca2-b3a5-018f0d7c154d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2325,19 +2305,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111909,
+                "_idleStart": 1410,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 116,
+              "duration": 20,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -2358,9 +2338,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:4917b4b5-fda5-494b-a869-70e51230e5f9",
+              "_testId": "urn:uuid:d4a8ac5c-f02d-43cc-8ae7-8c0450a32c33",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2371,12 +2351,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 20429,
+                "_idleStart": 670,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -2393,9 +2373,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:148d3bee-c1c0-4e7a-8dd3-7e7099e73160",
+              "_testId": "urn:uuid:6002b8a2-5755-437a-8856-1e410322c45f",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2406,7 +2386,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110952,
+                "_idleStart": 1040,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2428,9 +2408,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:fd5a1e41-b51b-479a-914d-51b5b77535cb",
+              "_testId": "urn:uuid:eecd288f-62d8-464b-b65a-806d3f23d5b4",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2441,12 +2421,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112026,
+                "_idleStart": 1431,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             }
@@ -2468,9 +2448,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:9fc759d8-ec63-4a88-9b20-c1893825506e",
+              "_testId": "urn:uuid:a25a5079-0731-4181-b8e0-89794ec4e402",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2481,19 +2461,21 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 20430,
+                "_idleStart": 671,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 23,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
+                "message": "expected 'methodNotSupported' to equal 'invalidDid'",
+                "showDiff": true,
+                "actual": "methodNotSupported",
+                "expected": "invalidDid",
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:115:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2509,9 +2491,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:48e79626-4a7f-4ab0-ad52-bd82d5ce9ca8",
+              "_testId": "urn:uuid:62f05607-4621-4c30-b6f0-26ef7722e835",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2522,12 +2504,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 110952,
+                "_idleStart": 1041,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 59,
+              "duration": 60,
               "state": "passed",
               "speed": "medium"
             },
@@ -2544,9 +2526,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:5c6522da-5ab8-4091-9d89-17382f8132bf",
+              "_testId": "urn:uuid:3a54db63-b875-4f07-aac0-7eb4f201b08e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2557,19 +2539,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112026,
+                "_idleStart": 1431,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 146,
+              "duration": 20,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -2590,9 +2572,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:47b6cd54-b604-4d78-99fd-bd9e8d7b3a42",
+              "_testId": "urn:uuid:63322325-d5e3-4ece-a378-1898c993b7e0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2603,12 +2585,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 30437,
+                "_idleStart": 697,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -2625,9 +2607,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:c910a779-86aa-4b66-9d00-0ab81b2a8ca8",
+              "_testId": "urn:uuid:4dc16bcb-4261-4ee0-bded-11aad3c1a6af",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2638,12 +2620,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111012,
+                "_idleStart": 1100,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -2660,9 +2642,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:e893cc35-cc6c-44a0-8c91-9fb660c9a3d1",
+              "_testId": "urn:uuid:ea972b07-e3f9-4faf-ba0a-68c800849df9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2673,7 +2655,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112173,
+                "_idleStart": 1452,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2700,9 +2682,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:89b38e1f-430d-4894-ac60-35ea4db465ef",
+              "_testId": "urn:uuid:082186c9-463a-4610-abf2-aa79e8a11768",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2713,19 +2695,21 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 30438,
+                "_idleStart": 697,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10004,
+              "duration": 20,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
+                "message": "expected 'methodNotSupported' to equal 'invalidDid'",
+                "showDiff": true,
+                "actual": "methodNotSupported",
+                "expected": "invalidDid",
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:141:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2741,9 +2725,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:4d49ecae-1085-4cb4-8968-2baf9bf69da3",
+              "_testId": "urn:uuid:3223654f-74f4-42ed-b002-40c3dd208fad",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2754,14 +2738,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111013,
+                "_idleStart": 1100,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 185,
+              "duration": 29,
               "state": "passed",
-              "speed": "slow"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -2776,9 +2760,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:f73a5e8c-1db1-49db-b871-d7c7528755bc",
+              "_testId": "urn:uuid:b91218d5-c0f8-498c-8b2a-42e0080d504c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2789,19 +2773,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112173,
+                "_idleStart": 1452,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 123,
+              "duration": 19,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -2822,9 +2806,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:4ad6cdc0-bf12-4a95-ab2f-39c4813c5851",
+              "_testId": "urn:uuid:9ab889b9-6528-422e-9311-3ea8a0a59d09",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2835,19 +2819,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 40443,
+                "_idleStart": 719,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 17,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected resolution of did:key:@ to return a response: expected undefined to exist",
+                "message": "Expected a didDocument: expected null to exist",
                 "showDiff": false,
+                "actual": null,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected a didDocument: expected null to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:161:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2863,9 +2848,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:5afd3031-3c1d-4f7e-bb6a-b57a88fdf1e1",
+              "_testId": "urn:uuid:5236dde2-3b8b-4fb1-b27d-02be17d2d714",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2876,14 +2861,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111198,
+                "_idleStart": 1129,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 59,
+              "duration": 32,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -2898,9 +2883,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:df33afdd-44a2-4b4a-810c-1297c8badf9b",
+              "_testId": "urn:uuid:57e1203d-dfa4-44f1-bc58-7c8a6f661171",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2911,19 +2896,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112296,
+                "_idleStart": 1472,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 128,
+              "duration": 19,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected resolution of did:key:@ to return a response: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -2944,9 +2929,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:7f057e8c-a038-4731-87e6-be2730a8ead8",
+              "_testId": "urn:uuid:80ff00cd-c9ee-4ff7-a647-cc7be4a258c0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2957,19 +2942,21 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 50451,
+                "_idleStart": 736,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 20,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
-                "showDiff": false,
+                "message": "expected 'methodNotSupported' to equal 'invalidPublicKeyLength'",
+                "showDiff": true,
+                "actual": "methodNotSupported",
+                "expected": "invalidPublicKeyLength",
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidPublicKeyLength'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2985,9 +2972,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:a51366a1-fa6f-4eac-9da6-12aa9174e4ca",
+              "_testId": "urn:uuid:2f2ade0d-270f-4d0a-9518-756a99657b6f",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2998,14 +2985,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111257,
+                "_idleStart": 1164,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 58,
+              "duration": 31,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -3020,9 +3007,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:c9844efe-87f1-454b-8400-5dd9b652bde1",
+              "_testId": "urn:uuid:fb63eab0-8e7b-44e4-b634-e7ad24d87c34",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3033,19 +3020,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112424,
+                "_idleStart": 1491,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 129,
+              "duration": 18,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3066,9 +3053,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:55171cd6-345a-4bf2-849a-85bb010036cd",
+              "_testId": "urn:uuid:a56f892a-507e-4839-bb7c-c43f99a31755",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3079,19 +3066,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 60458,
+                "_idleStart": 756,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 16,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:200:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -3107,9 +3094,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:9e3badad-6e7b-4fae-9172-e631208d8d07",
+              "_testId": "urn:uuid:0362ac48-4ea7-422c-9c8e-8a830443943d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3120,14 +3107,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111316,
+                "_idleStart": 1195,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 59,
+              "duration": 29,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -3142,9 +3129,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:835ee285-1a58-4cc7-a969-3228500ce03b",
+              "_testId": "urn:uuid:61ee4d7e-68f2-4c88-b372-bea8422d22c9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3155,19 +3142,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 112553,
+                "_idleStart": 1509,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 505,
+              "duration": 340,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3188,9 +3175,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:eab6551c-36f2-4518-bc8d-940fb02f7e42",
+              "_testId": "urn:uuid:283c3cc5-d727-4e4b-abe5-0545af63385c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3201,19 +3188,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 70466,
+                "_idleStart": 773,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 21,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected no response: expected Response{ data: { …(4) }, …(3) } to not exist",
                 "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "actual": {},
+                "operator": "notStrictEqual",
+                "stack": "AssertionError: Expected no response: expected Response{ data: { …(4) }, …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -3229,9 +3217,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:41038ca1-616d-4e4d-a94a-3736d7b2f407",
+              "_testId": "urn:uuid:44688225-47a7-4902-a79a-f3b44ce5aa78",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3242,14 +3230,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111375,
+                "_idleStart": 1225,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 56,
+              "duration": 29,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -3264,9 +3252,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:ba26ff57-e4f2-4e19-8be5-6ad276ba179a",
+              "_testId": "urn:uuid:eb1bf67d-2986-4b96-b4c6-915317e00dd5",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3277,22 +3265,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 113058,
+                "_idleStart": 1849,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 130,
+              "duration": 19,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response{ size: +0, data: { …(5) }, …(2) } to not exist",
+                "message": "Expected no response: expected Response{ data: { …(5) }, …(3) } to not exist",
                 "showDiff": false,
-                "actual": {
-                  "size": 0
-                },
+                "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response{ size: +0, data: { …(5) }, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected no response: expected Response{ data: { …(5) }, …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3313,9 +3299,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:688ea831-11e4-465e-8089-b46df3f9ae83",
+              "_testId": "urn:uuid:e4569260-7704-4812-9470-11b02359e2cc",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3326,19 +3312,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 80474,
+                "_idleStart": 796,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10007,
+              "duration": 16,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -3354,9 +3340,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:4cf802ec-0ff6-4e7d-84ad-a59402916b2e",
+              "_testId": "urn:uuid:19158158-4d04-49af-81ea-81fd0b680ab6",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3367,14 +3353,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111431,
+                "_idleStart": 1254,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 199,
+              "duration": 40,
               "state": "passed",
-              "speed": "slow"
+              "speed": "medium"
             },
             {
               "type": "test",
@@ -3389,9 +3375,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:276fcff1-c924-4087-93af-ace2292ed491",
+              "_testId": "urn:uuid:fcd60499-0f5d-4b03-8394-b5dae4e9bf53",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3402,22 +3388,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 113190,
+                "_idleStart": 1868,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 59,
+              "duration": 18,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response{ size: +0, …(2) } to not exist",
+                "message": "Expected no response: expected Response{ …(3) } to not exist",
                 "showDiff": false,
-                "actual": {
-                  "size": 0
-                },
+                "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response{ size: +0, …(2) } to not exist\n    at Object.should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected no response: expected Response{ …(3) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3438,9 +3422,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:03a19219-1ed6-406c-9684-84382e18c98f",
+              "_testId": "urn:uuid:5a80d042-23d7-416b-83e9-7f1ba04eb922",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3451,19 +3435,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 90482,
+                "_idleStart": 812,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10006,
+              "duration": 16,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -3479,9 +3463,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:7d1f30b4-a03b-4444-9dab-ce887240101f",
+              "_testId": "urn:uuid:bdcece37-ffdd-40f8-a1bc-b849e4f93328",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3492,14 +3476,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111630,
+                "_idleStart": 1295,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 60,
+              "duration": 30,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -3514,9 +3498,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:02039daa-a7a0-4e6f-80af-06bc77a925f1",
+              "_testId": "urn:uuid:acd7cba8-bb8b-4f73-bcd4-3a334fc41ee8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3527,19 +3511,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 113249,
+                "_idleStart": 1887,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 566,
+              "duration": 336,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected an error with data: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3560,9 +3544,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IxuGs5_C3v6GG78vxza3_",
+              "parent": "0BWIyNNxR3nVH3xZJK2L-",
               "ctx": null,
-              "_testId": "urn:uuid:d86ee3a4-76f1-4916-aaf0-0ab6deb19ee0",
+              "_testId": "urn:uuid:c91ba326-e3e9-44c9-8621-5248d07ffe22",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3573,19 +3557,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 100489,
+                "_idleStart": 828,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10006,
+              "duration": 16,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected a result: expected undefined to exist",
                 "showDiff": false,
                 "operator": "strictEqual",
-                "stack": "AssertionError: Expected a result: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected a result: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -3601,9 +3585,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "xCQPGiMFM-I20hCm5BezK",
+              "parent": "YLFGMtyCXjJH_xmfZlkRl",
               "ctx": null,
-              "_testId": "urn:uuid:e8b397cf-9015-4378-af13-5fee10c2a615",
+              "_testId": "urn:uuid:bb57f1d8-7252-4153-aacf-90964373a98d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3614,14 +3598,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 111690,
+                "_idleStart": 1324,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 64,
+              "duration": 36,
               "state": "passed",
-              "speed": "medium"
+              "speed": "fast"
             },
             {
               "type": "test",
@@ -3636,9 +3620,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "DfpQ6rv-yEZ00fW2Cj2l2",
+              "parent": "zoVh-ohDxUw8flrQWDxSG",
               "ctx": null,
-              "_testId": "urn:uuid:431a914f-8b3b-4bf5-8bf1-79deb0d7dc22",
+              "_testId": "urn:uuid:5d73f36e-7362-4f27-a1c3-7d1e87a6be7e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3649,18 +3633,18 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 113816,
+                "_idleStart": 2224,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 132,
+              "duration": 31,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "Expected DID Resolver response to have data.: expected undefined to exist",
                 "showDiff": false,
-                "stack": "AssertionError: Expected DID Resolver response to have data.: expected undefined to exist\n    at Object.should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:17:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+                "stack": "AssertionError: Expected DID Resolver response to have data.: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:17:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3703,9 +3687,9 @@
   },
   "title": "did:key Method Interoperability Report 1.0",
   "stats": [
-    "Tests passed 22/45 49%",
-    "Tests failed 23/45 51%",
-    "Failures 23",
+    "Tests passed 24/45 53%",
+    "Tests failed 21/45 47%",
+    "Failures 21",
     "Tests skipped 3",
     "Total tests 48"
   ]
