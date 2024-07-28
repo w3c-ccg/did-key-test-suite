@@ -69,6 +69,89 @@
         </style>
   </head>
   <body>
+    <!-- these are not in <head> in order to override Respec injected styles -->
+    <style>
+      .hide {
+        display: none;
+      }
+      details.hide {
+        display: none;
+      }
+      details.err {
+        position: absolute;
+        z-index: 1;
+        white-space: nowrap;
+        background: white;
+        border: 1px solid darkgray;
+        text-align: left;
+        padding: .1em .5em;
+        box-shadow: 0 0 5px darkgray;
+        min-width: 25em;
+      }
+      details.err summary {
+        color: indianred;
+      }
+      .no-space-around {
+        margin: 0;
+        padding: 0;
+      }
+      pre {
+        width: 75%;
+        white-space: pre-line;
+        word-break: break-all;
+        margin: 0;
+        padding: 0;
+        background: white;
+      }
+      code > span.hljs-attr {
+        margin-left: 1rem;
+      }
+      .no-wrap {
+        white-space: nowrap;
+      }
+      td.optional {
+        background-color: #b9b7b7;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .text-left {
+        text-align: left;
+      }
+      .text-center, th.text-center {
+        text-align: center;
+      }
+      .qr-code {
+        margin-left: 25px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .small-font {
+        font-size: 0.75rem;
+      }
+      .highlight-on-hover:hover {
+        background-color: yellow;
+        cursor: default;
+      }
+      .highlight-on-hover:hover + .relative-pos > .err {
+        display: block;
+      }
+      pre, code.hljs {
+        overflow: auto;
+      }
+      .relative-pos {
+        position: relative;
+        width: 0.5rem;
+        height: 0.5rem;
+        z-index: 1;
+      }
+      .relative-pos:hover > .err {
+        display: block;
+      }
+    </style>
     <section id="abstract">
       <p>
       The purpose of this test suite is to demonstrate a path to interoperability
@@ -99,21 +182,48 @@
       Total tests 64
       </p>
       <p>
-        These tests were run on <time>21 July 2024 at 5:16 am UTC</time>
+        These tests were run on <time>28 July 2024 at 5:16 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
-        <ul>
-          <li>
-    ✓ - Success
-          </li>
-          <li>
-    ❌ - Error
-          </li>
-          <li>
-    — - Implementation explicitly does not support this feature
-          </li>
-        </ul>
+        <table>
+          <tr>
+            <td class="pending not-optional highlight-on-hover text-center">
+              <div class="highlight-on-hover">🚫</div>
+            </td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td class="passed not-optional highlight-on-hover text-center">
+              <div class="highlight-on-hover">✓</div>
+            </td>
+            <td>Passed</td>
+          </tr>
+          <tr>
+            <td class="failed not-optional highlight-on-hover text-center">
+              <div class="highlight-on-hover">❌</div>
+            </td>
+            <td>Failed</td>
+          </tr>
+          <tr>
+            <td class="accessDenied not-optional highlight-on-hover text-center">
+              <div class="highlight-on-hover">⊘</div>
+            </td>
+            <td>Access Denied</td>
+          </tr>
+          <tr>
+            <td class="timeout not-optional highlight-on-hover text-center">
+              <div class="highlight-on-hover">⏱</div>
+            </td>
+            <td>Timeout</td>
+          </tr>
+          <tr>
+            <td class="notImplemented not-optional highlight-on-hover text-center">
+              <div class="highlight-on-hover">—</div>
+            </td>
+            <td>Not Implemented</td>
+          </tr>
+        </table>
       </section>
     
       <p>
@@ -124,53 +234,6 @@
       <!--- This will take the tests and display them as matrices -->
         <section class="informative" id="did:key Create Operation">
           <h2>did:key Create Operation</h2>
-          <style>
-            .no-wrap {
-              white-space: nowrap;
-            }
-            td.optional {
-              background-color: #b9b7b7;
-            }
-           .text-right {
-              text-align: right;
-            }
-           .text-left {
-              text-align: left;
-            }
-           .text-center, th.text-center {
-             text-align: center;
-           }
-           .qr-code {
-             margin-left: 25px;
-           }
-           .row {
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-           }
-           .small-font {
-             font-size: 0.75rem;
-           }
-           .highlight-on-hover:hover {
-             background-color: yellow;
-             cursor: default;
-           }
-           .highlight-on-hover:hover + .relative-pos > .err {
-             display: block;
-           }
-           pre, code.hljs {
-             overflow: auto;
-           }
-           .relative-pos {
-             position: relative;
-             width: 0.5rem;
-             height: 0.5rem;
-             z-index: 1;
-           }
-           .relative-pos:hover > .err {
-             display: block;
-           }
-          </style>
           <div class="row">
             <table class="simple">
               <thead>
@@ -190,2192 +253,626 @@
               <tbody>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">The scheme MUST be the value &#x60;did&#x60;</td>
+                <td class="subtest">
+                    The scheme MUST be the value &#x60;did&#x60;
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">MUST raise &#x60;invalidDid&#x60; error if scheme is not &#x60;did&#x60;</td>
+                <td class="subtest">
+                    MUST raise &#x60;invalidDid&#x60; error if scheme is not &#x60;did&#x60;
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">The method MUST be the value &#x60;key&#x60;</td>
+                <td class="subtest">
+                    The method MUST be the value &#x60;key&#x60;
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">MUST raise &#x60;methodNotSupported&#x60; error if method is not &#x60;key&#x60;</td>
+                <td class="subtest">
+                    MUST raise &#x60;methodNotSupported&#x60; error if method is not &#x60;key&#x60;
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected 'invalidDid' to equal 'methodNotSupported'",
-                      "stack": "AssertionError: expected 'invalidDid' to equal 'methodNotSupported'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected &#x27;invalidDid&#x27; to equal &#x27;methodNotSupported&#x27;:</summary>
+                        <pre>AssertionError: expected &#x27;invalidDid&#x27; to equal &#x27;methodNotSupported&#x27;
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)
+                        at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:93:11)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b8068f1310c2-ORD', connection: 'keep-alive', 'content-length': '42', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b8068f1310c2-ORD', connection: 'keep-alive', 'content-length': '42', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa266697d852943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;42&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa266697d852943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;42&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">The version MUST be convertible to a positive integer value.</td>
+                <td class="subtest">
+                    The version MUST be convertible to a positive integer value.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">MUST raise &#x60;invalidDid&#x60; if version is not convertible to a positive integer value.</td>
+                <td class="subtest">
+                    MUST raise &#x60;invalidDid&#x60; if version is not convertible to a positive integer value.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected 'methodNotSupported' to equal 'invalidDid'",
-                      "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:115:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected &#x27;methodNotSupported&#x27; to equal &#x27;invalidDid&#x27;:</summary>
+                        <pre>AssertionError: expected &#x27;methodNotSupported&#x27; to equal &#x27;invalidDid&#x27;
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)
+                        at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:115:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b806cf8310c2-ORD', connection: 'keep-alive', 'content-length': '34', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b806cf8310c2-ORD', connection: 'keep-alive', 'content-length': '34', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa26669ddce2943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa26669ddce2943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">The multibaseValue MUST be a string and begin with the letter &#x60;z&#x60;</td>
+                <td class="subtest">
+                    The multibaseValue MUST be a string and begin with the letter &#x60;z&#x60;
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">MUST raise &#x60;invalidDid&#x60; if the multibaseValue does not begin with the letter &#x60;z&#x60;.</td>
+                <td class="subtest">
+                    MUST raise &#x60;invalidDid&#x60; if the multibaseValue does not begin with the letter &#x60;z&#x60;.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected 'methodNotSupported' to equal 'invalidDid'",
-                      "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidDid'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:141:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected &#x27;methodNotSupported&#x27; to equal &#x27;invalidDid&#x27;:</summary>
+                        <pre>AssertionError: expected &#x27;methodNotSupported&#x27; to equal &#x27;invalidDid&#x27;
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)
+                        at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:141:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b8071fe610c2-ORD', connection: 'keep-alive', 'content-length': '34', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b8071fe610c2-ORD', connection: 'keep-alive', 'content-length': '34', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666a2e232943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666a2e232943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">If &quot;didDocument.id&quot; is not a valid DID, an &#x60;invalidDid&#x60; error MUST be raised</td>
+                <td class="subtest">
+                    If &quot;didDocument.id&quot; is not a valid DID, an &#x60;invalidDid&#x60; error MUST be raised
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected a didDocument: expected null to exist",
-                      "stack": "AssertionError: Expected a didDocument: expected null to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:161:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected a didDocument: expected null to exist:</summary>
+                        <pre>AssertionError: Expected a didDocument: expected null to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:161:16)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected a didDocument: expected null to exist",
-                      "stack": "AssertionError: Expected a didDocument: expected null to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:161:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected a didDocument: expected null to exist:</summary>
+                        <pre>AssertionError: Expected a didDocument: expected null to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:161:16)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected resolution of did:key:@ to return a response: expected undefined to exist",
-                      "stack": "AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected resolution of did:key:@ to return a response: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">If the byte length of rawPublicKeyBytes does not match the expected public key length for the associated multicodecValue, an &#x60;invalidPublicKeyLength&#x60; error MUST be raised.</td>
+                <td class="subtest">
+                    If the byte length of rawPublicKeyBytes does not match the expected public key length for the associated multicodecValue, an &#x60;invalidPublicKeyLength&#x60; error MUST be raised.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected 'methodNotSupported' to equal 'invalidPublicKeyLength'",
-                      "stack": "AssertionError: expected 'methodNotSupported' to equal 'invalidPublicKeyLength'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected &#x27;methodNotSupported&#x27; to equal &#x27;invalidPublicKeyLength&#x27;:</summary>
+                        <pre>AssertionError: expected &#x27;methodNotSupported&#x27; to equal &#x27;invalidPublicKeyLength&#x27;
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)
+                        at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected 'invalidDid' to equal 'invalidPublicKeyLength'",
-                      "stack": "AssertionError: expected 'invalidDid' to equal 'invalidPublicKeyLength'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected &#x27;invalidDid&#x27; to equal &#x27;invalidPublicKeyLength&#x27;:</summary>
+                        <pre>AssertionError: expected &#x27;invalidDid&#x27; to equal &#x27;invalidPublicKeyLength&#x27;
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)
+                        at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b807a8a210c2-ORD', connection: 'keep-alive', 'content-encoding': 'gzip', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare', 'transfer-encoding': 'chunked' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b807a8a210c2-ORD', connection: 'keep-alive', 'content-encoding': 'gzip', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare', 'transfer-encoding': 'chunked' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666aeebd2943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666aeebd2943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">If verificationMethod.id is not a valid DID URL, an &#x60;invalidDidUrl&#x60; error MUST be raised.</td>
+                <td class="subtest">
+                    If verificationMethod.id is not a valid DID URL, an &#x60;invalidDidUrl&#x60; error MUST be raised.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected { …(4) } to have property 'didDocument'",
-                      "stack": "AssertionError: expected { …(4) } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:199:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected { …(4) } to have property &#x27;didDocument&#x27;:</summary>
+                        <pre>AssertionError: expected { …(4) } to have property &#x27;didDocument&#x27;
+                        at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:199:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected { detail: 'Not Found' } to have property 'didDocument'",
-                      "stack": "AssertionError: expected { detail: 'Not Found' } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:199:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected { detail: &#x27;Not Found&#x27; } to have property &#x27;didDocument&#x27;:</summary>
+                        <pre>AssertionError: expected { detail: &#x27;Not Found&#x27; } to have property &#x27;didDocument&#x27;
+                        at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:199:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected an error with data: expected undefined to exist",
-                      "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">If publicKeyFormat is not known to the implementation, an &#x60;unsupportedPublicKeyType&#x60; error MUST be raised.</td>
+                <td class="subtest">
+                    If publicKeyFormat is not known to the implementation, an &#x60;unsupportedPublicKeyType&#x60; error MUST be raised.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\";charset=utf-8', date: 'Sun, 21 Jul 2024 05:16:24 GMT', 'transfer-encoding': 'chunked' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\";charset=utf-8', date: 'Sun, 21 Jul 2024 05:16:24 GMT', 'transfer-encoding': 'chunked' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;;charset&#x3D;utf-8&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:55 GMT&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;;charset&#x3D;utf-8&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:55 GMT&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected 'invalidDid' to equal 'unsupportedPublicKeyType'",
-                      "stack": "AssertionError: expected 'invalidDid' to equal 'unsupportedPublicKeyType'\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)\n    at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:213:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected &#x27;invalidDid&#x27; to equal &#x27;unsupportedPublicKeyType&#x27;:</summary>
+                        <pre>AssertionError: expected &#x27;invalidDid&#x27; to equal &#x27;unsupportedPublicKeyType&#x27;
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)
+                        at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:213:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b808395910c2-ORD', connection: 'keep-alive', 'content-length': '37', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b808395910c2-ORD', connection: 'keep-alive', 'content-length': '37', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666b9f6c2943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;37&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666b9f6c2943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;37&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">For Signature Verification Methods, if options.enableExperimentalPublicKeyTypes is set to false and publicKeyFormat is not Multikey, JsonWebKey2020, or Ed25519VerificationKey2020, an &#x60;invalidPublicKeyType&#x60; error MUST be raised.</td>
+                <td class="subtest">
+                    For Signature Verification Methods, if options.enableExperimentalPublicKeyTypes is set to false and publicKeyFormat is not Multikey, JsonWebKey2020, or Ed25519VerificationKey2020, an &#x60;invalidPublicKeyType&#x60; error MUST be raised.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
-                      "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected property didDereferencingMetadata to exist: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)
+                        at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
-                      "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected property didDereferencingMetadata to exist: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)
+                        at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b80889a410c2-ORD', connection: 'keep-alive', 'content-encoding': 'gzip', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare', 'transfer-encoding': 'chunked' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b80889a410c2-ORD', connection: 'keep-alive', 'content-encoding': 'gzip', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare', 'transfer-encoding': 'chunked' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666bffac2943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666bffac2943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">For Encryption Verification Methods, if options.enableExperimentalPublicKeyTypes is set to false and publicKeyFormat is not Multikey, JsonWebKey2020, or X25519KeyAgreementKey2020, an &#x60;invalidPublicKeyType&#x60; error MUST be raised.</td>
+                <td class="subtest">
+                    For Encryption Verification Methods, if options.enableExperimentalPublicKeyTypes is set to false and publicKeyFormat is not Multikey, JsonWebKey2020, or X25519KeyAgreementKey2020, an &#x60;invalidPublicKeyType&#x60; error MUST be raised.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
-                      "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected property didDereferencingMetadata to exist: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)
+                        at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected property didDereferencingMetadata to exist: expected undefined to exist",
-                      "stack": "AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)\n    at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected property didDereferencingMetadata to exist: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)
+                        at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b808ca0410c2-ORD', connection: 'keep-alive', 'content-length': '32', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cf-cache-status': 'DYNAMIC', 'cf-ray': '8a68b808ca0410c2-ORD', connection: 'keep-alive', 'content-length': '32', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', date: 'Sun, 21 Jul 2024 05:16:26 GMT', server: 'cloudflare' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666c4fe92943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;32&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, &#x27;cf-ray&#x27;: &#x27;8aa2666c4fe92943-ORD&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;content-length&#x27;: &#x27;32&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, date: &#x27;Sun, 28 Jul 2024 05:16:57 GMT&#x27;, server: &#x27;cloudflare&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">If verificationMethod.controller is not a valid DID, an &#x60;invalidDid&#x60; error MUST be raised.</td>
+                <td class="subtest">
+                    If verificationMethod.controller is not a valid DID, an &#x60;invalidDid&#x60; error MUST be raised.
+                </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected a result: expected undefined to exist",
-                      "stack": "AssertionError: Expected a result: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected a result: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected a result: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "Expected a result: expected undefined to exist",
-                      "stack": "AssertionError: Expected a result: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>Expected a result: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected a result: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
-                      <style>
-                       .hide {
-                         display: none;
-                       }
-                       .err {
-                         position: relative;
-                         z-index: 1;
-                         width: 50rem;
-                         right: calc(0% + 15rem);
-                         background: rgba(0, 0, 0, 0.0);
-                       }
-                       .no-space-around {
-                         margin: 0;
-                         padding: 0;
-                       }
-                       pre {
-                         width: 75%;
-                         white-space: pre-line;
-                         word-break: break-all;
-                         margin: 0;
-                         padding: 0;
-                         background: white;
-                       }
-                       code > span.hljs-attr {
-                         margin-left: 1rem;
-                       }
-                      </style>
-                      <span class="err hide no-space-around">
-                        <pre>{
-                      "name": "AssertionError",
-                      "message": "expected { Success: { …(3) } } to have property 'didDocument'",
-                      "stack": "AssertionError: expected { Success: { …(3) } } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-                    }</pre>
-                      </span>
+                      <details class="err hide">
+                        <summary>expected { Success: { …(3) } } to have property &#x27;didDocument&#x27;:</summary>
+                        <pre>AssertionError: expected { Success: { …(3) } } to have property &#x27;didDocument&#x27;
+                        at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:9)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
               </tr>
