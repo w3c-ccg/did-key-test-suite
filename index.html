@@ -167,13 +167,13 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 32/60 53%
+      Tests passed 28/60 47%
       </p>
       <p>
-      Tests failed 28/60 47%
+      Tests failed 32/60 53%
       </p>
       <p>
-      Failures 28
+      Failures 32
       </p>
       <p>
       Tests skipped 4
@@ -182,7 +182,7 @@
       Total tests 64
       </p>
       <p>
-        These tests were run on <time>1 September 2024 at 5:17 am UTC</time>
+        These tests were run on <time>8 September 2024 at 5:18 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -294,9 +294,19 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:67:11)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -364,17 +374,27 @@
                       </details>
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:48 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;42&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbccacf9cf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:48 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;42&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbccacf9cf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;42&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a7fcc08d02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;42&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a7fcc08d02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:90:11)
@@ -434,17 +454,27 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbcd3d59cf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbcd3d59cf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a805c6ed02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a805c6ed02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:112:9)
@@ -504,17 +534,27 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbcdbdcfcf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbcdbdcfcf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a80dcf1d02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;34&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a80dcf1d02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:138:9)
@@ -550,11 +590,13 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected a didDocument: expected null to exist:</summary>
-                        <pre>AssertionError: Expected a didDocument: expected null to exist
+                        <summary>Expected resolution of did:key:@ to return a response: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected resolution of did:key:@ to return a response: expected undefined to exist
                         at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:161:16)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:154:16)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
                       </details>
                     </div>
                   </td>
@@ -599,12 +641,14 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>expected &#x27;invalidDid&#x27; to equal &#x27;invalidPublicKeyLength&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;invalidDid&#x27; to equal &#x27;invalidPublicKeyLength&#x27;
-                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)
-                        at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
                       </details>
                     </div>
                   </td>
@@ -612,8 +656,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbceded1cf09-SJC&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbceded1cf09-SJC&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a81ede0d02d-SJC&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a81ede0d02d-SJC&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:172:9)
@@ -649,11 +693,14 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>expected { detail: &#x27;Not Found&#x27; } to have property &#x27;didDocument&#x27;:</summary>
-                        <pre>AssertionError: expected { detail: &#x27;Not Found&#x27; } to have property &#x27;didDocument&#x27;
-                        at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:22:20)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:199:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:198:9)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
                       </details>
                     </div>
                   </td>
@@ -681,8 +728,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:45 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;;charset&#x3D;utf-8&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:45 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;;charset&#x3D;utf-8&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:16:41 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;;charset&#x3D;utf-8&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:16:41 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;;charset&#x3D;utf-8&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)
@@ -699,12 +746,14 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>expected &#x27;invalidDid&#x27; to equal &#x27;unsupportedPublicKeyType&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;invalidDid&#x27; to equal &#x27;unsupportedPublicKeyType&#x27;
-                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:85:31)
-                        at shouldHaveDidResolutionError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:38:10)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:213:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
+                        at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
                       </details>
                     </div>
                   </td>
@@ -712,8 +761,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;37&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbcfefa2cf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;37&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbcfefa2cf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;37&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a82fecbd02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;37&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a82fecbd02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:212:9)
@@ -751,13 +800,14 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected property didDereferencingMetadata to exist: expected undefined to exist:</summary>
-                        <pre>AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
                         at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
-                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)
-                        at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:230:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
                       </details>
                     </div>
                   </td>
@@ -765,8 +815,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbd0783acf09-SJC&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbd0783acf09-SJC&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a837f61d02d-SJC&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a837f61d02d-SJC&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:229:9)
@@ -804,13 +854,14 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected property didDereferencingMetadata to exist: expected undefined to exist:</summary>
-                        <pre>AssertionError: Expected property didDereferencingMetadata to exist: expected undefined to exist
+                        <summary>Expected an error with data: expected undefined to exist:</summary>
+                        <pre>AssertionError: Expected an error with data: expected undefined to exist
                         at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
-                        at _shouldHaveMetadataError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:81:10)
-                        at shouldHaveDidDereferencingError (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:42:10)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:247:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:10)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
                       </details>
                     </div>
                   </td>
@@ -818,8 +869,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;32&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbd108b8cf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 01 Sep 2024 05:17:49 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;32&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bc2cbd108b8cf09-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;32&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a841fd5d02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
+                        <pre>AssertionError: Expected no response: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { date: &#x27;Sun, 08 Sep 2024 05:18:33 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/ld+json;profile&#x3D;&quot;https://w3id.org/did-resolution&quot;&#x27;, &#x27;content-length&#x27;: &#x27;32&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8bfc7a841fd5d02d-SJC&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:32:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:246:9)
@@ -859,7 +910,9 @@
                         <pre>AssertionError: Expected a result: expected undefined to exist
                         at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:258:16)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)</pre>
                       </details>
                     </div>
                   </td>
