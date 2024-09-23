@@ -11,34 +11,38 @@
 
 ## Background
 
-Provides interoperability tests for did resolvers that support [did:key Method](https://w3c-ccg.github.io/did-method-key/).
+Provides interoperability tests for did resolvers that support
+[`did:key` Method](https://w3c-ccg.github.io/did-method-key/).
 
 ## Install
 
-```js
-npm i
+```sh
+$ npm i
 ```
 
 ## Usage
 
-```
-npm test
+```sh
+$ npm test
 ```
 
 ## Test Data
-Currently our test suite works only with `did:key`s that are `ed25519` compatible.
-We will expand to support other formats of `did:key` when those libraries are available.
+Currently our test suite works only with `did:key`s that are `ed25519`
+compatible.  We will expand to support other formats of `did:key` when those
+libraries are available.
 
 ## Implementation
-To add your implementation to this test suite see the [README here.](https://github.com/w3c-ccg/vc-test-suite-implementations)
-Add the tag `did-key` to the did resolvers you want tested. Did Resolvers should be their own property in the json manifest:
+To add your implementation to this test suite see the
+[README here.](https://github.com/w3c-ccg/vc-test-suite-implementations)
+Add the tag `did-key` to the did resolvers you want tested. Did Resolvers should
+be their own property in the JSON manifest:
 
 ```js
   "issuers": [{
-    ... issuer settings here
+    // ... issuer settings here
   }],
   "verifiers": [{
-    ... verifier settings here
+    // ... verifier settings here
   }],
   "didResolvers": [{
     "id": "",
@@ -47,5 +51,8 @@ Add the tag `did-key` to the did resolvers you want tested. Did Resolvers should
   }]
 ```
 
-To run the tests, some implementations require client secrets
-that can be passed as env variables to the test script. To see which ones require client secrets, you can check the [vc-test-suite-implementations](https://github.com/w3c-ccg/vc-test-suite-implementations) library.
+To run the tests, some implementations require client secrets that can be passed
+as env variables to the test script. To see which ones require client secrets,
+you can check the
+[vc-test-suite-implementations](https://github.com/w3c-ccg/vc-test-suite-implementations)
+library.
