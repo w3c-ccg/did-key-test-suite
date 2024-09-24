@@ -1,3 +1,8 @@
+/*!
+ * Copyright (c) 2022 Digital Bazaar, Inc.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
 // default valid bs58 ed25519 did
 export const did = 'did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b';
 // The id of the keyAgreementKey used for encryption verification

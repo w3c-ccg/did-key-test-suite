@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Digital Bazaar, Inc. <support@digitalbazaar.com>
+
+Files: *.md *json *.hbs .eslintrc.cjs .gitignore package.json .editorconfig
+    .github/*
+Copyright: 2022-2024 Digital Bazaar, Inc.
+License: BSD-3-Clause

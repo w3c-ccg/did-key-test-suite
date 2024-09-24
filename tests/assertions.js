@@ -1,5 +1,7 @@
 /*!
  * Copyright (c) 2022 Digital Bazaar, Inc.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
  */
 import chai from 'chai';
 

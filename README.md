@@ -56,3 +56,7 @@ as env variables to the test script. To see which ones require client secrets,
 you can check the
 [vc-test-suite-implementations](https://github.com/w3c-ccg/vc-test-suite-implementations)
 library.
+
+## LICENSE
+
+[BSD-3-Clause](LICENSE) Copyright 2022-2024 Digital Bazaar, Inc.
