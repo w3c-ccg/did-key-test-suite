@@ -3,6 +3,7 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
+import * as chai from 'chai';
 import {
   assertionVmId,
   did,
@@ -17,7 +18,6 @@ import {
   shouldHaveDidResolutionError,
   shouldHaveValidVersion
 } from './assertions.js';
-import chai from 'chai';
 import {filterByTag} from 'vc-test-suite-implementations';
 import {splitDid} from './helpers.js';
 

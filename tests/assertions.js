@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import chai from 'chai';
+import * as chai from 'chai';
 
 const should = chai.should();
 
