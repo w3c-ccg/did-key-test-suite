@@ -24,12 +24,12 @@
     "url": "https://digitalbazaar.com/"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
-    "@digitalbazaar/mocha-w3c-interop-reporter": "^1.5.0",
-    "chai": "^4.3.6",
-    "mocha": "^10.0.0",
+    "@digitalbazaar/mocha-w3c-interop-reporter": "^1.10.0",
+    "chai": "^5.2.1",
+    "mocha": "11.7.0",
     "vc-test-suite-implementations": "github:w3c-ccg/vc-test-suite-implementations"
   },
   "devDependencies": {
