@@ -22,9 +22,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:858d1433-6e54-454b-a089-afb12fa3ada2",
+              "_testId": "urn:uuid:aa119391-a732-41b7-9ce0-5a01fe51e768",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -35,7 +35,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 435,
+                "_idleStart": 471,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -57,9 +57,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:24a67e01-7893-44a4-a96a-20e5f532ddf8",
+              "_testId": "urn:uuid:5abfa795-ec1c-4d08-ac41-4dae201aa6b0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -70,12 +70,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 437,
+                "_idleStart": 472,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 366,
+              "duration": 323,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -98,9 +98,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:966ca5e9-e110-4672-be6f-19f11b544c04",
+              "_testId": "urn:uuid:6c5738a2-2225-43a3-b99f-86a7263018dd",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -111,12 +111,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 806,
+                "_idleStart": 800,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -133,9 +133,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:71137ae6-15c9-44b7-9677-4729fa495f44",
+              "_testId": "urn:uuid:5086e8ec-40e0-4a55-a5ba-1b4f3b912ce5",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -146,12 +146,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 806,
+                "_idleStart": 800,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 20,
+              "duration": 40,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -174,9 +174,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:e591dd34-790a-4def-899d-01b4faaaea8d",
+              "_testId": "urn:uuid:222247f5-d8d0-46ce-9dc8-dc48458973fe",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -187,12 +187,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 827,
+                "_idleStart": 841,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -209,9 +209,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:7bdc9bed-b57e-4fde-b925-b1f903223232",
+              "_testId": "urn:uuid:07e60210-a9b5-4048-8154-7b3c2f22ee26",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -222,12 +222,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 828,
+                "_idleStart": 842,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 21,
+              "duration": 37,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -250,9 +250,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:94b7bb95-d91a-413a-8b22-64b7af1944fb",
+              "_testId": "urn:uuid:47b659cf-a6d7-4e61-b80b-3d7e384ca8fc",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -263,7 +263,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 849,
+                "_idleStart": 880,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -285,9 +285,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:11476983-ef51-4f28-bb97-030c2c0020c4",
+              "_testId": "urn:uuid:d706d89a-5f1a-4115-968c-eae6ec10968d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -298,12 +298,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 850,
+                "_idleStart": 880,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 18,
+              "duration": 38,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -326,9 +326,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:515908a3-114d-4366-88d5-feac3820697d",
+              "_testId": "urn:uuid:41436207-f6f7-4117-92ae-a9cfa03abb67",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -339,12 +339,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 869,
+                "_idleStart": 919,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 14,
+              "duration": 34,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -367,9 +367,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:0efe45bc-89a6-4f3e-b9e3-0fb6055f52a5",
+              "_testId": "urn:uuid:92ac58b2-2177-45c2-ac09-74e779aca720",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -380,12 +380,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 883,
+                "_idleStart": 954,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 29,
+              "duration": 37,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -407,7 +407,7 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
               "state": "pending"
             },
@@ -424,9 +424,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:59626911-9c2b-40e7-bc70-868e08939348",
+              "_testId": "urn:uuid:bcd9f7e0-2b50-4fa4-aab0-ab7f5108b116",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -437,19 +437,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 913,
+                "_idleStart": 992,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 18,
+              "duration": 39,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "expected { …(4) } to have property 'didDocument'",
                 "showDiff": false,
                 "actual": {
-                  "timestamp": "2026-01-18T05:25:06.761+00:00",
+                  "timestamp": "2026-01-25T05:29:07.317Z",
                   "status": 400,
                   "error": "Bad Request",
                   "path": "/1.0/identifiers/did%3Akey%3Az6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b%2F%5Ebar%5E%2F%3Fquery%3D%60%23z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b"
@@ -470,9 +470,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:34c82c8b-884a-4690-b4bd-2e486f8e46b1",
+              "_testId": "urn:uuid:5cbdbb97-1039-41cd-8792-5accdfc0248c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -483,20 +483,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 933,
+                "_idleStart": 1031,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 44,
+              "duration": 39,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:06 GMT', 'content-type': 'application/did-resolution;charset=utf-8', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'access-control-allow-origin': '*', Authorization: 'sanitized to prevent exposure of secrets' }, body: null, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:07 GMT', 'content-type': 'application/did-resolution;charset=utf-8', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'access-control-allow-origin': '*', Authorization: 'sanitized to prevent exposure of secrets' }, body: null, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:06 GMT', 'content-type': 'application/did-resolution;charset=utf-8', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'access-control-allow-origin': '*', Authorization: 'sanitized to prevent exposure of secrets' }, body: null, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:07 GMT', 'content-type': 'application/did-resolution;charset=utf-8', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'access-control-allow-origin': '*', Authorization: 'sanitized to prevent exposure of secrets' }, body: null, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -512,9 +512,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:35339ba4-6558-441a-9187-fd129546d29b",
+              "_testId": "urn:uuid:8d1b4f45-2621-4a27-b356-9f039e79ca8c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -525,7 +525,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 977,
+                "_idleStart": 1071,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -553,9 +553,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:508d341f-607d-46ad-b5b3-fbe3191062b4",
+              "_testId": "urn:uuid:4aef1ff5-8d82-45cc-bab1-07db49591644",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -566,12 +566,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1018,
+                "_idleStart": 1111,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 21,
+              "duration": 40,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -594,9 +594,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:30164b77-6418-4345-935d-23021bf6d015",
+              "_testId": "urn:uuid:788e3862-2363-4d19-bd18-6537aa36107e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -607,12 +607,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1040,
+                "_idleStart": 1152,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 18,
+              "duration": 38,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -636,9 +636,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "tEW-l5zUcQCuxTVl090jx",
+          "parent": "GxZMEYEnp3pp4rrCASr29",
           "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-          "_testId": "urn:uuid:1800f0d7-f89c-4316-a566-c4a4ea8bbd01"
+          "_testId": "urn:uuid:4257a39b-d369-4f64-84c1-95a6871d477a"
         },
         {
           "title": "Digital Bazaar, Inc.",
@@ -658,9 +658,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:fde17806-7644-47b9-953c-f774448d41a4",
+              "_testId": "urn:uuid:2b0718d9-ac29-4f65-b55e-c53a4a0e31d8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -671,7 +671,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1059,
+                "_idleStart": 1191,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -693,9 +693,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:5f28e58d-5931-4db1-8b06-3278956b827e",
+              "_testId": "urn:uuid:37222282-4889-4970-b72c-84215eb7d7b3",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -706,12 +706,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1059,
+                "_idleStart": 1192,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 200,
+              "duration": 275,
               "state": "passed",
               "speed": "slow"
             },
@@ -728,9 +728,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:85d2706d-de2a-49c8-b0a0-3b366c2781c1",
+              "_testId": "urn:uuid:8a0b15ea-b4ee-4470-8349-ec442288c6af",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -741,12 +741,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1259,
+                "_idleStart": 1468,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -763,9 +763,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:c8bfd74a-531d-483f-a328-6dd4ef7029c1",
+              "_testId": "urn:uuid:434eea69-68fe-4bcf-b612-13b0556bc7e9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -776,12 +776,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1259,
+                "_idleStart": 1468,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 60,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -806,9 +806,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:55f8cb66-e8a3-40bd-8d68-c9dbcc0f4bc5",
+              "_testId": "urn:uuid:255bdf88-8516-4561-be9a-282e657dbf62",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -819,7 +819,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1303,
+                "_idleStart": 1529,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -841,9 +841,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:c3c8217c-8ef9-48bd-a0ca-d20a395f8029",
+              "_testId": "urn:uuid:028cb8ca-8911-4f11-a78d-acf7ad843603",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -854,12 +854,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1303,
+                "_idleStart": 1529,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 51,
+              "duration": 70,
               "state": "passed",
               "speed": "medium"
             },
@@ -876,9 +876,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:de118b4c-907c-4a5e-8ad8-f548fafa3e83",
+              "_testId": "urn:uuid:3d3ea83c-5a3f-46df-843a-3e4ff3b067d7",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -889,7 +889,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1354,
+                "_idleStart": 1599,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -911,9 +911,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:61df2bd0-9329-444c-8c75-b6c7be0994f0",
+              "_testId": "urn:uuid:309316f2-701f-4cf2-9a76-668bc426c9c0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -924,12 +924,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1354,
+                "_idleStart": 1600,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 39,
+              "duration": 54,
               "state": "passed",
               "speed": "medium"
             },
@@ -946,9 +946,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:bf4018a1-bd98-4994-95e1-e469762d3bfa",
+              "_testId": "urn:uuid:3fcac764-0596-4487-acc7-ccab394579f9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -959,12 +959,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1393,
+                "_idleStart": 1655,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 53,
               "state": "passed",
               "speed": "medium"
             },
@@ -981,9 +981,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:33a953fa-46d9-4d7c-aedc-1acba18114d6",
+              "_testId": "urn:uuid:81df5521-3591-4a3d-93c2-87744aa0a7c7",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -994,12 +994,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1436,
+                "_idleStart": 1707,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 53,
               "state": "passed",
               "speed": "medium"
             },
@@ -1015,7 +1015,7 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
               "state": "pending"
             },
@@ -1032,9 +1032,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:d952f67c-6160-4a7a-a3e5-4ab5fb6f4176",
+              "_testId": "urn:uuid:9eabcc97-9e49-4f7a-bdb9-6bcd0e7bc6fb",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1045,12 +1045,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1478,
+                "_idleStart": 1761,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 54,
               "state": "passed",
               "speed": "medium"
             },
@@ -1067,9 +1067,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:cbb40650-c1e4-40f6-b90e-69ac1537b7de",
+              "_testId": "urn:uuid:c724e25d-ce4a-41f0-abda-6767462c109d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1080,12 +1080,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1520,
+                "_idleStart": 1815,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 41,
+              "duration": 55,
               "state": "passed",
               "speed": "medium"
             },
@@ -1102,9 +1102,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:ca6a6a75-5787-408b-b628-d8cf9be16912",
+              "_testId": "urn:uuid:9218883c-c5bf-4d72-bd48-3e91d76d56c0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1115,12 +1115,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1560,
+                "_idleStart": 1870,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 45,
+              "duration": 61,
               "state": "passed",
               "speed": "medium"
             },
@@ -1137,9 +1137,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:bb6844f8-6ad7-443f-bf79-fdf1485fc909",
+              "_testId": "urn:uuid:26034fde-3d4a-4ac5-b182-76053b107638",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1150,12 +1150,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1606,
+                "_idleStart": 1931,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 54,
               "state": "passed",
               "speed": "medium"
             },
@@ -1172,9 +1172,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:67a4199e-229b-47a3-ac4a-aa6b2e0af5b5",
+              "_testId": "urn:uuid:e2176118-d87d-4365-ae2d-08ef6e5f2e4b",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1185,12 +1185,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1649,
+                "_idleStart": 1985,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 48,
+              "duration": 64,
               "state": "passed",
               "speed": "medium"
             }
@@ -1208,9 +1208,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "tEW-l5zUcQCuxTVl090jx",
+          "parent": "GxZMEYEnp3pp4rrCASr29",
           "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-          "_testId": "urn:uuid:9c4ceeb8-9b9f-4783-b6dc-33ca71420c59"
+          "_testId": "urn:uuid:25cad4db-629b-463a-baf8-2c4d8830b7d4"
         },
         {
           "title": "Procivis One Core",
@@ -1230,9 +1230,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:f5f6bd20-307a-48c4-8632-ed2256e44eb9",
+              "_testId": "urn:uuid:0a9e4e20-6c8e-47a4-a7f4-640bc82abf48",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1243,7 +1243,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1697,
+                "_idleStart": 2050,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1265,9 +1265,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:01b0661f-126a-49a7-b13f-9ff84b97f812",
+              "_testId": "urn:uuid:ac280d63-e839-48e8-9d92-de8546b78eda",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1278,12 +1278,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1698,
+                "_idleStart": 2050,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 546,
+              "duration": 607,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1306,9 +1306,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:a7cb4878-001c-4f07-9530-0f37ac49d549",
+              "_testId": "urn:uuid:07a1933e-f09a-4ffc-9577-e4d907f750a6",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1319,7 +1319,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2244,
+                "_idleStart": 2657,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1341,9 +1341,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:cd368763-979a-4065-b09c-993a0df88500",
+              "_testId": "urn:uuid:c69c7a04-f63c-4f6d-96f0-2381f1c67232",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1354,12 +1354,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2244,
+                "_idleStart": 2657,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 111,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1382,9 +1382,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:4eddc3c0-b55e-461d-aa84-626b87e37abb",
+              "_testId": "urn:uuid:b185c415-1fde-4790-b79d-fa9e4cbe842d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1395,12 +1395,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2356,
+                "_idleStart": 2777,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -1417,9 +1417,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:e0b7bf8d-4bc4-4116-bd61-29bc5fd28c66",
+              "_testId": "urn:uuid:14af6b77-3972-43c3-a500-ae5df2a663f6",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1430,12 +1430,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2356,
+                "_idleStart": 2777,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 108,
+              "duration": 118,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1458,9 +1458,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:9efc126b-faa5-4455-bfad-7712e359f28f",
+              "_testId": "urn:uuid:f9df52ce-f36c-450c-a632-79046ed86d51",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1471,7 +1471,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2466,
+                "_idleStart": 2896,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1493,9 +1493,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:f5b43887-04ec-4792-b1e8-28d2b913235e",
+              "_testId": "urn:uuid:4a0c8dd8-cb96-4857-b03b-44a24cca9f13",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1506,12 +1506,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2466,
+                "_idleStart": 2896,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1534,9 +1534,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:c3e74d56-7614-46e9-bbe5-1840da672ca2",
+              "_testId": "urn:uuid:d6908e97-71ef-4de2-83b3-fa72a0c4d725",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1547,12 +1547,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2575,
+                "_idleStart": 3016,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 119,
+              "duration": 118,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1575,9 +1575,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:cb341579-dd29-4f77-8616-f8d256b0b151",
+              "_testId": "urn:uuid:178bfc18-84d5-41ff-a2de-236ace118d3a",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1588,12 +1588,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2695,
+                "_idleStart": 3135,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1615,7 +1615,7 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
               "state": "pending"
             },
@@ -1632,9 +1632,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:62b97c8a-c493-43ea-8b3d-d08cfc74c7ee",
+              "_testId": "urn:uuid:5133fd20-cb0d-4972-a8b9-624947fa523b",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1645,12 +1645,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2804,
+                "_idleStart": 3254,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1673,9 +1673,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:64c26e06-17ca-4ddd-8375-d7b3c7ee3633",
+              "_testId": "urn:uuid:e2d34d6d-dce8-4235-8503-600449a30469",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1686,12 +1686,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2914,
+                "_idleStart": 3373,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1714,9 +1714,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:876902ac-7c21-4f80-95ac-ab5dcdda8894",
+              "_testId": "urn:uuid:091912f3-0c4a-42e7-ab68-0707b7ba1ca7",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1727,12 +1727,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3024,
+                "_idleStart": 3493,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 118,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1755,9 +1755,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:23ae9fa3-245a-469d-95ba-d527a7efaa4f",
+              "_testId": "urn:uuid:a42ea290-0362-4f3f-8911-88f36dcfa353",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1768,12 +1768,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3133,
+                "_idleStart": 3612,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1796,9 +1796,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:d86e4d3e-5fb5-468a-abaa-aab56a0be2ff",
+              "_testId": "urn:uuid:b1b7cd3a-4b42-4308-9acb-74b8958f8508",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1809,12 +1809,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3243,
+                "_idleStart": 3732,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 118,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1838,9 +1838,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "tEW-l5zUcQCuxTVl090jx",
+          "parent": "GxZMEYEnp3pp4rrCASr29",
           "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-          "_testId": "urn:uuid:85d8f231-e919-4d95-8a6a-3cdb1f6021d7"
+          "_testId": "urn:uuid:24f26ff2-3c33-48a0-9ce5-63942a2d52d3"
         },
         {
           "title": "SpruceID",
@@ -1860,9 +1860,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:a476fc1a-d96b-44cb-88c8-2ced2632329c",
+              "_testId": "urn:uuid:3263aacd-5008-447d-b63b-305377840fee",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1873,7 +1873,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3352,
+                "_idleStart": 3851,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1895,9 +1895,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:f19766ab-3816-4785-a62c-10c39212c1d8",
+              "_testId": "urn:uuid:003887cd-79d0-4be9-80f5-51e5d038c088",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1908,12 +1908,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3353,
+                "_idleStart": 3852,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 139,
+              "duration": 250,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -1936,9 +1936,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:2e348ccb-db68-4c06-ab1a-9f31fcec9b3c",
+              "_testId": "urn:uuid:2941857c-cce1-4561-8e43-8e2dd8739a24",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1949,12 +1949,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3492,
+                "_idleStart": 4103,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -1971,9 +1971,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:9e78fe41-1a7e-4d5b-9358-ccbb705d35c4",
+              "_testId": "urn:uuid:33a21836-1225-4990-bb11-ed9242cf13f2",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -1984,20 +1984,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3493,
+                "_idleStart": 4103,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 37,
+              "duration": 168,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8d5cc201ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f101a23e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8d5cc201ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:92:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f101a23e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:92:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2013,9 +2013,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:8d74ed9d-1773-4192-afac-f442f146ab71",
+              "_testId": "urn:uuid:9c8d5bef-eb86-475a-819d-ce42ff2aa502",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2026,12 +2026,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3530,
+                "_idleStart": 4272,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -2048,9 +2048,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:7af05fc3-9445-4ae9-a98b-e1f4d09daa60",
+              "_testId": "urn:uuid:ecd0ef65-24b7-43f2-ae85-b360c81d7704",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2061,20 +2061,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3530,
+                "_idleStart": 4272,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 32,
+              "duration": 61,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8d9cde01ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f112b00e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8d9cde01ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:114:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f112b00e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:114:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2090,9 +2090,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:77f118e7-b643-4e84-9e8e-1b95a90cbf72",
+              "_testId": "urn:uuid:def672a8-0796-4493-8e4d-b40b3736a45e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2103,7 +2103,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3563,
+                "_idleStart": 4334,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2125,9 +2125,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:dbe9ce3b-372b-4600-8472-c67d86be9dff",
+              "_testId": "urn:uuid:0f7ac86f-b40c-4e6c-8072-d6b6d431b55d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2138,20 +2138,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3564,
+                "_idleStart": 4334,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 36,
+              "duration": 59,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8dccf601ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f118b41e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8dccf601ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:140:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f118b41e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:140:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2167,9 +2167,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:2b5ac6b6-a3ad-4cb1-ae55-7b54bf8006f6",
+              "_testId": "urn:uuid:4f02072a-5db0-4e61-8550-6fbb1bf85532",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2180,12 +2180,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3600,
+                "_idleStart": 4393,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 33,
+              "duration": 60,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2208,9 +2208,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:3269891b-24af-4ddd-afb6-2a4fce30f27a",
+              "_testId": "urn:uuid:165886f3-71b6-4e09-a97a-62c178294499",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2221,20 +2221,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3633,
+                "_idleStart": 4453,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 37,
+              "duration": 58,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8e3d3b01ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f124ba9e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8e3d3b01ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f124ba9e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2249,7 +2249,7 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
               "state": "pending"
             },
@@ -2266,9 +2266,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:cab01eda-6c5f-4937-94bb-c9b11650849c",
+              "_testId": "urn:uuid:045e98f4-15c5-4ffa-9def-7d1cd31d6ce6",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2279,12 +2279,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3670,
+                "_idleStart": 4511,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 30,
+              "duration": 59,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2307,9 +2307,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:fac670ce-df77-4ca2-ba95-ec5abe6c5d76",
+              "_testId": "urn:uuid:469f0cac-1b1d-4e8d-8194-9e3f83ffe54f",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2320,20 +2320,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3701,
+                "_idleStart": 4570,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 37,
+              "duration": 61,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8ead7601ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f130c13e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8ead7601ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f130c13e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2349,9 +2349,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:fce8e923-d961-462e-a8fa-ef3245f600fe",
+              "_testId": "urn:uuid:12728f1a-2c60-43b4-a61b-1c23e3cc2352",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2362,19 +2362,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3738,
+                "_idleStart": 4631,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 32,
+              "duration": 61,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f136c4ae524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:36:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:231:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "actual": {},
+                "operator": "notStrictEqual",
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f136c4ae524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:231:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2390,9 +2391,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:f326e790-a574-4c34-bbc1-c6902381e0ad",
+              "_testId": "urn:uuid:320a6fef-4c57-481e-a078-eaf989e55889",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2403,19 +2404,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3770,
+                "_idleStart": 4692,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 32,
+              "duration": 61,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:11 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f13cc88e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:36:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:248:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "actual": {},
+                "operator": "notStrictEqual",
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:11 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f13cc88e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:248:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -2431,9 +2433,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:d27ccc84-c7bb-451d-b531-29919c7c9534",
+              "_testId": "urn:uuid:2f689986-43a5-420b-abf3-b849aa5c3d91",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2444,19 +2446,29 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3802,
+                "_idleStart": 4753,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 31,
+              "duration": 60,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected a result: expected undefined to exist",
+                "message": "expected { Success: { …(3) } } to have property 'didDocument'",
                 "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected a result: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "actual": {
+                  "Success": {
+                    "content": "{\"id\":\"did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b\",\"type\":\"Multikey\",\"controller\":\"did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b\",\"publicKeyMultibase\":\"z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b\"}",
+                    "metadata": {
+                      "contentType": "application/did+ld+json"
+                    },
+                    "document_metadata": {
+                      "deactivated": null
+                    }
+                  }
+                },
+                "stack": "AssertionError: expected { Success: { …(3) } } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:24:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:262:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ],
@@ -2473,9 +2485,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "tEW-l5zUcQCuxTVl090jx",
+          "parent": "GxZMEYEnp3pp4rrCASr29",
           "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-          "_testId": "urn:uuid:2229d8b6-815c-4e81-acdb-b2188b7da763"
+          "_testId": "urn:uuid:c816e195-3412-4349-a4ed-764de332770e"
         }
       ],
       "root": false,
@@ -2491,7 +2503,7 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "Gio7dZt80-lFJzXr3pkIO",
+      "parent": "ltyhoLsfMx0iFLCC-dHuk",
       "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
       "summary": {},
       "matrix": true,
@@ -2499,7 +2511,7 @@
       "rowLabel": "Test Name",
       "columnLabel": "did:key Resolver",
       "reportData": [],
-      "_testId": "urn:uuid:099517e2-8fe0-4b31-8455-62f4466146cd",
+      "_testId": "urn:uuid:815ba47f-df76-4f71-b830-baea78b66429",
       "columns": [
         "DIF",
         "Digital Bazaar, Inc.",
@@ -2523,9 +2535,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:858d1433-6e54-454b-a089-afb12fa3ada2",
+              "_testId": "urn:uuid:aa119391-a732-41b7-9ce0-5a01fe51e768",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2536,7 +2548,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 435,
+                "_idleStart": 471,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2558,9 +2570,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:fde17806-7644-47b9-953c-f774448d41a4",
+              "_testId": "urn:uuid:2b0718d9-ac29-4f65-b55e-c53a4a0e31d8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2571,7 +2583,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1059,
+                "_idleStart": 1191,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2593,9 +2605,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:f5f6bd20-307a-48c4-8632-ed2256e44eb9",
+              "_testId": "urn:uuid:0a9e4e20-6c8e-47a4-a7f4-640bc82abf48",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2606,7 +2618,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1697,
+                "_idleStart": 2050,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2628,9 +2640,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:a476fc1a-d96b-44cb-88c8-2ced2632329c",
+              "_testId": "urn:uuid:3263aacd-5008-447d-b63b-305377840fee",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2641,7 +2653,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3352,
+                "_idleStart": 3851,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2668,9 +2680,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:24a67e01-7893-44a4-a96a-20e5f532ddf8",
+              "_testId": "urn:uuid:5abfa795-ec1c-4d08-ac41-4dae201aa6b0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2681,12 +2693,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 437,
+                "_idleStart": 472,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 366,
+              "duration": 323,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2709,9 +2721,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:5f28e58d-5931-4db1-8b06-3278956b827e",
+              "_testId": "urn:uuid:37222282-4889-4970-b72c-84215eb7d7b3",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2722,12 +2734,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1059,
+                "_idleStart": 1192,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 200,
+              "duration": 275,
               "state": "passed",
               "speed": "slow"
             },
@@ -2744,9 +2756,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:01b0661f-126a-49a7-b13f-9ff84b97f812",
+              "_testId": "urn:uuid:ac280d63-e839-48e8-9d92-de8546b78eda",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2757,12 +2769,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1698,
+                "_idleStart": 2050,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 546,
+              "duration": 607,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2785,9 +2797,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:f19766ab-3816-4785-a62c-10c39212c1d8",
+              "_testId": "urn:uuid:003887cd-79d0-4be9-80f5-51e5d038c088",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2798,12 +2810,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3353,
+                "_idleStart": 3852,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 139,
+              "duration": 250,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2831,9 +2843,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:966ca5e9-e110-4672-be6f-19f11b544c04",
+              "_testId": "urn:uuid:6c5738a2-2225-43a3-b99f-86a7263018dd",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2844,12 +2856,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 806,
+                "_idleStart": 800,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -2866,9 +2878,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:85d2706d-de2a-49c8-b0a0-3b366c2781c1",
+              "_testId": "urn:uuid:8a0b15ea-b4ee-4470-8349-ec442288c6af",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2879,12 +2891,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1259,
+                "_idleStart": 1468,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -2901,9 +2913,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:a7cb4878-001c-4f07-9530-0f37ac49d549",
+              "_testId": "urn:uuid:07a1933e-f09a-4ffc-9577-e4d907f750a6",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2914,7 +2926,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2244,
+                "_idleStart": 2657,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -2936,9 +2948,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:2e348ccb-db68-4c06-ab1a-9f31fcec9b3c",
+              "_testId": "urn:uuid:2941857c-cce1-4561-8e43-8e2dd8739a24",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2949,12 +2961,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3492,
+                "_idleStart": 4103,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             }
@@ -2976,9 +2988,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:71137ae6-15c9-44b7-9677-4729fa495f44",
+              "_testId": "urn:uuid:5086e8ec-40e0-4a55-a5ba-1b4f3b912ce5",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -2989,12 +3001,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 806,
+                "_idleStart": 800,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 20,
+              "duration": 40,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3017,9 +3029,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:c8bfd74a-531d-483f-a328-6dd4ef7029c1",
+              "_testId": "urn:uuid:434eea69-68fe-4bcf-b612-13b0556bc7e9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3030,12 +3042,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1259,
+                "_idleStart": 1468,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 60,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3060,9 +3072,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:cd368763-979a-4065-b09c-993a0df88500",
+              "_testId": "urn:uuid:c69c7a04-f63c-4f6d-96f0-2381f1c67232",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3073,12 +3085,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2244,
+                "_idleStart": 2657,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 111,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3101,9 +3113,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:9e78fe41-1a7e-4d5b-9358-ccbb705d35c4",
+              "_testId": "urn:uuid:33a21836-1225-4990-bb11-ed9242cf13f2",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3114,20 +3126,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3493,
+                "_idleStart": 4103,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 37,
+              "duration": 168,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8d5cc201ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f101a23e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8d5cc201ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:92:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f101a23e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:92:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3148,9 +3160,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:e591dd34-790a-4def-899d-01b4faaaea8d",
+              "_testId": "urn:uuid:222247f5-d8d0-46ce-9dc8-dc48458973fe",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3161,12 +3173,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 827,
+                "_idleStart": 841,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -3183,9 +3195,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:55f8cb66-e8a3-40bd-8d68-c9dbcc0f4bc5",
+              "_testId": "urn:uuid:255bdf88-8516-4561-be9a-282e657dbf62",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3196,7 +3208,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1303,
+                "_idleStart": 1529,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -3218,9 +3230,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:4eddc3c0-b55e-461d-aa84-626b87e37abb",
+              "_testId": "urn:uuid:b185c415-1fde-4790-b79d-fa9e4cbe842d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3231,12 +3243,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2356,
+                "_idleStart": 2777,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -3253,9 +3265,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:8d74ed9d-1773-4192-afac-f442f146ab71",
+              "_testId": "urn:uuid:9c8d5bef-eb86-475a-819d-ce42ff2aa502",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3266,12 +3278,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3530,
+                "_idleStart": 4272,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             }
@@ -3293,9 +3305,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:7bdc9bed-b57e-4fde-b925-b1f903223232",
+              "_testId": "urn:uuid:07e60210-a9b5-4048-8154-7b3c2f22ee26",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3306,12 +3318,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 828,
+                "_idleStart": 842,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 21,
+              "duration": 37,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3334,9 +3346,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:c3c8217c-8ef9-48bd-a0ca-d20a395f8029",
+              "_testId": "urn:uuid:028cb8ca-8911-4f11-a78d-acf7ad843603",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3347,12 +3359,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1303,
+                "_idleStart": 1529,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 51,
+              "duration": 70,
               "state": "passed",
               "speed": "medium"
             },
@@ -3369,9 +3381,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:e0b7bf8d-4bc4-4116-bd61-29bc5fd28c66",
+              "_testId": "urn:uuid:14af6b77-3972-43c3-a500-ae5df2a663f6",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3382,12 +3394,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2356,
+                "_idleStart": 2777,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 108,
+              "duration": 118,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3410,9 +3422,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:7af05fc3-9445-4ae9-a98b-e1f4d09daa60",
+              "_testId": "urn:uuid:ecd0ef65-24b7-43f2-ae85-b360c81d7704",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3423,20 +3435,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3530,
+                "_idleStart": 4272,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 32,
+              "duration": 61,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8d9cde01ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f112b00e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8d9cde01ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:114:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f112b00e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:114:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3457,9 +3469,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:94b7bb95-d91a-413a-8b22-64b7af1944fb",
+              "_testId": "urn:uuid:47b659cf-a6d7-4e61-b80b-3d7e384ca8fc",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3470,7 +3482,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 849,
+                "_idleStart": 880,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -3492,9 +3504,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:de118b4c-907c-4a5e-8ad8-f548fafa3e83",
+              "_testId": "urn:uuid:3d3ea83c-5a3f-46df-843a-3e4ff3b067d7",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3505,7 +3517,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1354,
+                "_idleStart": 1599,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -3527,9 +3539,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:9efc126b-faa5-4455-bfad-7712e359f28f",
+              "_testId": "urn:uuid:f9df52ce-f36c-450c-a632-79046ed86d51",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3540,7 +3552,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2466,
+                "_idleStart": 2896,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -3562,9 +3574,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:77f118e7-b643-4e84-9e8e-1b95a90cbf72",
+              "_testId": "urn:uuid:def672a8-0796-4493-8e4d-b40b3736a45e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3575,7 +3587,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3563,
+                "_idleStart": 4334,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -3602,9 +3614,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:11476983-ef51-4f28-bb97-030c2c0020c4",
+              "_testId": "urn:uuid:d706d89a-5f1a-4115-968c-eae6ec10968d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3615,12 +3627,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 850,
+                "_idleStart": 880,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 18,
+              "duration": 38,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3643,9 +3655,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:61df2bd0-9329-444c-8c75-b6c7be0994f0",
+              "_testId": "urn:uuid:309316f2-701f-4cf2-9a76-668bc426c9c0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3656,12 +3668,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1354,
+                "_idleStart": 1600,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 39,
+              "duration": 54,
               "state": "passed",
               "speed": "medium"
             },
@@ -3678,9 +3690,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:f5b43887-04ec-4792-b1e8-28d2b913235e",
+              "_testId": "urn:uuid:4a0c8dd8-cb96-4857-b03b-44a24cca9f13",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3691,12 +3703,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2466,
+                "_idleStart": 2896,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3719,9 +3731,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:dbe9ce3b-372b-4600-8472-c67d86be9dff",
+              "_testId": "urn:uuid:0f7ac86f-b40c-4e6c-8072-d6b6d431b55d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3732,20 +3744,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3564,
+                "_idleStart": 4334,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 36,
+              "duration": 59,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8dccf601ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f118b41e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8dccf601ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:140:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f118b41e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:140:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -3766,9 +3778,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:515908a3-114d-4366-88d5-feac3820697d",
+              "_testId": "urn:uuid:41436207-f6f7-4117-92ae-a9cfa03abb67",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3779,12 +3791,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 869,
+                "_idleStart": 919,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 14,
+              "duration": 34,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3807,9 +3819,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:bf4018a1-bd98-4994-95e1-e469762d3bfa",
+              "_testId": "urn:uuid:3fcac764-0596-4487-acc7-ccab394579f9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3820,12 +3832,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1393,
+                "_idleStart": 1655,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 53,
               "state": "passed",
               "speed": "medium"
             },
@@ -3842,9 +3854,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:c3e74d56-7614-46e9-bbe5-1840da672ca2",
+              "_testId": "urn:uuid:d6908e97-71ef-4de2-83b3-fa72a0c4d725",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3855,12 +3867,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2575,
+                "_idleStart": 3016,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 119,
+              "duration": 118,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3883,9 +3895,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:2b5ac6b6-a3ad-4cb1-ae55-7b54bf8006f6",
+              "_testId": "urn:uuid:4f02072a-5db0-4e61-8550-6fbb1bf85532",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3896,12 +3908,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3600,
+                "_idleStart": 4393,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 33,
+              "duration": 60,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3929,9 +3941,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:0efe45bc-89a6-4f3e-b9e3-0fb6055f52a5",
+              "_testId": "urn:uuid:92ac58b2-2177-45c2-ac09-74e779aca720",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3942,12 +3954,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 883,
+                "_idleStart": 954,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 29,
+              "duration": 37,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3970,9 +3982,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:33a953fa-46d9-4d7c-aedc-1acba18114d6",
+              "_testId": "urn:uuid:81df5521-3591-4a3d-93c2-87744aa0a7c7",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -3983,12 +3995,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1436,
+                "_idleStart": 1707,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 53,
               "state": "passed",
               "speed": "medium"
             },
@@ -4005,9 +4017,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:cb341579-dd29-4f77-8616-f8d256b0b151",
+              "_testId": "urn:uuid:178bfc18-84d5-41ff-a2de-236ace118d3a",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4018,12 +4030,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2695,
+                "_idleStart": 3135,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4046,9 +4058,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:3269891b-24af-4ddd-afb6-2a4fce30f27a",
+              "_testId": "urn:uuid:165886f3-71b6-4e09-a97a-62c178294499",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4059,20 +4071,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3633,
+                "_idleStart": 4453,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 37,
+              "duration": 58,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8e3d3b01ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f124ba9e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8e3d3b01ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f124ba9e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:174:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -4093,9 +4105,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:59626911-9c2b-40e7-bc70-868e08939348",
+              "_testId": "urn:uuid:bcd9f7e0-2b50-4fa4-aab0-ab7f5108b116",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4106,19 +4118,19 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 913,
+                "_idleStart": 992,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 18,
+              "duration": 39,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
                 "message": "expected { …(4) } to have property 'didDocument'",
                 "showDiff": false,
                 "actual": {
-                  "timestamp": "2026-01-18T05:25:06.761+00:00",
+                  "timestamp": "2026-01-25T05:29:07.317Z",
                   "status": 400,
                   "error": "Bad Request",
                   "path": "/1.0/identifiers/did%3Akey%3Az6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b%2F%5Ebar%5E%2F%3Fquery%3D%60%23z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b"
@@ -4139,9 +4151,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:d952f67c-6160-4a7a-a3e5-4ab5fb6f4176",
+              "_testId": "urn:uuid:9eabcc97-9e49-4f7a-bdb9-6bcd0e7bc6fb",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4152,12 +4164,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1478,
+                "_idleStart": 1761,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 54,
               "state": "passed",
               "speed": "medium"
             },
@@ -4174,9 +4186,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:62b97c8a-c493-43ea-8b3d-d08cfc74c7ee",
+              "_testId": "urn:uuid:5133fd20-cb0d-4972-a8b9-624947fa523b",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4187,12 +4199,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2804,
+                "_idleStart": 3254,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4215,9 +4227,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:cab01eda-6c5f-4937-94bb-c9b11650849c",
+              "_testId": "urn:uuid:045e98f4-15c5-4ffa-9def-7d1cd31d6ce6",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4228,12 +4240,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3670,
+                "_idleStart": 4511,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 30,
+              "duration": 59,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4261,9 +4273,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:34c82c8b-884a-4690-b4bd-2e486f8e46b1",
+              "_testId": "urn:uuid:5cbdbb97-1039-41cd-8792-5accdfc0248c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4274,20 +4286,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 933,
+                "_idleStart": 1031,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 44,
+              "duration": 39,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:06 GMT', 'content-type': 'application/did-resolution;charset=utf-8', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'access-control-allow-origin': '*', Authorization: 'sanitized to prevent exposure of secrets' }, body: null, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:07 GMT', 'content-type': 'application/did-resolution;charset=utf-8', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'access-control-allow-origin': '*', Authorization: 'sanitized to prevent exposure of secrets' }, body: null, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:06 GMT', 'content-type': 'application/did-resolution;charset=utf-8', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'access-control-allow-origin': '*', Authorization: 'sanitized to prevent exposure of secrets' }, body: null, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:07 GMT', 'content-type': 'application/did-resolution;charset=utf-8', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'access-control-allow-origin': '*', Authorization: 'sanitized to prevent exposure of secrets' }, body: null, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             },
             {
@@ -4303,9 +4315,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:cbb40650-c1e4-40f6-b90e-69ac1537b7de",
+              "_testId": "urn:uuid:c724e25d-ce4a-41f0-abda-6767462c109d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4316,12 +4328,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1520,
+                "_idleStart": 1815,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 41,
+              "duration": 55,
               "state": "passed",
               "speed": "medium"
             },
@@ -4338,9 +4350,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:64c26e06-17ca-4ddd-8375-d7b3c7ee3633",
+              "_testId": "urn:uuid:e2d34d6d-dce8-4235-8503-600449a30469",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4351,12 +4363,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 2914,
+                "_idleStart": 3373,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4379,9 +4391,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:fac670ce-df77-4ca2-ba95-ec5abe6c5d76",
+              "_testId": "urn:uuid:469f0cac-1b1d-4e8d-8194-9e3f83ffe54f",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4392,20 +4404,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3701,
+                "_idleStart": 4570,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 37,
+              "duration": 61,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8ead7601ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f130c13e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
                 "actual": {},
                 "operator": "notStrictEqual",
-                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 18 Jan 2026 05:25:09 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9bfbab8ead7601ca-ORD', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f130c13e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:214:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -4426,9 +4438,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:35339ba4-6558-441a-9187-fd129546d29b",
+              "_testId": "urn:uuid:8d1b4f45-2621-4a27-b356-9f039e79ca8c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4439,7 +4451,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 977,
+                "_idleStart": 1071,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -4467,9 +4479,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:ca6a6a75-5787-408b-b628-d8cf9be16912",
+              "_testId": "urn:uuid:9218883c-c5bf-4d72-bd48-3e91d76d56c0",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4480,12 +4492,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1560,
+                "_idleStart": 1870,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 45,
+              "duration": 61,
               "state": "passed",
               "speed": "medium"
             },
@@ -4502,9 +4514,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:876902ac-7c21-4f80-95ac-ab5dcdda8894",
+              "_testId": "urn:uuid:091912f3-0c4a-42e7-ab68-0707b7ba1ca7",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4515,12 +4527,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3024,
+                "_idleStart": 3493,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 118,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4543,9 +4555,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:fce8e923-d961-462e-a8fa-ef3245f600fe",
+              "_testId": "urn:uuid:12728f1a-2c60-43b4-a61b-1c23e3cc2352",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4556,19 +4568,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3738,
+                "_idleStart": 4631,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 32,
+              "duration": 61,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f136c4ae524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:36:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:231:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "actual": {},
+                "operator": "notStrictEqual",
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:10 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f136c4ae524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:231:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -4589,9 +4602,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:508d341f-607d-46ad-b5b3-fbe3191062b4",
+              "_testId": "urn:uuid:4aef1ff5-8d82-45cc-bab1-07db49591644",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4602,12 +4615,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1018,
+                "_idleStart": 1111,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 21,
+              "duration": 40,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4630,9 +4643,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:bb6844f8-6ad7-443f-bf79-fdf1485fc909",
+              "_testId": "urn:uuid:26034fde-3d4a-4ac5-b182-76053b107638",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4643,12 +4656,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1606,
+                "_idleStart": 1931,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 42,
+              "duration": 54,
               "state": "passed",
               "speed": "medium"
             },
@@ -4665,9 +4678,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:23ae9fa3-245a-469d-95ba-d527a7efaa4f",
+              "_testId": "urn:uuid:a42ea290-0362-4f3f-8911-88f36dcfa353",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4678,12 +4691,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3133,
+                "_idleStart": 3612,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 119,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4706,9 +4719,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:f326e790-a574-4c34-bbc1-c6902381e0ad",
+              "_testId": "urn:uuid:320a6fef-4c57-481e-a078-eaf989e55889",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4719,19 +4732,20 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3770,
+                "_idleStart": 4692,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 32,
+              "duration": 61,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected an error with data: expected undefined to exist",
+                "message": "Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:11 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f13cc88e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
                 "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected an error with data: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:36:10)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:248:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "actual": {},
+                "operator": "notStrictEqual",
+                "stack": "AssertionError: Expected no response: expected Response { status: 200, statusText: 'OK', headers: Headers { date: 'Sun, 25 Jan 2026 05:29:11 GMT', 'content-type': 'application/ld+json;profile=\"https://w3id.org/did-resolution\"', 'transfer-encoding': 'chunked', connection: 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'content-encoding': 'gzip', server: 'cloudflare', 'cf-ray': '9c355f13cc88e524-DFW', Authorization: 'sanitized to prevent exposure of secrets' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at shouldErrorWithData (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:34:14)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:248:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
@@ -4752,9 +4766,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "IqUCzCyS7nZrZKc8RRO7B",
+              "parent": "_k94fMWLZ54ovEVciVf7C",
               "ctx": null,
-              "_testId": "urn:uuid:30164b77-6418-4345-935d-23021bf6d015",
+              "_testId": "urn:uuid:788e3862-2363-4d19-bd18-6537aa36107e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4765,12 +4779,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1040,
+                "_idleStart": 1152,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 18,
+              "duration": 38,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4793,9 +4807,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "4LPZKBaljOnFXKbIhxnH0",
+              "parent": "9DZAyfEh01RZFPV_GQe0i",
               "ctx": null,
-              "_testId": "urn:uuid:67a4199e-229b-47a3-ac4a-aa6b2e0af5b5",
+              "_testId": "urn:uuid:e2176118-d87d-4365-ae2d-08ef6e5f2e4b",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4806,12 +4820,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 1649,
+                "_idleStart": 1985,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 48,
+              "duration": 64,
               "state": "passed",
               "speed": "medium"
             },
@@ -4828,9 +4842,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "hKYRlx4gZYhy4tFNqi2fq",
+              "parent": "GJ7VqmZ0pLk38Abpi2OH6",
               "ctx": null,
-              "_testId": "urn:uuid:d86e4d3e-5fb5-468a-abaa-aab56a0be2ff",
+              "_testId": "urn:uuid:b1b7cd3a-4b42-4308-9acb-74b8958f8508",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4841,12 +4855,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3243,
+                "_idleStart": 3732,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 109,
+              "duration": 118,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4869,9 +4883,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js",
-              "parent": "vfNRh6WixhPM2m-Z4RC0y",
+              "parent": "sqMDeJKvveyk9n7f4-U-p",
               "ctx": null,
-              "_testId": "urn:uuid:d27ccc84-c7bb-451d-b531-29919c7c9534",
+              "_testId": "urn:uuid:2f689986-43a5-420b-abf3-b849aa5c3d91",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4882,19 +4896,29 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 3802,
+                "_idleStart": 4753,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 31,
+              "duration": 60,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
-                "message": "Expected a result: expected undefined to exist",
+                "message": "expected { Success: { …(3) } } to have property 'didDocument'",
                 "showDiff": false,
-                "operator": "strictEqual",
-                "stack": "AssertionError: Expected a result: expected undefined to exist\n    at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:260:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                "actual": {
+                  "Success": {
+                    "content": "{\"id\":\"did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b#z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b\",\"type\":\"Multikey\",\"controller\":\"did:key:z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b\",\"publicKeyMultibase\":\"z6MktKwz7Ge1Yxzr4JHavN33wiwa8y81QdcMRLXQsrH9T53b\"}",
+                    "metadata": {
+                      "contentType": "application/did+ld+json"
+                    },
+                    "document_metadata": {
+                      "deactivated": null
+                    }
+                  }
+                },
+                "stack": "AssertionError: expected { Success: { …(3) } } to have property 'didDocument'\n    at shouldBeDidResolverResponse (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/assertions.js:24:20)\n    at Context.<anonymous> (file:///home/runner/work/did-key-test-suite/did-key-test-suite/tests/10-create.js:262:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
               }
             }
           ]
